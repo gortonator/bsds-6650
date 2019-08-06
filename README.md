@@ -23,7 +23,7 @@ hopefully there will be some!!
 
 Week | Topic
 ---- | -----
-1  | [Introduction to Distributed Systems] (https://gortonator.github.io/Week-1)
+1  | [Introduction to Distributed Systems](http://gortonator.github.io/Week-1)
 2  | Concurrency
 
 ## Assignments
