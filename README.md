@@ -6,10 +6,10 @@
 ## Logistics
 **Class:** 3-6pm 4th Floor, 225 Terry Ave N, Seattle Campus
 
-##### Course Lead
+### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
-##### Teaching Assistants
+### Teaching Assistants
 hopefully there will be some!!
 
 
@@ -20,6 +20,11 @@ hopefully there will be some!!
 # Course Content
 
 ## Modules
+
+Week | Topic
+---- | -----
+1  | [Introduction to Distributed Systems] (https://gortonator.github.io/Week-1)
+2  | Concurrency
 
 ## Assignments
 
