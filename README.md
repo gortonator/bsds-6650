@@ -6,10 +6,10 @@
 ## Logistics
 **Class:** 3-6pm 4th Floor, 225 Terry Ave N, Seattle Campus
 
-#####Course Lead
+##### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
-#####Teaching Assistants
+##### Teaching Assistants
 hopefully there will be some!!
 
 
