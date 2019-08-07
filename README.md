@@ -25,7 +25,7 @@ There is one written assigment that is worth 7% of the final grade
 ## Modules
 
 Week | Topic | Date
----- | -----   ----
+---- | ----- | ----
 1  | [Introduction to Distributed Systems](http://gortonator.github.io/Week-1) | 9/10
 2  | Concurrency | 9/17
 3  | Distributed Systems Fundamentals | 9/24
