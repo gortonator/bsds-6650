@@ -27,19 +27,19 @@ hopefully there will be some!!
 Week | Topic | Date
 ---- | ----- | ----
 1  | [Introduction to Distributed Systems](http://gortonator.github.io/Week-1) | 9/10
-2  | Concurrency | 9/17
-3  | Distributed Systems Fundamentals | 9/24
-4  | Data Layer: Replication, Partitioning and Consistency | 10/1
-5  | Data Layer: NoSQL Databases | 10/8
-6  | Scalable Request Processing: APIs and State Management | 10/15
-7  | Caching and Load Balancing | 10/22
-8  | Asynchronous Systems | 10/29
-9  | Microservices | 11/5
-10 | Data Processing Architectures - Lambda/etc | 11/12
-11 | Scalable data Analytics | 11/19
-12 | Stream Processing | 11/26
-13 | Security | 12/3
-14 | Final Presentations | 12/10
+2  | [Concurrency](http://gortonator.github.io/Week-2) | 9/17
+3  | [Distributed Systems Fundamentals](http://gortonator.github.io/Week-3) | 9/24
+4  | [Data Layer: Replication, Partitioning and Consistency](http://gortonator.github.io/Week-4) | 10/1
+5  | [Data Layer: NoSQL Databases](http://gortonator.github.io/Week-5) | 10/8
+6  | [Scalable Request Processing: APIs and State Management](http://gortonator.github.io/Week-6) | 10/15
+7  | [Caching and Load Balancing](http://gortonator.github.io/Week-7) | 10/22
+8  | [Asynchronous Systems](http://gortonator.github.io/Week-8) | 10/29
+9  | [Microservices](http://gortonator.github.io/Week-9) | 11/5
+10 | [Data Processing Architectures - Lambda/etc](http://gortonator.github.io/Week-10) | 11/12
+11 | [Scalable Data Analytics](http://gortonator.github.io/Week-11) | 11/19
+12 | [Stream Processing](http://gortonator.github.io/Week-12) | 11/26
+13 | [Security](http://gortonator.github.io/Week-13) | 12/3
+14 | Final Project Presentations | 12/10
 
 ## Assignments
 
