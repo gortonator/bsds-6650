@@ -16,9 +16,9 @@ hopefully there will be some!!
 ## Overview
 
 ## Assessment
-There are 4 assigments, the first 3 are individual and the final project can be done in pairs. Each assignmenta is worth 18% of the final grade
-There are 4 quizes. Each quiz if worth 6% of the final grade.
-There is one written assigment that is worth 4% of the final grade
+* There are 4 assigments, the first 3 are individual and the final project can be done in pairs. Each assignmenta is worth 18% of the final grade
+* There are 4 quizes. Each quiz if worth 6% of the final grade.
+* There is one written assigment that is worth 4% of the final grade
 
 # Course Content
 
@@ -51,6 +51,7 @@ Assignment | Topic | Due Date
 4 | Final Project | 12/10
 
 ## Quizzes
+Quizzes will be held at the start of class on the following 4 dates.
 
 Quiz | Date
 ---- | ----
@@ -64,6 +65,7 @@ Quiz | Date
 ### Late Submission
 
 ### Missed Quizzes
+Quizzes are held in class and last approximately 30 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let me know_ in advace. Failure to do this will result in a zero for the quiz you miss. 
 
 ### Do your own work
 
