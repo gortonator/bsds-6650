@@ -60,13 +60,13 @@ Quiz | Date
 3 | 11/5
 4 | 12/3
 
-## Policies
+# Policies
 
-### Late Submission
+**Late Submission**
 
-### Missed Quizzes
+**Missed Quizzes**
 Quizzes are held in class and last approximately 30 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let me know_ in advace. Failure to do this will result in a zero for the quiz you miss. 
 
-### Do your own work
+**Do your own work**
 
-### Come to class
+**Come to class**
