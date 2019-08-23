@@ -26,7 +26,7 @@ hopefully there will be some!!
 
 Week | Topic | Date
 ---- | ----- | ----
-1  | [Introduction to Distributed Systems](http://gortonator.github.io/Week-1.md) | 9/10
+1  | [Introduction to Distributed Systems](https://github.com/gortonator/bsds-6650/blob/master/Week-1.md) | 9/10
 2  | [Concurrency](http://gortonator.github.io/Week-2.md) | 9/17
 3  | [Distributed Systems Fundamentals](http://gortonator.github.io/Week-3.md) | 9/24
 4  | [Data Layer: Replication, Partitioning and Consistency](http://gortonator.github.io/Week-4.md) | 10/1
