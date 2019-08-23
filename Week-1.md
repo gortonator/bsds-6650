@@ -17,7 +17,7 @@
 1. Course Structure
 
 ## Lecture Slides
-Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/BSDS-2019-Intro.pdf)
+Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/BSDS-2019-Week-1.pdf)
 
 ## Lab 1 - Getting started with AWS
 
