@@ -21,4 +21,8 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/
 
 ## Lab 1 - Getting started with AWS
 
-Instructions coiming soon
+### Aims: 
+1. Get AWS account up and running
+1. Launch a free tier AMI running AWS Linux
+1. Install tomcat
+1. Install MySQL (or another database of your choice)
