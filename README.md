@@ -9,16 +9,20 @@
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
-### Teaching Assistants
-hopefully there will be some!!
-
+### Super Talented Teaching Assistants
+Mengjiao Wu <wu.mengji@husky.neu.edu>
+Wenlin Huang <huang.wenl@husky.neu.edu>
 
 ## Overview
+This course will cover the essential elements of distributed, concurrent systems and build upon that
+knowledge with engineering principles and practical experience with state-of-the-art technologies and
+methods for building scalable systems. Scalability is an essential quality of Internet-facing systems, and
+requires specialized skills and knowledge to build systems that scale at low cost. 
 
 ## Assessment
-* There are 4 assigments, the first 3 are individual and the final project can be done in pairs. Each assignmenta is worth 18% of the final grade
+* There are 4 assigments, the first 3 are individual and the final project can be done in pairs. Each assignment is worth 18% of the final grade
 * There are 4 quizes. Each quiz if worth 6% of the final grade.
-* There is one written assigment that is worth 4% of the final grade
+* There is one individual written assigment that is worth 4% of the final grade.
 
 # Course Content
 
@@ -63,10 +67,13 @@ Quiz | Date
 # Policies
 
 **Late Submission**
+If you need more time, come beg :). Communications usually gives a positive outcome.
+Without warning, you'll lose 5% of your final grade each day overdue. 
 
 **Missed Quizzes**
 Quizzes are held in class and last approximately 30 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let me know_ in advace. Failure to do this will result in a zero for the quiz you miss. 
 
 **Do your own work**
+You know the rules. Helping each other out is fine, but design and build your own system. Any unwarrented collaboration will result in a zero grade for the assignment. 
 
 **Come to class**
