@@ -10,8 +10,8 @@
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
 ### Super Talented Teaching Assistants
-Mengjiao Wu <wu.mengji@husky.neu.edu>
-Wenlin Huang <huang.wenl@husky.neu.edu>
+1. Mengjiao Wu <wu.mengji@husky.neu.edu>: Office Hours TBA
+1. Wenlin Huang <huang.wenl@husky.neu.edu>: Office Hours TBA
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
@@ -77,3 +77,4 @@ Quizzes are held in class and last approximately 30 minutes. If you are not able
 You know the rules. Helping each other out is fine, but design and build your own system. Any unwarrented collaboration will result in a zero grade for the assignment. 
 
 **Come to class**
+Most classes contain a lab exercise that builds on the lecture materials and supports the assignments. These are great opportunitie sto work with classmates and learn lots of complex stuff togther, with help from the TAs and maybe even me!!!
