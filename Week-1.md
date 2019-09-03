@@ -20,9 +20,6 @@
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/BSDS-2019-Week-1.pdf)
 
 ## Lab 1 - Getting started with AWS
-1. [Launch a Linux VM on AWS]
-1. [Create an RDS MySQL Instance](https://aws.amazon.com/getting-started/tutorials/create-mysql-db/)
-
 ### Aims: 
 1. Get AWS account up and running - you should have an AWS Educate invitation
 1. [Launch a free tier AMI running Amazon Linux](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/)
