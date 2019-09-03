@@ -26,3 +26,5 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/
 1. Launch a free tier AMI running AWS Linux
 1. Install tomcat
 1. Install MySQL (or another database of your choice)
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
