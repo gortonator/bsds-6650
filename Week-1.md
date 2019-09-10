@@ -19,6 +19,14 @@
 ## Lecture Slides
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/BSDS-2019-Week-1.pdf)
 
+## Reading
+Cloud Architecture Patterns, Bill Wilder
+* Chapter 1 (available through [Notheastern Library](https://library.northeastern.edu/)
+Distributed systems : concepts and design
+Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon.
+Harlow, England ; Addison-Wesley c2012
+* Chapter 1
+
 ## Lab 1 - Getting started with AWS
 ### Aims: 
 1. Get AWS account up and running - you should have an AWS Educate invitation
