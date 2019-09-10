@@ -6,6 +6,7 @@
 1. Describe the two major problems that occur in multi-threaded systems
 1. Write programs using threads in Java
 1. Write programs using thread safe collections, queues and executors
+1. Lab: Understand and run a simple servlet in tomcat
 
 ## Module Outline
 
@@ -26,3 +27,9 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-2-concu
 Java Concurrency in Practice 1st Edition
 by Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
 * Chapters 1-8 are relevant to the assignments, so use these as your main sourse of information
+
+## Lab
+### Simple Servlets
+coming soon ..
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)

@@ -22,4 +22,8 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week3-fundam
 coming soon
 
 ## Lab
+### Sockets in Java
 coming soon
+
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
