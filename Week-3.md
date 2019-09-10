@@ -1,4 +1,4 @@
-# Introduction to Distributed Systems
+# Distributed Systems Fundamentals
 
 ## Learning Objectives
 
@@ -16,7 +16,7 @@
 1. Performance and scalability revisited
 
 ## Lecture Slides
-Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week3-fundamentals/BSDS-2019-Week-3.pdf)
+Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-3-fundamentals/BSDS-2019-Week-3.pdf)
 
 ## Reading
 coming soon
