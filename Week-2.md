@@ -21,7 +21,7 @@
 
 
 ## Lecture Slides
-Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-2-concurrency/BSDS-2019-Week-2.pdf)
+Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-2-concurrency/BSDS-2019-week-2.pdf)
 
 ## Reading
 Java Concurrency in Practice 1st Edition
