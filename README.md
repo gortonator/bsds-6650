@@ -64,6 +64,15 @@ Quiz | Date
 3 | 11/5
 4 | 12/3
 
+# Reading
+We cover a lot of material taht is not really covered by a single book Each week will give you some resoures to read/view taht are relevant to the materials. 
+
+The following are great resources however, and can be excellent references for this course and your future career.
+
+* Java Concurrency in Practice 1st Edition, Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
+* Distributed systems : concepts and design, Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon. Harlow, England ; Addison-Wesley c2012
+* Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems, Martin Kleppmann, O'Reilly
+
 # Policies
 
 **Late Submission**
