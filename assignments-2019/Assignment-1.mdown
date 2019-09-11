@@ -2,14 +2,14 @@
 
 ## Overview
 
-You work for Upic - a global acquirer of ski resorts that is homogenezing skiing around the world. Upic ski resorts all use RFID lift ticket readers so that every time a skiier gets on a lift, the time of the ride and teh skier ID are recorded
+You work for Upic - a global acquirer of ski resorts that is homogenezing skiing around the world. Upic ski resorts all use RFID lift ticket readers so that every time a skiier gets on a lift, the time of the ride and the skier ID are recorded
 
 In this course, through a series of assignments, we'll build a scalable distributed cloud-based system that can record all lift rides from all Upic resorts. This data can then be used as a basis for data analysis, answering such questions as:
 * which lifts are most heavily used?
 * which skiers ride the most lifts?
 * How many lifts do skiers ride on average per day at resort X?
 
-In Assignment 1, we'll build a client that generates and sends lift ride data to a server in the cloud. The server will simply accept and validate requests, and send an HTTP 200/201 response. In Assignment 2, we'll add the processingand storage logic to the server
+In Assignment 1, we'll build a client that generates and sends lift ride data to a server in the cloud. The server will simply accept and validate requests, and send an HTTP 200/201 response. In Assignment 2, we'll add the processing and storage logic to the server.
 
 ## Implement the Server API 
 
@@ -41,8 +41,7 @@ In addition, each ski day is of length 420 minutes (7 hours - 9am-4pm) from when
 Based on these values, your client will start up and execute 3 phases, with each phase sending a large number of lift ride events to the server API.
 
 Phase 1, the *startup* phase, will launch numThreads/4 threads, and each thread will be passed:
-* a start and end range for skierIDs, so that each thread has an identical number of skierIDs, caluculated as numSkiers/(numThreads/4). Pass each thread a disjoint range of skierIDs so that the whole range of IDs is covered by the threads
-  ** ie, thread 0 has skierIDs from 1 to (numSkiers/(numThreads/4)), thread 1 has skierIDs from (1x(numSkiers/(numThreads/3)+1) to (numSkiers/(numThreads/4))x2
+* a start and end range for skierIDs, so that each thread has an identical number of skierIDs, caluculated as numSkiers/(numThreads/4). Pass each thread a disjoint range of skierIDs so that the whole range of IDs is covered by the threads, ie, thread 0 has skierIDs from 1 to (numSkiers/(numThreads/4)), thread 1 has skierIDs from (1x(numSkiers/(numThreads/3)+1) to (numSkiers/(numThreads/4))x2
 * a start and end time, by default this is the first 90 minutes of the ski day (1-90)
 
 For example if numThreads=64 and numSkiers=1024, we will launch 16 threads, with thread 1 passed skierID range 1 to 64, thread 2 range 65 to 128, and so on.
@@ -65,7 +64,7 @@ Once 10% of the threads in Phase 1 have completed, Phase 2, the *peak phase* sho
 As above, each thread will randomly select a skierID, liftID and time from the ranges provided and sends a POST request. It will do this (numRunsx0.8)x(numSkiers/numThreads) times.
 Back to our example above, this means phase 2 would create 64 threads, and send 16*(1024/64) POSTs.
 
-Finally, once 10% of the threads in Phase 2 are completed, Phase 3 should begin. Phase 3, the *cooldown phase*, is identical to Phase 1, starting 25% of numThreads, with each thread sending (0.1xnumRuns) POST requests.
+Finally, once 10% of the threads in Phase 2 are completed, Phase 3 should begin. Phase 3, the *cooldown phase*, is identical to Phase 1, starting 25% of numThreads, with each thread sending (0.1xnumRuns) POST requests, and a time interval range of 361 to 420.
 
 When all threads from all phases are complete, the programs should print out:
 1. number of successful requests sent
