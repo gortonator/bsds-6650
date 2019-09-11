@@ -22,9 +22,10 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/
 ## Reading
 Cloud Architecture Patterns, Bill Wilder
 * Chapter 1 (available through [Notheastern Library](https://library.northeastern.edu/)
+
 Distributed systems : concepts and design
 Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon.
-Harlow, England ; Addison-Wesley c2012
+Harlow, England ; Addison-Wesley 5th Edition
 * Chapter 1
 
 ## Lab 1 - Getting started with AWS
