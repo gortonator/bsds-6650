@@ -1,0 +1,117 @@
+# CS6650 Fall 2019  Assignment1
+
+## Overview
+
+You work for Upic - a global acquirer of ski resorts that is homogenezing skiing around the world. Upic ski resorts all use RFID lift ticket readers so that every time a skiier gets on a lift, the time of the ride and teh skier ID are recorded
+
+In this course, through a series of assignments, we'll build a scalable distributed cloud-based system that can record all lift rides from all Upic resorts. This data can then be used as a basis for data analysis, answering such questions as:
+* which lifts are most heavily used?
+* which skiers ride the most lifts?
+* How many lifts do skiers ride on average per day at resort X?
+
+In Assignment 1, we'll build a client that generates and sends lift ride data to a server in the cloud. The server will simply accept and validate requests, and send an HTTP 200/201 response. In Assignment 2, we'll add the processingand storage logic to the server
+
+## Implement the Server API 
+
+The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.0.1)
+
+In this assignment you need to implement this API using a Java servlets. Each API should:
+
+1. Accept the parameters for each operations
+1. Do basic parameter validation, and return a 4XX response code if invalid
+1. If the request is valid, return a 200/201 response code and some dummy data as a response body
+
+This should be a pretty simple task. Test each servlet API with POSTMAN or an equivilent testing tools.
+
+Make sure you can load the resulting .war file onto your EC2 free tier instance you have created and configured in lab 1.
+
+## Build the Client (Part 1)
+
+This is the major part of this assignment. We want a client we can configure to upload a day of lift rides to the server.
+
+Your client should accept a set of parameters at startup. These are:
+1. number of threads to run at peak phase (numThreads - max 256)
+1. number of skier to generate lift rides for  (numSkiers - max 50000), This is effectively the skier's ID (skierID)
+1. number of lifts  (numLifts - range 5-60, default 40)
+1. mean numbers of ski lifts each skier rides each day (numRuns - default 10, max 20)
+1. IP/port address of the server
+
+In addition, each ski day is of length 420 minutes (7 hours - 9am-4pm) from when the lifts open until they all close.
+
+Based on these values, your client will start up and execute 3 phases, with each phase sending a large number of lift ride events to the server API.
+
+Phase 1, the *startup* phase, will launch numThreads/4 threads, and each thread will be passed:
+* a start and end range for skierIDs, so that each thread has an identical number of skierIDs, caluculated as numSkiers/(numThreads/4). Pass each thread a disjoint range of skierIDs so that the whole range of IDs is covered by the threads
+  ** ie, thread 0 has skierIDs from 1 to (numSkiers/(numThreads/4)), thread 1 has skierIDs from (1x(numSkiers/(numThreads/3)+1) to (numSkiers/(numThreads/4))x2
+* a start and end time, by default this is the first 90 minutes of the ski day (1-90)
+
+For example if numThreads=64 and numSkiers=1024, we will launch 16 threads, with thread 1 passed skierID range 1 to 64, thread 2 range 65 to 128, and so on.
+
+Once each thread has started it should send (numRunsx0.1)x(numSkiers/(numThreads/4)) POST requests to the server. Each POST should randomly select:
+1. a skierID from the range of ids passed to the thread
+1. a lift number (liftID)
+1. a time from the range of minutes passed to each thread (start and end time - same for each thread)
+
+With our example, if numRuns=20, each thread will send 2x(1024/16) POST requests. 
+
+The server will return an HTTP 201 response code for a successful operation. As soon as the 201 is received, the client should immediately send the next request until it has exhausted teh number of requests to send.
+If the client receives a 5XX response code (server error), or a 4XX response code it should log the error using [log4j](https://logging.apache.org/log4j/2.x/) and move to the next request.
+
+Once 10% of the threads in Phase 1 have completed, Phase 2, the *peak phase* should begin. Phase 2 behaves like Phase 1, except:
+* it creates *numThreads* threads
+* the start and end time interval is 91 to 360
+* each thread is passed a disjoint skierID range of size (numSkiers/numThreads)
+
+As above, each thread will randomly select a skierID, liftID and time from the ranges provided and sends a POST request. It will do this (numRunsx0.8)x(numSkiers/numThreads) times.
+Back to our example above, this means phase 2 would create 64 threads, and send 16*(1024/64) POSTs.
+
+Finally, once 10% of the threads in Phase 2 are completed, Phase 3 should begin. Phase 3, the *cooldown phase*, is identical to Phase 1, starting 25% of numThreads, with each thread sending (0.1xnumRuns) POST requests.
+
+When all threads from all phases are complete, the programs should print out:
+1. number of successful requests sent
+1. number of unsuccessful requests (ideally should be 0)
+1. the total run time (wall time) for all phases to complete. Calculate this by taking a timestamp before commencing Phase 1 and another after all Phase 3 threads are complete.
+
+## Building the Client (Part 2)
+With your load generating client working wonderfully, we want to now instrument the client so we have deeper insights into the performance of the system. 
+To this end, for each POST request:
+* before sending the POST, take a timestamp
+* when the HTTP response is received, take another timestamp
+* calculate the latency (end - start) in milliseconds
+* Write out a record containing {start time, request type (ie POST), latency, response code}. CSV is a good file format.
+
+Once the client has completed, from the output file we need to calculate:
+* mean response time (millisecs)
+* median response time (millisecs)
+* throughput = total number of requests/wall time
+* p99 (99th percentile) response time
+* max response time
+
+The client should calculate these and display them in the output window in addition to the output from the previous step.
+
+## Submission Requirements
+Submit your work to Blackboard as a pdf document. The document should contain:
+
+1. the URL for your git repo. *Make sure that the code for the client part 1 and part 2 are in seperate folders in your repo*
+1. a 1 page-ish description of your client design. Show major classes, packages, relationships, whatever you need to convey concisely how your client works
+1. Client (Part 1) - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Include the outputs of each run in your submission (showing the wall time) and plot a simple chart showing the wall time by the number of threads
+1. Client (Part 2) - run the client as per Part 1, showing teh output window for each run. Also generate a plot of throughput and mean response time against number of threads.
+
+## Grading:
+1. Server implementation working (5 points)
+1. Client design description (5 points) - clarity of description, good design practies used
+1. Client Part 1 - (10 points) - 1 point per run output, 1 point for the chart, 5 points for sensible results!
+1. Client Part 2 - (20 points) - 1 point per run, 1 point for the chart. 5 points for calculations of mean/median/p99/max (as long as they are sensible). 10 points for wall time within 5% of wall time for Client Step 1.
+
+# Deadline: 10/1, 3pm PST 
+
+
+
+
+
+
+
+
+
+
+
