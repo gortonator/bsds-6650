@@ -119,6 +119,8 @@ example, a second interval, and plot the average response time for that time int
 
 # Deadline: 10/1, 3pm PST 
 
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
+
 
 
 
