@@ -19,7 +19,7 @@
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-3-fundamentals/BSDS-2019-Week-3.pdf)
 
 ## Reading
-coming soon
+[There is No Now - Problems with simultaneity in distributed systems](https://queue.acm.org/detail.cfm?id=2745385), Justin Sheehy
 
 ## Lab
 ### Sockets in Java
