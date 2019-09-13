@@ -1,0 +1,27 @@
+# CS6650 Fall 2019  Assignment1
+
+## Lab 2 - Simple Server with Java Servlet
+### Aims: 
+1. Build a Java Servlet to process two of the APIs in Assignment 1
+1. Echo the API parameter values back to the client
+1. Learn simple testing with POSTMAN
+
+### Step 1
+....
+
+
+
+### Reference Stuff:
+#### Common HTTP Response Codes
+
+200: Done, it was okay. Generally, your GETs return this code.
+201: “Done, and created.” Generally, your POSTs return this code.
+204: “Done, and no body.” Generally, your DELETEs return this code.
+400: “Client sent me junk, and I’m not going to mess with it.”
+401: “Unauthorized, the client should authenticate first.”
+403: “Not allowed. You can’t have it because you logged in but don’t have permission to this thing or to delete this thing.”
+404: “Can’t find it.”
+410: “Marked as deleted.”
+451: “The government made me not show it.”
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
