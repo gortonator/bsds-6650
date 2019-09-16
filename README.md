@@ -10,8 +10,10 @@
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
 ### Super Talented Teaching Assistants
-1. Mengjiao Wu <wu.mengji@husky.neu.edu>: Office Hours TBA
-1. Wenlin Huang <huang.wenl@husky.neu.edu>: Office Hours TBA
+1. Mengjiao Wu <wu.mengji@husky.neu.edu>:
+   - 3:30 PM - 5:30 PM on **Mondays** at 225 3rd floor kitchen area
+1. Wenlin Huang <huang.wenl@husky.neu.edu>:
+   - 3:30 PM - 5:30 PM on **Thursdays** at 225 3rd floor kitchen area
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
