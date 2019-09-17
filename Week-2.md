@@ -24,7 +24,7 @@
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-2-concurrency/BSDS-2019-week-2.pdf)
 
 ## Code Examples
-Can be found [here](https://gortonator.github.io/bsds-6650/code/week-2)
+Can be found [here](https://github.com/gortonator/bsds-6650/tree/master/code/week-2)
 
 ## Reading
 Java Concurrency in Practice 1st Edition
