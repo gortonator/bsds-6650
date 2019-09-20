@@ -23,7 +23,7 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-3-funda
 
 ## Lab
 ### Sockets in Java
-Every distributed systems engineer should have written some sockets code. [Here's your chance for street cred!](https://github.com/gortonator/bsds-6650/labs/lab-3) Along with some barrier synchronization and thread pool practise that should help with your assignments.
+Every distributed systems engineer should have written some sockets code. [Here's your chance for street cred!](https://github.com/gortonator.github.io/bsds-6650/labs/lab-3) Along with some barrier synchronization and thread pool practise that should help with your assignments.
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
