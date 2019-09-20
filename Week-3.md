@@ -1,4 +1,4 @@
-# Distributed Systems Fundamentals
+# Week 3: Distributed Systems Fundamentals
 
 ## Learning Objectives
 
