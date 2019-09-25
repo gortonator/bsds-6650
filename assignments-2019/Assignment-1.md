@@ -13,7 +13,7 @@ In Assignment 1, we'll build a client that generates and sends lift ride data to
 
 ## Implement the Server API 
 
-The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.0.1)
+The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.0.2)
 
 In this assignment you need to implement this API using a Java servlets. Each API should:
 
