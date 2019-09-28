@@ -21,7 +21,7 @@ public class SocketServerThreadPool {
             // create object to count active threads
             ActiveCount threadCount = new ActiveCount();
             System.out.println("Server started .....");
-            Object synk = new Object(); 
+            // create thread pool and accept connections
             Executor pool = Executors.newFixedThreadPool(20);
             while (true) {
                 Socket conn = listener.accept();

@@ -30,6 +30,7 @@ Can be found [here](https://github.com/gortonator/bsds-6650/tree/master/code/wee
 Java Concurrency in Practice 1st Edition
 by Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
 * Chapters 1-8 are relevant to the assignments, so use these as your main sourse of information
+[Shooting yourself in the foot with Random number generators](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators)
 
 ## Lab 2 - Simple Server with Java Servlet
 ### Aims: 
