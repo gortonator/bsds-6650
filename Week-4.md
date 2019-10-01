@@ -14,7 +14,7 @@
 1. Consistency
 
 ## Lecture Slides
-Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-4-data-layer/BSDS-2019-Week-4.pdf)
+Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-4-data-layer/BSDS-2019-week-4.pdf)
 
 ## Reading
 Distributed Systems Concepts and Design, 5th Edition, George Coulouris, Jean Dollimore, Tim Kindberg and Gordon Blair, Chapters 14, 15 and 18
