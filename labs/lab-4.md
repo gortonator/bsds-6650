@@ -1,4 +1,4 @@
-# Lab 4: Database and Pick a Primary Key
+# Lab 4: Database Design and Selecting a Primary Key
 
 ## What you should takeaway from this lab?
 - Definitions: 1) primary key 2) surrogate key
