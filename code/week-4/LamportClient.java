@@ -77,13 +77,11 @@ public class LamportClient implements Runnable {
                 
         }
         
-        System.out.println("Process " + pid + " complete and ending");
+        System.out.println("Process " + pid + " complete. Here's my view of the order of events");
 		
-        // TO DO add your code here 
+        // TO DO add your code here to output results
 		
-        for (String event: events) {
-            System.out.println(event);
-        }
+        
             
           
      }
