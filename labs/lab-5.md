@@ -19,6 +19,7 @@ Let's imagine that we have a LeetCode Contest that all students in Northeastern 
 - There will be 10,000 commits in total.
 
 We want to record the records in a table called ***records***:
+
 | RecordID | Student | ProblemID | PassOrFail | SubmitTime | Runtime |
 |----------|---------|-----------|------------|------------|---------|
 | 1        | Fac     | 111       | true       | 11:00      | 12      |
