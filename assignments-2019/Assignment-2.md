@@ -14,9 +14,10 @@ In Assignment 2, we'll build the server and database. This will give us the foun
 ## Implement the Server 
 
 The server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.1). You should have implemented stubs for your APIs in your servlet in assignment 1. 
-First you should design your database schema and deploy this to your MySQL RDS instance. Think carefully about the design as you need to support a write-heavy workload (see lab 5).
 
-You then need build the servlet business logis to implement this API. Each API should:
+Next we need to design a database schema and deploy this to your MySQL RDS instance. Think carefully about the design as you need to support a write-heavy workload (see lab 5).
+
+You then need build the servlet business logic to implement this API. Each API should:
 
 1. Accept the parameters for each operations as per the specification
 1. Do basic parameter validation, and return a 4XX response code and error message if invalid values/formats supplied
@@ -36,6 +37,8 @@ This essentially increases the number of requests you send in phase 3. We'll use
 ## Performance Testing
 As in assignment 1, we want to test your new server/database with our load generating client. Test with {32, 64, 128, 256} client threads and report the ourputs for each.
 
+You will probably find you get database deadlocks. You will need to find a way to work around these through schema changes or request retries. Your tests should successfully execute every request.
+
 ## Load Balancing
 The previous section has a bottleneck in the single server instance. So let's try and add capacity to our system and see what happens,
 
@@ -48,10 +51,10 @@ Again test with {32, 64, 128, 256} clients and compare your results again the on
 ## Collect Runtime Statistics
 Note the new _/statistics_ endpoint in v1.1 of the API. If you have ignored this so far, that's fine. Now we need to design and build it.
 
-The basic aim is to provide an API that tells the caller the mean and maximin latencies for each endpoint. To do this you need to inject performance statistics code in your servlets and persist it so it can be queried.
+The basic aim is to provide an API that tells the caller the mean and maximin latencies for each endpoint. To do this you need to inject performance statistics code in your servlets and persist response times so they can be queried in aggregate.
 There are two tricky issues to consider:
 1. You want your statistics logging to be as low overhead as possible so that it does not slow down your servlet in processing client requests.
-2. Your server will progressively capture more statistics as it processes more requests. This could quickly become a huge amount of data. So yo want to think about what is actually useful here to store.
+2. Your server will progressively capture more statistics as it processes more requests. This could quickly become a huge amount of data. So you want to think about what is actually useful here to store.
 
 There are many ways to address this problem. Make some sound assumptions and design your solutions around these. For example you may want to only calculate response time values using the last N requests so your data collection is bounded. You will almost certainly want cached values for mean and maximum. Cached where is a design issue ;)
 
