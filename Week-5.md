@@ -20,6 +20,7 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-5-stron
 Distributed Systems Concepts and Design, 5th Edition, George Coulouris, Jean Dollimore, Tim Kindberg and Gordon Blair, Chapters 16 and 17
 
 ## Labs
+
 ###Lab 6: Raft Explained
 Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
 
