@@ -21,7 +21,7 @@ Distributed Systems Concepts and Design, 5th Edition, George Coulouris, Jean Dol
 
 ## Labs
 
-###Lab 6: Raft Explained
+### Lab 6: Raft Explained
 Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
 
 
