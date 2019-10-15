@@ -19,6 +19,7 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-5-stron
 ## Reading
 Distributed Systems Concepts and Design, 5th Edition, George Coulouris, Jean Dollimore, Tim Kindberg and Gordon Blair, Chapters 16 and 17
 [Comparing Paxos and Raft](https://mysqlhighavailability.com/good-leaders-are-game-changers-raft-paxos/)
+[Presentation on Raft](https://www.brianstorti.com/raft/)
 
 ## Labs
 
