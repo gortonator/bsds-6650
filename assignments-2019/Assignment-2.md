@@ -23,6 +23,7 @@ You then need build the servlet business logic to implement this API. Each API s
 1. Do basic parameter validation, and return a 4XX response code and error message if invalid values/formats supplied
 1. If the request is valid, do the appropriate data processing to read/write from the database
 1. Construct the correct response message and return a 200/201 response code 
+1. For a lift ride POST, assume the lift vertical rise in the (liftNum*10), ie lift 6 is 60m vertical. Store the vertical in the database, as in reality this condition would not hold
 
 Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
 
