@@ -1,4 +1,4 @@
-# Week 5: NoSQL Databases
+# Week 6: NoSQL Databases
 
 ## Learning Objectives
 
