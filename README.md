@@ -37,8 +37,8 @@ Week | Topic | Date
 3  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-3) | 9/24
 4  | [Data Layer: Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-4) | 10/1
 5  | [Data Layer: Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-5) | 10/8
-6  | [Scalable Request Processing: APIs and State Management](http://gortonator.github.io/bsds-6650/Week-6) | 10/15
-7  | [Caching and Load Balancing](http://gortonator.github.io/bsds-6650/Week-7) | 10/22
+6  | [Data layer: NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-6) | 10/15
+7  | [Scalable Request Processing](http://gortonator.github.io/bsds-6650/Week-7) | 10/22
 8  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-8) | 10/29
 9  | [Microservices](http://gortonator.github.io/bsds-6650/Week-9) | 11/5
 10 | [Data Processing Architectures - Lambda/etc](http://gortonator.github.io/bsds-6650/Week-10) | 11/12
