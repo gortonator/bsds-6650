@@ -18,9 +18,10 @@
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-6-nosql/BSDS-2019-week-6.pdf)
 
 ## Reading
-[Comparing Riak with the original Dynamo paper](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/)
-[MongoDB 4.2 Architecture](https://info-mongodb-com.s3.us-east-1.amazonaws.com/MongoDB_Architecture_Guide.pdf)
-[CAP Theorem explained](https://dzone.com/articles/understanding-the-cap-theorem)
+
+1. [Comparing Riak with the original Dynamo paper](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/)
+1. [MongoDB 4.2 Architecture](https://info-mongodb-com.s3.us-east-1.amazonaws.com/MongoDB_Architecture_Guide.pdf)
+1. [CAP Theorem explained](https://dzone.com/articles/understanding-the-cap-theorem)
 
 ## Labs
 
