@@ -29,7 +29,7 @@ Make sure you can load the resulting .war file onto your EC2 free tier instance 
 
 This is the major part of this assignment. We want a multithreaded Java client we can configure to upload a day of lift rides to the server and exert various loads on the server.
 
-Your client should accept a set of parameters at startup. These are:
+Your client should accept a set of parameters from the command line (or a parameter file) at startup. These are:
 1. maximim number of threads to run (numThreads - max 256)
 1. number of skier to generate lift rides for  (numSkiers - max 50000), This is effectively the skier's ID (skierID)
 1. number of ski lifts  (numLifts - range 5-60, default 40)
@@ -97,8 +97,8 @@ Submit your work to Blackboard Assignment 1 as a pdf document. The document shou
 
 1. the URL for your git repo. *Make sure that the code for the client part 1 and part 2 are in seperate folders in your repo*
 1. a 1-2 page description of your client design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works
-1. Client (Part 1) - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Include the outputs of each run in your submission (showing the wall time) and plot a simple chart showing the wall time by the number of threads
-1. Client (Part 2) - run the client as per Part 1, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads.
+1. Client (Part 1) - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Include the outputs of each run in your submission (showing the wall time) and plot a simple chart showing the wall time by the number of threads. This should be a screen shot of your output window.
+1. Client (Part 2) - run the client as per Part 1, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads. Again, this should be a screen shot of your output window.
 
 ## Bonus Points
 You will get extra credit for either (or both) of the following:
