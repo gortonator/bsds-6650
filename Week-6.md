@@ -25,6 +25,9 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-6-nosql
 
 ## Labs
 
+### Lab 6: Connect your servlet to MySQL
+[Follow these instructions to get a basic connection to your database](https://gortonator.github.io/bsds-6650/labs/lab-6)
+
 ### Lab 7: Consistent Hashing Exerise
 [Study and extend a simple consistent hashing implementaion](https://gortonator.github.io/bsds-6650/labs/lab-7)
 
