@@ -15,9 +15,9 @@
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-7-scaling/BSDS-2019-week-7.pdf)
 
 ## Reading
-[HTTP Caching Overview](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
-[Basic Horizontal Scaling Overview](https://www.oreilly.com/library/view/cloud-architecture-patterns/9781449357979/ch01.html)
-[Caching approaches compared](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)
-REST in Practice, Chapter 6, O'Reilly (available online through Snell University Library)
+1. [HTTP Caching Overview](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
+1. [Basic Horizontal Scaling Overview](https://www.oreilly.com/library/view/cloud-architecture-patterns/9781449357979/ch01.html)
+1. [Caching approaches compared](https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/)
+1. REST in Practice, Chapter 6, O'Reilly (available online through Snell University Library)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
