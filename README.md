@@ -53,7 +53,7 @@ Assignment | Topic | Due Date
 ---------- | ----- | --------
 1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-1) | 10/1
 2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-2) | 10/29
-3 | [Serverless and Google Cloud](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-2) | 11/19
+3 | [Serverless and Google Cloud](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-3) | 11/19
 4 | Final Project | 12/10
 
 ## Quizzes
