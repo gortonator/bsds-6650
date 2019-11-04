@@ -19,5 +19,7 @@ Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-8-asynk
 1. [RabbitMQ web site](https://www.rabbitmq.com/)
 1. Enterprise Messaging: JMS 1.1 and JMS 2.0 Fundamentals, Mark Richards, O'Reilly 2014 (available online from library)
 
+## Lab 
+[Let's get some experience with messaging using RabbitMQ](https://gortonator.github.io/bsds-6650/labs/lab-8)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
