@@ -49,4 +49,4 @@ Submit your work to Blackboard Assignment 3 as a pdf document. The document shou
 1. Comparison with AWS - (5 points) 
 
 # Deadline: 11/19, 3pm PST
-[Back to Course Home Page]
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
