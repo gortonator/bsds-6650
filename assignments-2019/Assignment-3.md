@@ -33,14 +33,15 @@ Deploy your Java code as a standard environment app. Then, as a first step, simp
 The instructions [here](https://cloud.google.com/sql/docs/mysql/connect-app-engine) give directions on how to modify your server to connect to you MySQL database. 
 
 ## Load testing
-You should know what to expect by now. Run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Show command window outputs, plots, etc as in assignment 2. 
+You should know what to expect by now. Run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Show command window outputs, plots, etc as in assignment 2.
+
+You can comment out the code you have built for the /statistics endpoint, as it is likely the way your have built this might not be compatible with the AppEngine model. If it is, feel free to show off but no one will lose points for this! 
 
 ## Submission Requirements
 Submit your work to Blackboard Assignment 3 as a pdf document. The document should contain:
 
 - The URL for your git repo.
 - run the client as above againt your GAE app, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads.
-- Runtime Statistics Collection: Same as assignment 2, run a single client test with 256 client threads and wait for it to display its outputs. In the command line window, immediately issue a cURL/wget command on the /skiers POST/GET endpoints your have been testing. Hand in the command line window showing the client and cURL/wget outputs.
 - a short report (1-2 pages) that compares your results again the ones from AWS - both client and server times. Which is faster? What are the costs of GAE? Which is easier to build and deploy? 
 
 ## Grading:
