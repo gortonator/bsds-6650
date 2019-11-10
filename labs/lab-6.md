@@ -28,11 +28,10 @@ Add the following to the `<dependencies>` tag of your `pom.xml` and wait for you
 With JDBC driver downloaded, we are able to let our Java program talk to MySQL database. So next we will create such connection manager class to establish connections between your project and MySQL database.
 
 ```java
-import java.sql.*;
 import org.apache.commons.dbcp2.*;
 
 public class DBCPDataSource {
-    private static BasicDataSource dataSource = new BasicDataSource();
+    private static BasicDataSource dataSource;
 
     // NEVER store sensitive information below in plain text!
     private static final String HOST_NAME = System.getProperty("MySQL_IP_ADDRESS");
@@ -43,17 +42,22 @@ public class DBCPDataSource {
 
     static {
         // https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference-jdbc-url-format.html
+        dataSource = new BasicDataSource();
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         String url = String.format("jdbc:mysql://%s:%s/%s?serverTimezone=UTC", HOST_NAME, PORT, DATABASE);
         dataSource.setUrl(url);
         dataSource.setUsername(USERNAME);
         dataSource.setPassword(PASSWORD);
-        dataSource.setMinIdle(5);
-        dataSource.setMaxIdle(10);
-        dataSource.setMaxOpenPreparedStatements(100);
+        dataSource.setInitialSize(10);
+        dataSource.setMaxTotal(60);
     }
 
-    public static Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
+    public static BasicDataSource getDataSource() {
+        return dataSource;
     }
 }
 ```
@@ -72,24 +76,22 @@ Below is an example DAO class with a record insertion operation. Your code may v
 
 ```java
 import java.sql.*;
+import org.apache.commons.dbcp2.*;
 
 public class LiftRideDao {
-    private static Connection conn;
-    private static PreparedStatement preparedStatement;
+    private static BasicDataSource dataSource;
 
     public LiftRideDao() {
-        try {
-            conn = DBCPDataSource.getConnection();
-            preparedStatement = null;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        dataSource = DBCPDataSource.getDataSource();
     }
 
     public void createLiftRide(LiftRide newLiftRide) {
+        Connection conn = null;
+        PreparedStatement preparedStatement = null;
         String insertQueryStatement = "INSERT INTO LiftRides (skierId, resortId, seasonId, dayId, time, liftId) " +
                                       "VALUES (?,?,?,?,?,?)";
         try {
+            conn = dataSource.getConnection();
             preparedStatement = conn.prepareStatement(insertQueryStatement);
             preparedStatement.setInt(1, newLiftRide.getSkierId());
             preparedStatement.setInt(2, newLiftRide.getResortId());
@@ -102,6 +104,17 @@ public class LiftRideDao {
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+                if (preparedStatement != null) {
+                    preparedStatement.close();
+                }
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }
         }
     }
 }
