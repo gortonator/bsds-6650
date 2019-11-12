@@ -14,7 +14,7 @@
 1. Bulkhead Pattern
 
 ## Lecture Slides
-Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-8-microservices/BSDS-2019-week-9.pdf)
+Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-9-microservices/BSDS-2019-week-9.pdf)
 
 ## Reading
 1. Building Microservices, Sam Newman, O'Reilly Publishing (available online at Snell library)
