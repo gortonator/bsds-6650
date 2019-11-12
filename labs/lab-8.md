@@ -1,4 +1,4 @@
-## Lan 8 - Playing with RabbitMQ
+## Lab 8 - Playing with RabbitMQ
 
 RabbitMQ is a massively popular lightweight messaging platform. It has an excellent set of [tutorials](https://www.rabbitmq.com/tutorials/) which are well worth working through.
 
