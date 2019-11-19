@@ -41,11 +41,10 @@ Week | Topic | Date
 7  | [Scalable Request Processing](http://gortonator.github.io/bsds-6650/Week-7) | 10/22
 8  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-8) | 10/29
 9  | [Microservices](http://gortonator.github.io/bsds-6650/Week-9) | 11/5
-10 | [Data Processing Architectures - Lambda/etc](http://gortonator.github.io/bsds-6650/Week-10) | 11/12
-11 | [Scalable Data Analytics](http://gortonator.github.io/bsds-6650/Week-11) | 11/19
-12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 11/26
-13 | [Security](http://gortonator.github.io/bsds-6650/Week-13) | 12/3
-14 | Final Project Presentations | 12/10
+10 | [Serverless Architectures](http://gortonator.github.io/bsds-6650/Week-10) | 11/19
+11 | [Scalable Data Processing](http://gortonator.github.io/bsds-6650/Week-11) | 11/26
+12 | [Scalable Analytics](http://gortonator.github.io/bsds-6650/Week-12) | 12/3
+13 | Final Project Presentations | 12/10
 
 ## Assignments
 
