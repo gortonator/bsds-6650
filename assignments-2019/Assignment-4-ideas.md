@@ -4,12 +4,12 @@ Assuming Group size of 3. You can scale down the effort for smaller groups. Use 
 
 
 ## Server Diversity
-1. Reimplement your Java servlet on AWS using two other Java frameworks such as  SpringBoot, Spring,  [Google Guice] (http://www.aberger.at/en/blog/design/2016/11/16/dependency-injection-guice.html). With an identical DAO layer, compare the performance of the 3 implementations.
+1. Reimplement your Java servlet on AWS using two other Java frameworks such as  SpringBoot, Spring,  [Google Guice](http://www.aberger.at/en/blog/design/2016/11/16/dependency-injection-guice.html). With an identical DAO layer, compare the performance of the 3 implementations.
 1. Reimplement your GAE server using two different languages, eg Python, Go,  Node, and compare the performance of the 3 implementations.
 1. Build two versions of the server using AWS Lambda, using a different language for each. Compare the performance of the two with you GAE server.
 
 ## Communications Layer Diversity
-1. Reimplement your client/server using two of [Websockets] (https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/HomeWebsocket/WebsocketHome.html), [Thrift] (https://stackoverflow.com/questions/9732381/why-thrift-why-not-http-rpcjsongzip) over HTTP/JSON or even good old sockets, and compare the performance of the two protocols with REST/HTTP
+1. Reimplement your client/server using two of [Websockets](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/HomeWebsocket/WebsocketHome.html), [Thrift](https://stackoverflow.com/questions/9732381/why-thrift-why-not-http-rpcjsongzip) over HTTP/JSON or even good old sockets, and compare the performance of the two protocols with REST/HTTP
 1. Redesign your client/server to operate with a Kafka/RabbitMQ/etc endpoint exposed over HTTP for writing new lift records. Compare the performance of the two with you REST/HTTP server for writing.
 
 ## Database Diversity
