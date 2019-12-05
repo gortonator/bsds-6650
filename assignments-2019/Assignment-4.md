@@ -1,4 +1,4 @@
-# CS6650 Buidliding Scalable Distributed Systems Fall 2019
+# CS6650 Building Scalable Distributed Systems Fall 2019
 
 ## Assignment 4 - Experimentation Time
 
@@ -60,11 +60,11 @@ what happened when they tried to make the proposed changes, results, and what th
 Each team member should submit a pdf of their group presentation on blackboard before class on December 10th.
 
 ## Grading and Submissions
-There are 25 points available for this assignment
-Submit a pdf file to blackboard with your presentation slides.
-Also submit a short report (max 4 pages) that gives more detail on your work and findings. This can include more details on specifci designs, configuration settings, additional results, issues that arose that made it difficult/impossible to rwach your goals. 
-Step 1 - 5 points
-Step 2 - 10 points
-Step 3 - 10 points
+- There are 25 points available for this assignment
+- Submit a pdf file to blackboard with your presentation slides.
+- Also submit a short report (max 4 pages) that gives more detail on your work and findings. This can include more details on specifci designs, configuration settings, additional results, issues that arose that made it difficult/impossible to reach your goals. 
+- Step 1 - 5 points
+- Step 2 - 10 points
+- Step 3 - 10 points
 
 ## Deadline December 10th in class
