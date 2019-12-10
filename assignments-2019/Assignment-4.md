@@ -49,10 +49,10 @@ what happened when they tried to make the proposed changes, results, and what th
 ### Step 1 - Proposal - post on piazza:
 1. Clearly expressed: (2 points)
 1. Suitably ambitious (3 points)
-### Step 2
+### Step 2 - Project Presentation
 1. Presentation quality (2 points)
-1. Detailed explanation of the changes you made (8 points)
-### Step 3
+1. Detailed explanation of the changes you made and results summary (8 points)
+### Step 3 - Report
 1. Explain how you assessed/analyzed the effectiveness of the changes. Was it faster? Slower? More reliable? Easier to build/deploy? (7 points)
 1. What you learned - both positive and negative (3 points)
 
