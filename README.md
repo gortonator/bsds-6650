@@ -15,6 +15,8 @@
    - Office Hours: TBD
 1. Zhenhui Guo <guo.zhenhui@northeastern.edu>:
    - Office Hours: TBD
+1. Weijia Deng <deng.weij@northeastern.edu>:
+   - Office Hours: TBD
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
