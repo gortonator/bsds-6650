@@ -13,7 +13,7 @@
 ### Super Talented Teaching Assistants
 1. Mengjiao Wu <wu.mengji@husky.neu.edu>:
    - Office Hours: TBD
-1. ???
+1. Zhenhui Guo <guo.zhenhui@northeastern.edu>:
    - Office Hours: TBD
 
 ## Overview
