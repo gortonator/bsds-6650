@@ -8,7 +8,7 @@
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
-Office Hours - Monday 2-4pm, Tuesday 1-3pm
+**Office Hours** - Monday 2-4pm, Tuesday 1-3pm
 
 ### Super Talented Teaching Assistants
 1. Mengjiao Wu <wu.mengji@husky.neu.edu>:
@@ -23,7 +23,7 @@ methods for building scalable systems. Scalability is an essential quality of In
 requires specialized skills and knowledge to build systems that scale at low cost. 
 
 ## Course Delivery
-In our weird pandemicy world right now, we need to run classes a little differently. Each week the lecture materials will be recorded and uploaded to Canvas. You will be expected to watch these and do the associated reading. Class time will be spent giving a summary of the key points, and answering questions. So come prepared. Each class will also have a hands-on lab for you to work through. 
+In our weird pandemicy world right now, we need to run classes a little differently. Each week the lecture materials will be recorded and uploaded to Canvas. You will be expected to watch these and do the associated reading. Class time will be spent giving a summary of the key points, and answering questions. So come, physically or virtually, prepared. Each class will also have a hands-on lab for you to work through. 
 
 ## Assessment
 * There are 4 individual assigments. Each assignment is worth 18% of the final grade
