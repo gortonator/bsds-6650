@@ -29,7 +29,7 @@ In our weird pandemicy world right now, we need to run classes a little differen
 
 ## Assessment
 * There are 4 individual assigments. Each assignment is worth 18% of the final grade
-* There are 4 quizes. Each quiz if worth 7% of the final grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course.
+* There are 4 quizes. Each quiz is worth 7% of the final grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 30 minutes and be available at the start of the class in which it is scheduled.
 
 # Course Content
 
@@ -71,9 +71,9 @@ Quiz | Date
 4 | 12/8
 
 # Reading
-Course specific reading will be provided each week for the first haf of the course. 
+Course specific reading will be provided each week for the first half of the course. 
 
-We also cover a lot of material that is not really covered by a single book Each week will give you some resoures to read/view taht are relevant to the materials. 
+We also cover a lot of material that is not really covered by a single book Each week will give you some resoures to read/view that are relevant to the materials. 
 
 The following are great resources however, and can be excellent references for this course and your future career.
 
@@ -84,7 +84,7 @@ The following are great resources however, and can be excellent references for t
 # Policies
 
 **Late Submission**
-If you need more time, come beg :). Communications usually gives a positive outcome.
+If you need more time, come beg :). Communications usually give a positive outcome.
 Without warning, you'll lose 5% of your final grade each day overdue. 
 
 **Missed Quizzes**
