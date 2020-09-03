@@ -11,11 +11,13 @@
 **Office Hours** - Monday 2-4pm, Tuesday 1-3pm
 
 ### Super Talented Teaching Assistants
-1. Mengjiao Wu <wu.mengji@husky.neu.edu>:
+- Mengjiao Wu <wu.mengji@husky.neu.edu>:
    - Office Hours: TBD
-1. Zhenhui Guo <guo.zhenhui@northeastern.edu>:
+- Zhenhui Guo <guo.zhenhui@northeastern.edu>:
    - Office Hours: TBD
-1. Weijia Deng <deng.weij@northeastern.edu>:
+- Weijia Deng <deng.weij@northeastern.edu>:
+   - Office Hours: TBD
+- Nancy Tran <tran.nan@northeastern.edu>:
    - Office Hours: TBD
 
 ## Overview
