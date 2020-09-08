@@ -24,12 +24,11 @@ COMING SOON ..
 
 ## Reading
 Mandatory: 
-[Chapter 1](https://gortonator.github.io/bsds-6650/reading/chapter-1.pdf)
+- [Chapter 1](https://gortonator.github.io/bsds-6650/reading/chapter-1.pdf)
 
 Recommended:
-Distributed systems : concepts and design
-Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon.
-Harlow, England ; Addison-Wesley 5th Edition, Chapter 1
+- Distributed systems : concepts and design, CHAPTER 1, Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon.
+Harlow, England ; Addison-Wesley 5th Edition, 
 
 ## Lab
 COMING Soon
