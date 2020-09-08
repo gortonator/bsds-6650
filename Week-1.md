@@ -9,12 +9,11 @@
 
 ## Module Outline
 
-1. A brief history of how we got here
-1. Internet Scale Systems
+1. Internet Scale Systems - History
 1. Modern Web Sites and Scale
 1. What is Scalability?
-1. Course Topics
-1. Course Structure
+1. Course Overview
+
 
 ## Lecture Slides
 Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week1-Intro/BSDS-2019-Week-1.pdf)
