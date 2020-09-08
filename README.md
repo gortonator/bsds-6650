@@ -4,7 +4,7 @@
 **Instructor**: Ian Gorton, Khoury College of Computer Sciences, Northeastern University
 
 ## Logistics
-**Class:** 3.15-6.15pm 4th Floor, 225 Terry Ave N, Seattle Campus and online
+**Class:** 3.15-6.15pm Wednesday, 4th Floor, 225 Terry Ave N, Seattle Campus and online
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
@@ -39,38 +39,38 @@ In our weird pandemicy world right now, we need to run classes a little differen
 
 Week | Topic | Date
 ---- | ----- | ----
-1  | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1) | 9/15
-2  | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2) | 9/22
-3  | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3) | 9/29
-4  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4) | 10/6
-5  | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5) | 10/13
-6  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 10/20
-7  | [Microservices](http://gortonator.github.io/bsds-6650/Week-7) | 10/27
-8  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-8) | 11/3
-9  | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-9) | 11/10
-10 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-10) | 11/17
-11 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 11/24
-12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 12/1
-13 | Final Quiz and Course Wrapup | 12/8
+1  | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1) | 9/9
+2  | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2) | 9/16
+3  | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3) | 9/23
+4  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4) | 9/30
+5  | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5) | 10/7
+6  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 10/14
+7  | [Microservices](http://gortonator.github.io/bsds-6650/Week-7) | 10/21
+8  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-8) | 10/28
+9  | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-9) | 11/4
+10 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-10) | 11/11
+11 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 11/18
+12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 12/2
+13 | Final Quiz and Course Wrapup | 12/9
 
 ## Assignments
 
 Assignment | Topic | Due Date
 ---------- | ----- | --------
-1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-1) | 10/6
-2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-2) | 10/27
-3 | [Asynchronous Processing](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-3) | 11/17
-4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-4) | 12/111
+1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-1) | 10/7
+2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-2) | 10/28
+3 | [Asynchronous Processing](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-3) | 11/22
+4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2019/Assignment-4) | 12/11
 
 ## Quizzes
 Quizzes will be held at the start of class on the following 4 dates.
 
 Quiz | Date
 ---- | ----
-1 | 9/29
-2 | 10/20
-3 | 11/17
-4 | 12/8
+1 | 9/30
+2 | 10/21
+3 | 11/18
+4 | 12/9
 
 # Reading
 Course specific reading will be provided each week for the first half of the course. 
