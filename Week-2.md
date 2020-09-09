@@ -22,7 +22,7 @@ Can be found [here](https://github.com/gortonator/bsds-6650/tree/master/code/wee
 
 ## Reading
 Mandatory:
-- [Chapter 3]()
+- [Chapter 3](https://gortonator.github.io/bsds-6650/reading/chapter-3.pdf))
 
 Optional:
 Java Concurrency in Practice 1st Edition
