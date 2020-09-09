@@ -1,10 +1,10 @@
-# Building Scalable Distributed Systems (UNDER CONSTRUCTION)
+# Building Scalable Distributed Systems
 
 ## CS6650 Fall 2020
 **Instructor**: Ian Gorton, Khoury College of Computer Sciences, Northeastern University
 
 ## Logistics
-**Class:** 3.15-6.15pm Wednesday, 4th Floor, 225 Terry Ave N, Seattle Campus and online
+**Class:** 3.15-6.15pm Wednesday, 4th Floor, 225 Terry Ave N, Seattle Campus and online (Zoom info on Canvas site)
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
