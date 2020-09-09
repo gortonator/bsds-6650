@@ -13,8 +13,9 @@ class NamingThread implements Runnable {
         public NamingThread() {}
 
 	public NamingThread(String threadName) {
-	  System.out.println("Constructor called: " + threadName) ;
-          name = threadName ;
+	  name = threadName ;
+          System.out.println("Constructor called: " + threadName) ;
+          
 	}
         
         public void setName (String threadName) {

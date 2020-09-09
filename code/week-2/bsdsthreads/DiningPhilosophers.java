@@ -10,31 +10,31 @@ package bsdsthreads;
  * @author igortn
  */
 public class DiningPhilosophers {
- 
+ private final static int NUMPHILOSOPHERS=5; 
+ private final static int NUMCHOPSTICKS = 5 ; 
  public static void main(String[] args) throws Exception {
+        
+        final Philosopher[] ph = new Philosopher[NUMPHILOSOPHERS];
+        Object[] chopSticks = new Object[NUMCHOPSTICKS];
  
-        final Philosopher[] philosophers = new Philosopher[5];
-        Object[] forks = new Object[philosophers.length];
- 
-        for (int i = 0; i < forks.length; i++) {
-            forks[i] = new Object();
+        for (int i = 0; i < NUMCHOPSTICKS; i++) {
+            chopSticks[i] = new Object();
         }
  
-        for (int i = 0; i < philosophers.length; i++) {
-            Object leftFork = forks[i];
-            Object rightFork = forks[(i + 1) % forks.length];
- 
-            if (i == philosophers.length - 1) {
+        for (int i = 0; i < NUMPHILOSOPHERS; i++) {
+            Object leftChopStick = chopSticks[i];
+            Object rightChopStick = chopSticks[(i + 1) % chopSticks.length];
+            if (i == NUMPHILOSOPHERS - 1) {
                  
                 // The last philosopher picks up the right fork first
-                philosophers[i] = new Philosopher(rightFork, leftFork); 
+                ph[i] = new Philosopher(rightChopStick, leftChopStick); 
             } else {
-                philosophers[i] = new Philosopher(leftFork, rightFork);
+                ph[i] = new Philosopher(leftChopStick, rightChopStick);
             }
-             
-            Thread t 
-              = new Thread(philosophers[i], "Philosopher " + (i + 1));
-            t.start();
+          
+            Thread th
+              = new Thread(ph[i], "Philosopher " + (i + 1));
+            th.start();
         }
     }
 }

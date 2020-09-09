@@ -11,29 +11,29 @@ package bsdsthreads;
  */
 public class Philosopher implements Runnable {
 
-    private final Object leftFork;
-    private final Object rightFork;
+    private final Object leftChopStick;
+    private final Object rightChopStick;
 
-    Philosopher(Object left, Object right) {
-        this.leftFork = left;
-        this.rightFork = right;
+    Philosopher(Object leftChopStick, Object rightChopStick) {
+        this.leftChopStick = leftChopStick;
+        this.rightChopStick = rightChopStick;
     }
-    private void doAction(String action) throws InterruptedException {
-        System.out.println(Thread.currentThread().getName() + " " + action);
-        Thread.sleep(((int) (Math.random() * 100)));
+    private void LogEvent(String event) throws InterruptedException {
+        System.out.println(Thread.currentThread().getName() + " " + event);
+        Thread.sleep(1000);
     }
 
    public void run() {
         try {
             while (true) {
-                doAction(System.nanoTime() + ": Thinking"); // thinking
-                synchronized (leftFork) {
-                    doAction(System.nanoTime() + ": Picked up left fork");
-                    synchronized (rightFork) {
-                        doAction(System.nanoTime() + ": Picked up right fork - eating"); // eating
-                        doAction(System.nanoTime() + ": Put down right fork");
+                LogEvent(": Thinking deeply"); 
+                synchronized (leftChopStick) {
+                    LogEvent(": Picked up left chop stick");
+                    synchronized (rightChopStick) {
+                        LogEvent( ": Picked up right chopstick  - eating"); // eating
+                        LogEvent( ": Put down right chopstick");
                     }
-                    doAction(System.nanoTime() + ": Put down left fork. Returning to thinking");
+                    LogEvent(": Put down left chopstick. Returning to deep thinking");
                 }
             }
         } catch (InterruptedException e) {

@@ -22,8 +22,8 @@ public class ThreadOverlap {
 			}
 		};
 		
-		new Thread(test, "Man City EPL Champions").start();
+		new Thread(test, "Man City are great").start();
 		new Thread(test, "Man Utd Losers").start();
-                new Thread(test, "Liverpool European Champions").start();
+                new Thread(test, "Liverpool are too good right now").start();
 	}
 }
