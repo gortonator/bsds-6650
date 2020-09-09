@@ -8,30 +8,30 @@
 1. Write programs using thread safe collections, queues and executors
 1. Lab: Understand and run a simple servlet in tomcat
 
-## Module Outline
+## Module Contents
 
-1. Why threads?
-1. Simple threads in Java
-1. Problems with threading
-1. Synchronization primitives
-1. Thread coordination
-1. Thread states
-1. Thread pools
-1. Thread-safe collections
+1. [Why threads? Simple threads in Java]()
+1. [Problems with threading and Synchronization primitives]()
+1. [Thread coordination and Thread states]()
+1. [The Producer-Consumer problem and Thread Pools]()
+1. [Thread-safe collections]()
 
-
-## Lecture Slides
-Can be found [here](https://gortonator.github.io/bsds-6650/lectures/week-2-concurrency/BSDS-2019-week-2.pdf)
 
 ## Code Examples
 Can be found [here](https://github.com/gortonator/bsds-6650/tree/master/code/week-2)
 
 ## Reading
+Mandatory:
+- [Chapter 3]()
+
+Optional:
 Java Concurrency in Practice 1st Edition
 by Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
 * Chapters 1-8 are relevant to the assignments, so use these as your main sourse of information
 [Shooting yourself in the foot with Random number generators](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators)
 [Interesting article on thread-safe Java collections](https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java)
+
+## Lab 1 Coming soon
 
 ## Lab 2 - Simple Server with Java Servlet
 ### Aims: 
@@ -199,7 +199,7 @@ Since `POST` requests usually also contain request body, we can utilize tools li
     If all goes well, you will be able to see the response produced by your `doPost` method.
 
 
-Congratulations! You have just finished one of the most tricky part of all assignments! It may take a lot of pain to set up everything correctly and get your dev environment ready, but I assure you much more exciting stuff is coming up next!
+Congratulations! You have just finished one of the most tricky parts of all assignments! It may take a lot of pain to set up everything correctly and get your dev environment ready, but I assure you much more exciting stuff is coming up next!
 
 ### Reference Stuff:
 - [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
