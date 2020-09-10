@@ -10,11 +10,11 @@
 
 ## Module Contents
 
-1. [Why threads? Simple threads in Java](https://youtu.be/iMlkyQB5zr0)
+1. [Why threads? Simple threads in Java](https://youtu.be/iMlkyQB5zr0) 
 1. [Problems with threading and Synchronization primitives](https://youtu.be/89B_stQf9no)
 1. [Thread coordination and Thread states](https://youtu.be/kx9PNbumHdc)
 1. [The Producer-Consumer problem and Thread Pools](https://youtu.be/uk0ICzb7Vmc)
-1. [Thread-safe collections]()
+1. [Thread-safe collections](https://youtu.be/0P19ziFMkbI)
 
 
 ## Code Examples
