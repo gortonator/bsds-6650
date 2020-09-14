@@ -3,7 +3,7 @@
 ## Lab 1 - Getting started with AWS
 ### Aims: 
 1. Get AWS account up and running - you should have an AWS Educate invitation
-1. [Launch a free tier AMI running Amazon Linux](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/)
+1. [Launch a free tier AMI running Amazon Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 1. Install tomcat - see below.
 1. [Create an RDS MySQL Instance](https://aws.amazon.com/getting-started/tutorials/create-mysql-db/). You don't have to use MySQL, but the above gives a good introduction to the RDS Service. 
 
