@@ -12,13 +12,13 @@
 
 ### Super Talented Teaching Assistants
 - Mengjiao Wu <wu.mengji@husky.neu.edu>:
-   - Office Hours: TBD
+   - Office Hours: Thursday 3-5PM PDT
 - Zhenhui Guo <guo.zhenhui@northeastern.edu>:
    - Office Hours: TBD
 - Weijia Deng <deng.weij@northeastern.edu>:
    - Office Hours: TBD
 - Nancy Tran <tran.nan@northeastern.edu>:
-   - Office Hours: TBD
+   - Office Hours: Friday 10:30AM-12:30PM PDT
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
