@@ -8,7 +8,7 @@
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
-**Office Hours** - Monday 2-4pm, Tuesday 1-3pm
+**Office Hours** - Monday 2-4pm, Tuesday 1-3pm (PST)
 
 ### Super Talented Teaching Assistants
 - Mengjiao Wu <wu.mengji@husky.neu.edu>:
