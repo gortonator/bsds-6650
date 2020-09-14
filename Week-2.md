@@ -32,7 +32,7 @@ by Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Le
 [Interesting article on thread-safe Java collections](https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java)
 
 ## Lab 1
-###Aims
+### Aims
 1. Get you up and running on AWS EC2. 
 2. Create a free teir VM and an RDS instance
 3. Install and test tomcat
