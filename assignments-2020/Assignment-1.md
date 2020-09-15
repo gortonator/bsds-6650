@@ -32,7 +32,7 @@ Make sure you can load the resulting .war file onto your EC2 free tier instance 
 This is the major part of this assignment. We want a multithreaded Java client that we can configure to upload a day of lift rides to the server and exert various loads on the server.
 
 Your client should accept a set of parameters from the command line (or a parameter file) at startup. These are:
-1. maximum number of threads to run (numThreads - max 256)
+1. maximum number of threads to run (maxThreads - max 256)
 1. number of skier to generate lift rides for  (numSkiers - default 50000), This is effectively the skier's ID (skierID)
 1. number of ski lifts  (numLifts - range 5-60, default 40)
 1. the ski day number - default to 1
@@ -43,8 +43,8 @@ In addition, each ski day is of length 420 minutes (7 hours - 9am-4pm) from when
 
 Based on these values, your client will start up and execute 3 phases, with each phase sending a large number of lift ride events to the server API.
 
-Phase 1, the *startup* phase, will launch numThreads/4 threads, and each thread will be passed:
-* a start and end range for skierIDs, so that each thread has an identical number of skierIDs, caluculated as numSkiers/(numThreads/4). Pass each thread a disjoint range of skierIDs so that the whole range of IDs is covered by the threads, ie, thread 0 has skierIDs from 1 to (numSkiers/(numThreads/4)), thread 1 has skierIDs from (1x(numSkiers/(numThreads/4)+1) to (numSkiers/(numThreads/4))x2
+Phase 1, the *startup* phase, will launch (maxThreads/4) threads, and each thread will be passed:
+* a start and end range for skierIDs, so that each thread has an identical number of skierIDs, caluculated as numSkiers/(maxThreads/4). Pass each thread a disjoint range of skierIDs so that the whole range of IDs is covered by the threads, ie, thread 0 has skierIDs from 1 to (numSkiers/(maxThreads/4)), thread 1 has skierIDs from (1x(numSkiers/(maxThreads/4)+1) to (numSkiers/(maxThreads/4))x2, etc
 * a start and end time, for this phase this is the first 90 minutes of the ski day (1-90)
 
 For example if numThreads=64 and numSkiers=1024, we will launch 16 threads, with thread 0 passed skierID range 1 to 64, thread 1 range 65 to 128, and so on.
@@ -80,6 +80,8 @@ When all threads from all phases are complete, the programs should print out:
 1. throughput = requests per second = total number of requests/wall time
 
 The client should calculate these and display them in the output window, and then cleanly terminate.
+
+To reduce latencies, run your client as 'close' to the server as possible. Best is to run teh client on a EC2 instance in the same data center as your server. Second best is to run the server in an AWS data center that is as near to your client as possible. eg if you are in Seattle running the client on your laptop, Oregon is probably closest.
 
 ## Building the Client (Part 2)
 With your load generating client working wonderfully, we want to now instrument the client so we have deeper insights into the performance of the system. 
