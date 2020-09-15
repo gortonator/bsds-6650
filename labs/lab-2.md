@@ -1,4 +1,4 @@
-# CS6650 Fall 2019  Assignment1
+# CS6650 Fall 2020 
 
 ## Lab 2 - Simple Server with Java Servlet
 ### Aims: 
