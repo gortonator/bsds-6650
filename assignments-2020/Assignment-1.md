@@ -31,6 +31,16 @@ Make sure you can load the resulting .war file onto your EC2 free tier instance 
 
 This is the major part of this assignment. We want a multithreaded Java client that we can configure to upload a day of lift rides to the server and exert various loads on the server.
 
+First you need to get a Java client to call your server APIs. You can generate a client API from the Swagger specification. Look at:
+
+*Export-Client SDK-Java*
+
+The generated code contains thread-safe methods for calling the server APIs. Write a simple test that calls each API before proceeding to establish that you have connectivity.
+
+If you don't want to figure out the Swagger client, you can use the [Apache Java HTTP API](https://hc.apache.org/index.html).
+
+Once you have your client calling the API, it's time to build the client fun time!!
+
 Your client should accept a set of parameters from the command line (or a parameter file) at startup. These are:
 1. maximum number of threads to run (maxThreads - max 256)
 1. number of skier to generate lift rides for  (numSkiers - default 50000), This is effectively the skier's ID (skierID)
