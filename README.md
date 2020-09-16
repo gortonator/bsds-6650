@@ -14,7 +14,7 @@
 - Mengjiao Wu <wu.mengji@husky.neu.edu>:
    - Office Hours: Thursday 3-5PM PST
 - Zhenhui Guo <guo.zhenhui@northeastern.edu>:
-   - Office Hours: TBD
+   - Office Hours: Monday 10:00am-12:00pm PST
 - Weijia Deng <deng.weij@northeastern.edu>:
    - Office Hours: TBD
 - Nancy Tran <tran.nan@northeastern.edu>:
