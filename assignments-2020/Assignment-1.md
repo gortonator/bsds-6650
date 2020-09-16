@@ -1,5 +1,7 @@
 # CS6650 Fall 2020  Assignment 1
 
+[Introduction on YouTube](https://youtu.be/UYZvIc_gxo8)
+
 ## Overview
 
 You work for Ikkyone - a global acquirer of ski resorts that is homogenezing skiing around the world. Ikkyone ski resorts all use RFID lift ticket readers so that every time a skier gets on a ski lift, the time of the ride and the skier ID are recorded.
