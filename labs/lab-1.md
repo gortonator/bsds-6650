@@ -39,7 +39,8 @@ Now start tomcat
 ~~~
 sudo service tomcat8 start
 ~~~
-Tomcat listens on port 8080, so in your browser go to https://{your public IP address}:8080
+Tomcat listens on port 8080, so in your browser go to 
+* https://{your public IP address}:8080
 
 and with luck you will see the tomcat home page!
 
