@@ -31,8 +31,10 @@ Now install Tomcat 8
 sudo yum install tomcat8 tomcat8-webapps
 sudo service tomcat8 start
 ~~~
-Tomcat listens on port 8080, so in your browser go to https://{your AMI address}:8080
+Tomcat listens on port 8080, so in your browser go to https://{your public IP address}:8080
 
 and with luck you will see the tomcat home page!
+
+If you are running free tier instances, you can leave it running with no cost. If you do stop and restart your instances, just be aware the public IP address will change.
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
