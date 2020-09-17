@@ -1,5 +1,31 @@
 # Week 3: Distributed Systems Fundamentals
 
-Coming soon
+## Learning Objectives:
+1. Before scalability … the monolith
+1. Multi-tier architecture
+1. Scale up and Scale out
+1. Load balancing
+1. Stateless services
+1. Distributed databases
+1. Queuing
+
+## Mandatory Lecture Materials)
+[Distributed Systems Architecture: Whirlwind Tour]()
+
+[Lessons learned from Netflix Migration to AWS](https://www.youtube.com/watch?v=XrWII4ewrXA)
+[Distributed Systems Architecture: Whirlwind Tour]()
+
+## Manadatory Reading
+
+[Chapter 2]()
+
+## Optional, Highly Recommended Reading
+
+Chapter 4, Architecture Characteristics Defined, in Fundamentals of Software Architecture, Mark Richards and Neal Ford, Available through NU library at https://learning.oreilly.com/
+
+## Lab
+
+[Instructions for Lab 3 are here]()
+
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
