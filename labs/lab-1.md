@@ -35,4 +35,6 @@ Tomcat listens on port 8080, so in your browser go to https://{your AMI address}
 
 and with luck you will see the tomcat home page!
 
+It shoul dbe fine to leave a free tier instance running at zero cost. If you do stop and restart just remember you will get a new public IP address. 
+
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)

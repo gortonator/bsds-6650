@@ -144,6 +144,7 @@ In IntelliJ:
    - A WAR file called "[WEB_APP].war" will be created in `out/artifacts/[WEB_APP]/[WEB_APP].war`
 4. Upload this file to the `webapps` folder in your Tomcat installation path in the EC2 instance with tools such as [scp](http://man7.org/linux/man-pages/man1/scp.1.html), for example
    - $ `scp -i /path/to/pem/file /local/path/to/war/file ec2-user@EC2_IP_ADDR:/remote/path/to/tomcat_webapp/directory`
+   The exact location is dependent on installationversion but there's a good chance it will be something like '/var/lib/tomcat8/webapps'
 5. Visit **http://{YOUR_REMOTE_INSTANCE_IP}:8080/[WEB_APP]/skiers/12/seasonss/2019/day/1/skier/123** and you should see the same response as what you get locally
 
 ### Step 6: Send GET/POST request to server with Postman
