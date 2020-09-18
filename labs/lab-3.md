@@ -3,7 +3,8 @@
 ## Simple Performance Analysis Experiment
 ### Aims: 
 1. Experiment with a simple load test with a servlet
-1. Understand Little's Law
+1. Build a multithreaded servlet client using the Apache HttpClient library
+1. Understand Little's Law in the context of a client-server system
 
 ### Deploy a Simple Servlet
 Using your newly acquired skills from labs 1 and 2, we're going to deploy a universal salutations servlet as the basis for our experiment. 
