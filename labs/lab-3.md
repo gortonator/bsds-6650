@@ -58,7 +58,7 @@ Test the client against your server. When it connects and get a valid response. 
 #### Make the client multithreaded
 We want to create a client that exert a load on our server using multiple threads. There's an example from the lecture in Week 2 that provides a template for this - RequestCountBarrier.java.
 
-You can find the code [here](https://gortonator.github.io/bsds-6650/code/week-2/bsdsthreads).
+You can find the code [here](https://gortonator.github.io/bsds-6650/code/week-2/bsdsthreads/RemoteCounterBarrier.java).
 
 Your task is make the servlet client into a thread which is created by your main() in a loop. Initially create a 100 threads, with each thread issuing one call to the servlet. 
 
