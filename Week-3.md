@@ -23,7 +23,8 @@
 
 Chapter 4, Architecture Characteristics Defined, in Fundamentals of Software Architecture, Mark Richards and Neal Ford, Available through NU library at https://learning.oreilly.com/
 
-## Lab
+## Lab 3
+This week we're going to learn how to build a multithreaded servlet client and experiment with performance as we vary teh application configuration.
 
 [Instructions for Lab 3 are here](https://gortonator.github.io/bsds-6650/labs/lab-3)
 
