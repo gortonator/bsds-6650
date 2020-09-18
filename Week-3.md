@@ -10,14 +10,14 @@
 1. Queuing
 
 ## Mandatory Lecture Materials)
-[Distributed Systems Architecture: Whirlwind Tour]()
+[Distributed Systems Architecture: Whirlwind Tour](https://youtu.be/fzInqxi__CE)
 
 [Lessons learned from Netflix Migration to AWS](https://www.youtube.com/watch?v=XrWII4ewrXA)
-[Distributed Systems Architecture: Whirlwind Tour]()
+
 
 ## Manadatory Reading
 
-[Chapter 2]()
+[Chapter 2](https://gortonator.github.io/bsds-6650/reading/chapter-2.pdf)
 
 ## Optional, Highly Recommended Reading
 
@@ -25,7 +25,7 @@ Chapter 4, Architecture Characteristics Defined, in Fundamentals of Software Arc
 
 ## Lab
 
-[Instructions for Lab 3 are here]()
+[Instructions for Lab 3 are here](https://gortonator.github.io/bsds-6650/labs/lab-3)
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
