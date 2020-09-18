@@ -19,7 +19,9 @@
 
 [Chapter 2](https://github.com/gortonator/bsds-6650/blob/master/reading/chapter-2.pdf)
 
-## Optional, Highly Recommended Reading
+## Optional, Highly Recommended Reading/Viewing
+
+[Scaling Instragram Infrastructure](https://www.youtube.com/watch?v=hnpzNAPiC0E)
 
 Chapter 4, Architecture Characteristics Defined, in Fundamentals of Software Architecture, Mark Richards and Neal Ford, Available through NU library at https://learning.oreilly.com/
 
