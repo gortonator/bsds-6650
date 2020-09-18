@@ -17,7 +17,7 @@
 
 ## Manadatory Reading
 
-[Chapter 2](https://gortonator.github.io/bsds-6650/reading/chapter-2.pdf)
+[Chapter 2](https://github.com/gortonator/bsds-6650/blob/master/reading/chapter-2.pdf)
 
 ## Optional, Highly Recommended Reading
 
