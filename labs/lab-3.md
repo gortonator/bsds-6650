@@ -5,7 +5,7 @@
 1. Experiment with a simple load test with a servlet
 1. Understand Little's Law
 
-#### Deploy a Simple Servlet
+### Deploy a Simple Servlet
 Using your newly acquired skills from labs 1 and 2, we're going to deploy a universal salutations servlet as the basis for our experiment. 
 ~~~
 
@@ -48,14 +48,14 @@ Build, deploy to tomcat, test with Postman. You know the gig ;)
 
 Note that this servlet will take _at least_ 1 second to respond. This delay is inserted to simulate the processing delay in areally application.
 
-#### Build a HTTP Client
+### Build a HTTP Client
 We now need to build a Java client that will call our server. We'll use the Apache HttpClient library. There's an excellent tutorial [here](https://hc.apache.org/httpclient-3.x/tutorial.html). 
 
 It shouldn't take more than a few minutes to work through the tutorial and the code example at the end provides all you need for your client. Steal selectively :)
 
 Test the client against your server. When it connects and get a valid response. move on to the next section.
 
-#### Make the client multithreaded
+### Make the client multithreaded
 We want to create a client that exert a load on our server using multiple threads. There's an example from the lecture in Week 2 that provides a template for this - RequestCountBarrier.java.
 
 You can find the code [here](https://github.com/gortonator/bsds-6650/tree/master/code/week-2/bsdsthreads).
@@ -70,7 +70,7 @@ Do likewise when all threads have completed and print out the time taken to exec
 
 Remember every request will take ~1 second to execute. How long does your client take to excute 100 requests? Any idea why?
 
-#### Tomcat Configuration
+### Tomcat Configuration
 Tomcat is a highly configurable beast. You can modify the behavior of Tomcat by changing the parameter velues in the server.xml file in the tomcat installation.
 
 We're interested in the number of threads Tomcat makes available to service requests. By default it is 200. 
@@ -85,7 +85,7 @@ Stop and restart Tomcat and run your client again. Is the execution time differe
 
 Experiment with the number of threads in the server, client and sleep delay in the servlet. As you change teh values can you see any pattern in the resulting execution times?
 
-#### Little's Law
+### Little's Law
 Little’s law is universal formula for any system where a queue is present. From a bank to a distributed system. It states:
 
 "The long-term average number of customers in a stable system N is equal to the long-term average effective arrival rate, λ, multiplied by the average time a customer spends in the system, W; or expressed algebraically: N = λW."
@@ -107,7 +107,7 @@ N = Throughput * Response Time
 
 Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary teh number of client and server threads, and the servlet sleep time?
 
-#### Additional Issues to Explore - Tomcat Performance Monitoring
+### Additional Issues to Explore - Tomcat Performance Monitoring
 
 Server technolgies like Tomcat and MySQL provide sophisticated tools to monitor and measure server performance. [This article](https://www.datadoghq.com/blog/tomcat-monitoring-tools/) walks you through various Tomcat monitoring capabilities. 
 
