@@ -16,7 +16,7 @@
 - Zhenhui Guo <guo.zhenhui@northeastern.edu>:
    - Office Hours: Monday 10:00am-12:00pm PST
 - Weijia Deng <deng.weij@northeastern.edu>:
-   - Office Hours: TBD
+   - Office Hours: Thursday 1-3PM PST
 - Nancy Tran <tran.nan@northeastern.edu>:
    - Office Hours: Friday 10:30AM-12:30PM PST
 
