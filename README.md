@@ -8,7 +8,7 @@
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
-**Office Hours** - Monday 2-4pm, Tuesday 1-3pm (PST)
+**Office Hours** - Tuesday 1-4pm (PST)
 
 ### Super Talented Teaching Assistants
 - Mengjiao Wu <wu.mengji@husky.neu.edu>:
@@ -51,9 +51,10 @@ Week | Topic | Date
 10 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-10) | 11/11
 11 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 11/18
 12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 12/2
-13 | Final Quiz and Course Wrapup | 12/9
+13 | Final Quiz and Course Wrap up | 12/9
 
 ## Assignments
+Submission instructions and exact deadlines are on the course Canvas site. 
 
 Assignment | Topic | Due Date
 ---------- | ----- | --------
