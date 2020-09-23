@@ -1,4 +1,4 @@
-# Week 3: Distributed Systems Fundamentals
+# Week 3: Distributed Systems Architecture: Whirlwind Tour
 
 ## Learning Objectives:
 1. Before scalability … the monolith
