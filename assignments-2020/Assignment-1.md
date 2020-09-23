@@ -43,7 +43,7 @@ If you don't want to figure out the Swagger client, you can use the [Apache Java
 
 Once you have your client calling the API, it's time to build the client fun time!!
 
-Your client should accept a set of parameters from the command line (or a parameter file) at startup. These are:
+Your client should accept a set of parameters from the command line (or a properties file) at startup. These are:
 1. maximum number of threads to run (maxThreads - max 256)
 1. number of skier to generate lift rides for  (numSkiers - default 50000), This is effectively the skier's ID (skierID)
 1. number of ski lifts  (numLifts - range 5-60, default 40)
