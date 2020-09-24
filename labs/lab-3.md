@@ -106,7 +106,7 @@ This gives us:
 
 N = Throughput * Response Time
 
-Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary teh number of client and server threads, and the servlet sleep time?
+Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary the number of client and server threads, and the servlet sleep time?
 
 ### Additional Issues to Explore - Tomcat Performance Monitoring
 
