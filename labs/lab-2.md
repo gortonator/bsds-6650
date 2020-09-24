@@ -151,7 +151,7 @@ cd /var/lib/tomcat8
 sudo chmod -R 777 webapps/
 ~~~
 
-5. Visit **http://{YOUR_REMOTE_INSTANCE_IP}:8080/[WEB_APP]/skiers/12/seasonss/2019/day/1/skier/123** and you should see the same response as what you get locally
+5. Visit **http://{YOUR_REMOTE_INSTANCE_IP}:8080/[WEB_APP]/skiers/12/seasons/2019/day/1/skier/123** and you should see the same response as what you get locally
 
 ### Step 6: Send GET/POST request to server with Postman
 
