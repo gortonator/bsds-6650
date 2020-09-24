@@ -8,11 +8,15 @@
 
 
 ## Mandatory Lecture Materials)
-[Communications hardware and software] ...coming soon
+[Communications hardware and software](https://youtu.be/O_XvP6CMQjA)
 
 [Remote Procedure Calls] .... coming soon
 
 [Distributed Coordination and Time] ... coming soon
+
+The first short video in this playlist is important to watch as it covers the basics of Web Services. Watch more in the series if you like ;)
+
+[SOAP Web Services Overview](https://www.youtube.com/watch?v=mKjvKPlb1rA&list=PLqq-6Pq4lTTZTYpk_1DOowOGWJMIH5T39)
 
 
 ## Manadatory Reading
