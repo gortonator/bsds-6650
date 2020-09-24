@@ -44,7 +44,7 @@ This will create a simple web application structure in your project
     </project>
     ```
     - IntelliJ should resolve dependencies right after this new dependency is added
-1. Right click `src/main/java directory`, point to **New** and click **Create New Servlet**.
+1. Right click `src/main/java` directory, point to **New** and click **Create New Servlet**.
    - Enter the name of the servlet, e.g. "SkierServlet"
      - IntelliJ will then create the skeleton of the servlet with `doGet` and `doPost` methods
    - Make sure the `java` directory is marked as sources root, which should be done by default
