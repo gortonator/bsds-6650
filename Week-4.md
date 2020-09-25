@@ -9,11 +9,9 @@
 
 
 ## Mandatory Lecture Materials)
-[Communications hardware and software](https://youtu.be/O_XvP6CMQjA)
-
-[Remote Procedure Calls](https://youtu.be/wWUlfHwecvY)
-
-[Distributed Coordination and Time](https://youtu.be/--fyMrn5MTo)
+1. [Communications hardware and software](https://youtu.be/O_XvP6CMQjA)
+1. [Remote Procedure Calls](https://youtu.be/wWUlfHwecvY)
+1. [Distributed Coordination and Time](https://youtu.be/--fyMrn5MTo)
 
 The first short video in this playlist is important to watch as it covers the basics of Web Services. Watch more in the series if you like ;)
 
@@ -22,7 +20,7 @@ The first short video in this playlist is important to watch as it covers the ba
 
 ## Manadatory Reading
 
-[Chapter 4](https://github.com/gortonator/bsds-6650/blob/master/reading/chapter-4.pdf)
+[Chapter 4](https://github.com/gortonator/bsds-6650/reading/chapter-4.pdf)
 
 [Time Services at FaceBook](https://engineering.fb.com/production-engineering/ntp-service/)
 
