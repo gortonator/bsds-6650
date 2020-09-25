@@ -3,6 +3,7 @@
 ## Learning Objectives:
 1. Communications hardware and software
 1. Remote Procedure Calls
+1. Partial Failures
 1. Distributed coordination
 1. Time in distributed systems
 
@@ -10,9 +11,9 @@
 ## Mandatory Lecture Materials)
 [Communications hardware and software](https://youtu.be/O_XvP6CMQjA)
 
-[Remote Procedure Calls] .... coming soon
+[Remote Procedure Calls](https://youtu.be/wWUlfHwecvY)
 
-[Distributed Coordination and Time] ... coming soon
+[Distributed Coordination and Time](https://youtu.be/--fyMrn5MTo)
 
 The first short video in this playlist is important to watch as it covers the basics of Web Services. Watch more in the series if you like ;)
 
