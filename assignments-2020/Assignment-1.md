@@ -123,7 +123,7 @@ Submit your work to Canvas Assignment 1 as a pdf document. The document should c
 
 1. the URL for your git repo. *Make sure that the code for the client part 1 and part 2 are in seperate folders in your repo*
 1. a 1-2 page description of your client design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works
-1. Client (Part 1) - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Include the outputs of each run in your submission (showing the wall time) and plot a simple chart showing the wall time by the number of threads. This should be a screen shot of your output window.
+1. Client (Part 1) - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40. Include the outputs of each run in your submission (showing the wall time) and plot a simple chart showing the wall time by the number of threads. This should be a screen shot of your output window.
 1. Client (Part 2) - run the client as per Part 1, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads. Again, this should be a screen shot of your output window.
 
 ## Bonus Points
