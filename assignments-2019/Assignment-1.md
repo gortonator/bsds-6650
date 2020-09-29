@@ -21,7 +21,7 @@ In this assignment you need to implement this API using a Java servlets. Each AP
 1. Do basic parameter validation, and return a 4XX response code and error message if invalid values/formats supplied
 1. If the request is valid, return a 200/201 response code and some dummy data as a response body
 
-A simple illustration of how to handle JSON request payloads is [here](https://edwin.baculsoft.com/2011/11/how-to-create-a-simple-servlet-to-handle-json-requests/).
+Good simple illustrations of how to handle JSON request payloads are [here](https://edwin.baculsoft.com/2011/11/how-to-create-a-simple-servlet-to-handle-json-requests/) and [here](https://www.baeldung.com/servlet-json-response).
 
 This should be a pretty simple task. Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
 
