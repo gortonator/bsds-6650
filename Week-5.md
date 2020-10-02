@@ -15,18 +15,17 @@
 
 ## Manadatory Reading
 
-[Chapter 5](https://gortonator.github.io/bsds-6650/reading/chapter-5.pdf)
-
-[Chapter 6](https://gortonator.github.io/bsds-6650/reading/chapter-6.pdf)
+1. [Chapter 5](https://gortonator.github.io/bsds-6650/reading/chapter-5.pdf)
+1. [Chapter 6](https://gortonator.github.io/bsds-6650/reading/chapter-6.pdf)
 
 ## Optional, Highly Recommended Reading/Viewing
 
-[Caching at Twitter](https://www.youtube.com/watch?v=QznaOSk20nU)
-[Caching at Netflix](https://www.youtube.com/watch?v=Rzdxgx3RC0Q)
+1. [Caching at Twitter](https://www.youtube.com/watch?v=QznaOSk20nU)
+1. [Caching at Netflix](https://www.youtube.com/watch?v=Rzdxgx3RC0Q)
 
 ## Lab 5
 
-[Database Key Design](https://gortonator.github.io/bsds-6650/labs/lab-5)
+[Database Key Experimants and Design](https://gortonator.github.io/bsds-6650/labs/lab-5)
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
