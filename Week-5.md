@@ -26,7 +26,7 @@
 
 ## Lab 5
 
-[Instructions for Lab 5 are coming soon](https://gortonator.github.io/bsds-6650/labs/lab-5)
+[Database Key Design](https://gortonator.github.io/bsds-6650/labs/lab-5)
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
