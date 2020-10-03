@@ -93,7 +93,9 @@ When all threads from all phases are complete, the programs should print out:
 
 The client should calculate these and display them in the output window, and then cleanly terminate.
 
-To reduce latencies, run your client as 'close' to the server as possible. Best is to run teh client on a EC2 instance in the same data center as your server. Second best is to run the server in an AWS data center that is as near to your client as possible. eg if you are in Seattle running the client on your laptop, Oregon is probably closest.
+To reduce latencies, run your client as 'close' to the server as possible. Best is to run the client on a EC2 instance in the same data center as your server. Second best is to run the server in an AWS data center that is as near to your client as possible. eg if you are in Seattle running the client on your laptop, Oregon is probably closest.
+
+To run on a remote client, you need to build an executable .jar file. [This can be done easily with maven](https://www.baeldung.com/executable-jar-with-maven)
 
 ## Building the Client (Part 2)
 With your load generating client working wonderfully, we want to now instrument the client so we have deeper insights into the performance of the system. 
