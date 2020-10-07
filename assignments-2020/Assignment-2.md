@@ -58,7 +58,7 @@ Submit your work to Blackboard Assignment 2 as a pdf document. The document shou
 
 1. The URL for your git repo. 
 1. A 1-2 page description of your server design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works
-1. Single Server Tests - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40 and numRuns=20. Include the output window of each run in your submission (showing the wall time and performance stats) and plot a simple chart showing the throughput and mean response by the number of threads
+1. Single Server Tests - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40. Include the output window of each run in your submission (showing the wall time and performance stats) and plot a simple chart showing the throughput and mean response by the number of threads
 1. Load Balanced Server Tests - run the client as above, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads.
 
 ## Grading:
