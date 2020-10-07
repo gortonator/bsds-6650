@@ -47,6 +47,8 @@ The previous section has a bottleneck in the single server instance. So let's tr
 
 Set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ load balancers. Enable load balancing with 4 free tier EC2 instances and see what effect this has on your performance.  
 
+You will need to create scripts to automatically start tomcat on instance boot. [Here's an example for AWS Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html), and for AWS Linux 1 look [here](https://medium.com/@shrunk7byadagi/automatically-start-tomcat-on-instance-startup-reboot-in-amazon-ec2-ubuntu-instance-33849a9d9090).
+
 Depending on your data model, you may find you free tier RDS server becomes a bottleneck. If so then allocate a more powerful RDS instance and see what effect it has. Or, think about using two databases with some sensible partitioning. Just watch your costs.
 
 Again test with {32, 64, 128, 256} clients and compare your results again the ones from the previous section with a single server.
