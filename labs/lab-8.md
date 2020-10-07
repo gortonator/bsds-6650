@@ -1,15 +1,13 @@
-## Lab 8 - Playing with RabbitMQ
+## Lab 8 - Circuit Breaker Pattern
 
-RabbitMQ is a massively popular lightweight messaging platform. It has an excellent set of [tutorials](https://www.rabbitmq.com/tutorials/) which are well worth working through.
+The circuit breaker can be used in clients to reduce strain on a server that is under heavy load, and to potentially enable a service to provide more stable response times.
 
-The [tutorial on RPC](https://www.rabbitmq.com/tutorials/tutorial-six-java.html) is probaly the most interesting. In this lab:
+If we think about this in the context of our assignments, could we use a circuit breaker in 
+1. the client, which could set a latency threshold and back off if this is exceeded
+1. the server, which could time-out a SQL request that was taking too long (if you are updating synchronously from your servlet)
 
-1. Look at the prerequisites and install RabbitMQ on your machine. Work through [tutorial 1](https://www.rabbitmq.com/tutorials/tutorial-one-java.html) to make sure you have the Java client and environment set up correctly. 
-1. Now work through tutorial 6. The code is reasonably complex so run it and make sure you understand what is happening.
-1. The tutorial raises some interesting issues at the end, listed below. How would you modify teh tutorial exampl to make it more robust?
-  - How should the client react if there are no servers running?
-  - Should a client have some kind of timeout for the RPC?
-  - If the server malfunctions and raises an exception, should it be forwarded to the client?
-  - Protecting against invalid incoming messages (eg checking bounds, type) before processing.
+Take a look at your code and circuit breaker libraries. The Apache libray is probably the easiest to get started with, but choose any you'd like to learn.
+Can you add a circuit breaker in your client, server, or both, and obtain better perfromance?
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
   
-  [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
