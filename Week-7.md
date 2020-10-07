@@ -8,6 +8,7 @@
 
 ## Mandatory Lecture Materials
 We'll use lecture materials from last year's class as these haven't changed in content - just the order (they were week 9 last year)
+
 [Microservices](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80e8535b-1f86-4c0c-b4e6-ab9100dda93c)
 
 ## Mandatory Reading
@@ -19,6 +20,7 @@ We'll use lecture materials from last year's class as these haven't changed in c
 
 ## Labs
 Lab 7 [Tomcat and MySQL](https://gortonator.github.io/bsds-6650/labs/lab-7)
+
 Lab 8 [Circuit Breaker Experiments](https://gortonator.github.io/bsds-6650/labs/lab-8)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
