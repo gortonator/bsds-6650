@@ -11,6 +11,8 @@
 | INSERT    |                 |
 | GET       |                 |
 
+You can find the scripts needed for this lab [here](https://github.com/gortonator/bsds-6650/tree/master/labs)
+
 ## A simple database for our lab use.
 Let's imagine that we have a LeetCode Contest that all students in Northeastern Universtiy can participate in.
 - The contest run 24 hours. 
