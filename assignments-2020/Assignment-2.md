@@ -14,8 +14,11 @@ In Assignment 2, we'll build the server and database. This will give us the foun
 ## Implement the Server 
 
 The server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.13). You should have implemented stubs for your APIs in your servlet in assignment 1. 
+ 
 
-Next we need to design a database schema and deploy this to your MySQL RDS instance. Think carefully about the design as you need to support a write-heavy workload (see lab 5).
+Next we need to design a database schema and deploy this to your MySQL RDS instance. You can choose another database if you like, but just be aware you may be on your own!
+
+Think carefully about the design as you need to support an insert-heavy workload while still supporting aggregate queries for the GET APIS(see lab 5).
 
 You then need build the servlet business logic to implement this API. Each API should:
 
@@ -25,15 +28,17 @@ You then need build the servlet business logic to implement this API. Each API s
 1. Construct the correct response message and return a 200/201 response code 
 1. For a lift ride POST, assume the lift vertical rise is the (liftNum*10), ie lift 6 is 60m vertical. Store the vertical in the database, as in reality this condition would not hold
 
-Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
+For this assignment, just implement the three /skiers APIs. Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
 
 Make sure you can load the resulting .war file onto your EC2 free tier instance you have created and configured in lab 1 and call the APIs successfully.
 
 ## Modify the Client 
 We simply want to modify the client to send 1000 POST requests per thread instead of 100. That will generate a few more requests :)
 
+Also, in test phase 3, call *both* GET APIs 10 times each. In your output report (mean, median, p99) for each API.
+
 ## Performance Testing
-As in assignment 1, we want to test your new server/database with our load generating client. Test with {32, 64, 128, 256} client threads and report the ourputs for each.
+As in assignment 1, we want to test your new server/database with our load generating client. Test with {32, 64, 128, 256} client threads and report the outputs for each.
 
 You will probably find you get database deadlocks. You will need to find a way to work around these through schema changes or request retries. Your tests should successfully execute every request.
 
@@ -62,7 +67,7 @@ Submit your work to Blackboard Assignment 2 as a pdf document. The document shou
 1. Bonus  - (3 points) - A successful test run with 512 clients as max threads.
 
 
-# Deadline: 10/???, 3pm PST 
+# Deadline: 10/27, 11.59pm PST 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 
