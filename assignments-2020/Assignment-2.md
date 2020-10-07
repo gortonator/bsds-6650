@@ -2,9 +2,9 @@
 
 ## Overview
 
-You work for Upic - a global acquirer of ski resorts that is homogenezing skiing around the world. Upic ski resorts all use RFID lift ticket readers so that every time a skiier gets on a ski lift, the time of the ride and the skier ID are recorded.
+You work for Ikkyone  - a global acquirer of ski resorts that is homogenezing skiing around the world. Ikkyone  ski resorts all use RFID lift ticket readers so that every time a skier gets on a ski lift, the time of the ride and the skier ID are recorded.
 
-In this course, through a series of assignments, we'll build a scalable distributed cloud-based system that can record all lift rides from all Upic resorts. This data can then be used as a basis for data analysis, answering such questions as:
+In this course, through a series of assignments, we'll build a scalable distributed cloud-based system that can record all lift rides from all Ikkyone  resorts. This data can then be used as a basis for data analysis, answering such questions as:
 * which lifts are most heavily used?
 * which skiers ride the most lifts?
 * How many lifts do skiers ride on average per day at resort X?
