@@ -18,7 +18,9 @@ The server API is specified using [Swagger](https://app.swaggerhub.com/apis/clou
 
 Next we need to design a database schema and deploy this to your MySQL RDS instance. You can choose another database if you like, but just be aware you may be on your own!
 
-Think carefully about the design as you need to support an insert-heavy workload while still supporting aggregate queries for the GET APIS(see lab 5).
+Think carefully about the design as you need to support an insert-heavy workload while still supporting aggregate queries for the GET APIS(see lab 5). 
+
+Also thnk carefully about indexing as inserts are slower when indexes exist on a table. You can read all about SQL indexes [here](https://www.tutorialspoint.com/mysql/mysql-indexes.htm).
 
 You then need build the servlet business logic to implement this API. Each API should:
 
@@ -40,7 +42,9 @@ Also, in test phase 3, call *both* GET APIs 10 times each. In your output report
 ## Performance Testing
 As in assignment 1, we want to test your new server/database with our load generating client. Test with {32, 64, 128, 256} client threads and report the outputs for each.
 
-You will probably find you get database deadlocks. You will need to find a way to work around these through schema changes or request retries. Your tests should successfully execute every request.
+You will probably find you get database deadlocks. You will need to find a way to work around these through SQL/schema changes or request retries. Some useful advise on MYSQL deadlocks is [here](https://dev.mysql.com/doc/refman/8.0/en/innodb-deadlocks.html).
+
+Your tests should successfully execute every request.
 
 ## Load Balancing
 The previous section has a bottleneck in the single server instance. So let's try and add capacity to our system and see what happens,
