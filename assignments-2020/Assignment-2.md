@@ -22,6 +22,8 @@ Think carefully about the design as you need to support an insert-heavy workload
 
 Also thnk carefully about indexing as inserts are slower when indexes exist on a table. You can read all about SQL indexes [here](https://www.tutorialspoint.com/mysql/mysql-indexes.htm).
 
+A simple servlet example for accessing MySQL is [here]https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-glassfish-config-servlet.html) and Lab 7 expands on this.
+
 You then need build the servlet business logic to implement this API. Each API should:
 
 1. Accept the parameters for each operations as per the specification
@@ -31,6 +33,8 @@ You then need build the servlet business logic to implement this API. Each API s
 1. For a lift ride POST, assume the lift vertical rise is the (liftID*10), ie lift 6 is 60m vertical. Store the vertical in the database, as in reality this condition would not hold
 
 For this assignment, just implement the three /skiers APIs. Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
+
+If you are feeling confident/brave, you may use a cache to attempt to speed up your GET APIs.
 
 Make sure you can load the resulting .war file onto your EC2 free tier instance you have created and configured in lab 1 and call the APIs successfully.
 
