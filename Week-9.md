@@ -10,6 +10,7 @@
 We'll use lecture materials from last year's class as these haven't changed in content - just the order (they were week 5 last year)
 
 [Strong Consistency and Transactions](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=060abd7e-7f6c-4f03-a6bf-ab9100ddae42)
+
 [Raft in Neo4j](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=489ec07a-1ea0-4378-bcb4-ab9100ddadac)
 
 ## Mandatory Reading

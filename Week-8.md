@@ -8,6 +8,7 @@
 
 ## Mandatory Lecture Materials
 [Scaling Databases Fundamentals](https://youtu.be/uynmnvmzAgs)
+
 [Eventual Consistency](https://youtu.be/foyrZ5kYdno)
 
 ## Mandatory Reading
