@@ -19,7 +19,7 @@ We'll use lecture materials from last year's class as these haven't changed in c
 ## Optional Reading
 1. Chapter 7, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
 1. [Raft versus Paxos from MIT Lecture Series](https://www.youtube.com/watch?v=9QGGB5sCr1g)
-1. [Raft in MongoDB](https://www.youtube.com/watch?v=jCk0FCbqCz0)
+1. [Raft Features in MongoDB](https://www.youtube.com/watch?v=jCk0FCbqCz0)
 
 ## Labs
 ### Lab 11: Raft Explained

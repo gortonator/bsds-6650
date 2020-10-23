@@ -7,9 +7,8 @@
 1. Explain how consistency and conflicts are handled in leaderless systems
 
 ## Mandatory Lecture Materials
-[Scaling Databases Fundamentals](https://youtu.be/uynmnvmzAgs)
-
-[Eventual Consistency](https://youtu.be/foyrZ5kYdno)
+1. [Scaling Databases Fundamentals](https://youtu.be/uynmnvmzAgs)
+1. [Eventual Consistency](https://youtu.be/foyrZ5kYdno)
 
 ## Mandatory Reading
 1. Chapter 5 and 6, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
