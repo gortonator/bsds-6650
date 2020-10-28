@@ -19,7 +19,7 @@
 1. This video is a deep dive into [conflict resolution](https://www.youtube.com/watch?v=8_DfwEpHE88&list=PLeKd45zvjcDHJxge6VtYUAbYnvd_VNQCx&index=5) for you algos nerds :) 
 
 ## Labs
-Lab 9 Coming soon ....
+Lab 10 [Experiment with Lamport Clocks](https://gortonator.github.io/bsds-6650/labs/lab-10)
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
