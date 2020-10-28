@@ -77,7 +77,7 @@ Submit your work to Blackboard Assignment 2 as a pdf document. The document shou
 1. Bonus  - (3 points) - A successful test run with 512 clients as max threads.
 
 
-# Deadline: 10/27, 11.59pm PST 
+# Deadline: 10/28, 11.59pm PST 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 
