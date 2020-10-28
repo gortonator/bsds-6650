@@ -22,14 +22,33 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  
  Regardless, your solution needs to be aware of the possibility of losing messages due to a queue node crash. Experiment with persistent versus non-persistent queue configuration to explore the inherent performance trade-offs.
  
- ## Load Testing
+## Load Testing
  
- Your aim here is to find the best application configuration in terms of throughput for 256 and 512 client threads. You do not need to make changes to the client - use same load profile as in assignmemt 2
+Your aim here is to find the best application configuration in terms of throughput for 256 and 512 client threads. You do not need to make changes to the client - use same load profile as in assignmemt 2
  
- The questions you need to explore are:
- * Do I need load balancing?
- * How many consumers nodes do I need?
- * GETs still need to access the database? Can a cache be used to make GETs faster?
+The questions you need to explore are:
+* Do I need load balancing? Or can my system work with 1 free-tier (or slightly upgraded) server
+* How many consumers nodes do I need?
+* GETs still need to access the database? Can a cache be used to make GETs faster? How would the cache be updated?
+ 
+## Submission Requirements
+Submit your work to Canvas Assignment 3 as a pdf document. The document should contain:
+
+1. The URL for your git repo. Create a new folder for your Assignment 3 server code
+1. A 1-2 page description of your server design. Include database schema, major classes, packages, relationships, how read requests get processed, etc
+1. A commparison of the results for 256 client threads between this assignment and assignment 2, both single server and load balanced
+1. Results for a test with 512 client threads
+
+## Grading:
+1. Asynchronous server implementation working (10 points)
+1. Server design description (5 points) - clarity of description, good design practies used
+1. Results comparison (10 points) - throughput, persistent/non-persistent queues, different instances, basically describe and analyze what you did
+1. Results of a run with 512 client threads (5 points) - successful run (3 points), comparison with 256 client thread test (2 points)
+
+
+# Deadline: 11/23, 11.59pm PST 
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
  
  
  
