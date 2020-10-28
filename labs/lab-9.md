@@ -15,8 +15,8 @@ Threads can't consume message that they sent.
 Threads complete and print out the order of events thay see locally. Currently this is not synchronized so the output interleaves, making it impossible to interpret. 
 
 Your tasks:
-1) Ensure the thread output does not interleave
-2) When you can make sense of the output, see if it helps you understand the Lamport algorithm.
-3) Have a read about how [Version Vectors work](https://en.wikipedia.org/wiki/Version_vector). Can you extend this example to implement the version vector algorithm?
+1. Ensure the thread output does not interleave
+2. When you can make sense of the output, see if it helps you understand the Lamport algorithm.
+3. Have a read about how [Version Vectors work](https://en.wikipedia.org/wiki/Version_vector). Can you extend this example to implement the version vector algorithm?
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
