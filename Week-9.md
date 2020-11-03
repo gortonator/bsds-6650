@@ -9,9 +9,8 @@
 ## Mandatory Lecture Materials
 We'll use lecture materials from last year's class as these haven't changed in content - just the order (they were week 5 last year)
 
-[Strong Consistency and Transactions](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=060abd7e-7f6c-4f03-a6bf-ab9100ddae42)
-
-[Raft in Neo4j](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=489ec07a-1ea0-4378-bcb4-ab9100ddadac)
+1. [Strong Consistency and Transactions](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=060abd7e-7f6c-4f03-a6bf-ab9100ddae42)
+1. [Raft in Neo4j](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=489ec07a-1ea0-4378-bcb4-ab9100ddadac)
 
 ## Mandatory Reading
 1. Chapter 9, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
@@ -22,8 +21,13 @@ We'll use lecture materials from last year's class as these haven't changed in c
 1. [Raft Features in MongoDB](https://www.youtube.com/watch?v=jCk0FCbqCz0)
 
 ## Labs
-### Lab 11: Raft Explained
+Class Exercise: 
 Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
+
+
+### Lab 10: Group Lab: 
+[Quiz make-up points available](https://gortonator.github.io/bsds-6650/labs/lab-10)
+At the start of class we will randomly allocate people to teams to tackle this problem. Don't be late ...
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)

@@ -1,21 +1,18 @@
-## Lab 10 - Logical Clocks
+## Lab 10 - Quiz make up exersise
 
-## A simple experment with Lamport clocks.
+Work in your allocated group to implement and demonstrate the problem below. You can engage with TAs/instructors on any issue.
 
-Copy, build and run the code from [Week 4](https://github.com/gortonator/bsds-6650/tree/master/code/week-4)
+As soon as you are ready to present, get a TA/instructor to show your demo to.
 
-Multiple threads - LamportClient.java - exchange messages through a shared bounded buffer, and execute a fixed number of iterations
+Time: You have unti the end of class to present your working solution or explain your approach and progress. 
 
-These threads alternate between internal events and sending/receiving messages to increment the logical clock
+### Grading:
+* Successful solution demonstration: 10 points
+* Minor run time errors but close: 7.5 points
+* Good approach but implementation not complete: 5 points
+* Well, your turned up and tried ;): 2.5 points
 
-Random sleep periods ensure we get very non-deterministic behaviour
-
-Threads can't consume message that they sent.
-
-Threads complete and print out the order of events thay see locally. Currently this is not synchronized so the output interleaves, making it impossible to interpret. 
-
-Your tasks:
-1) Ensure the thread output does not interleave
-2) When you can make sense of the output, see if it helps you understand the Lamport algorithm.
+The Problem:
+COMING SOON ..... about 1 minute before class in fact!
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
