@@ -22,6 +22,7 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  
  Regardless, your solution needs to be aware of the possibility of losing messages due to a queue node crash. Experiment with persistent versus non-persistent queue configuration to explore the inherent performance trade-offs.
  
+ If you use RabbitMQ, there are some considerations to address concerning mutithreading. These are explained in an Addendum at the bottom of this assignment. 
 ## Load Testing
  
 Your aim here is to find the best application configuration in terms of throughput for 256 and 512 client threads. You do not need to make changes to the client - use same load profile as in assignmemt 2
@@ -47,6 +48,27 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 
 
 # Deadline: 11/23, 11.59pm PST 
+
+## Addendum: Nulthithreading and RabbitMQ
+
+RabbitMQ and multithreading needs a few considerations. Read on ....
+
+The basic abstraction that needs to be operated on by each thread is the channel. This means:
+
+In your servlet:
+
+1. In the init() method, initialize the connection (this is the socket, so slow)
+1. In the dopost(), create a channel and use that to publish to RabbitMQ. Close it at end of the request.
+
+This should work fine, although the [documentation](https://www.rabbitmq.com/api-guide.html#concurrency) say channels are meant to be long-lived and caution again churn. 
+
+So a better solution would be to create a channel pool that shares a bunch of pre-created channels (in .init()) just like your Database connection pool. 
+
+Roll your own is not too hard, but apache commons has a [generic pool implementation](http://commons.apache.org/proper/commons-pool/examples.html) that you could build on.
+
+On the consumer side, you probably want a multi-threaded consumer that just gets a message and writes to the database. In this case you can just create a channel per thread and all should be fine. 
+
+There's an excellent write up that describes the complexities of multi-threaded RMQ clients [here](http://moi.vonos.net/bigdata/rabbitmq-threading/)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
  

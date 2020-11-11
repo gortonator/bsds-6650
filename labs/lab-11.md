@@ -1,4 +1,4 @@
-## # Lab 11: Consistent Hashing
+### Lab 11: Consistent Hashing
 
 ## Step 1:
 Copy the code for consistent hashing from:
