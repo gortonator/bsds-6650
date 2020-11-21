@@ -61,7 +61,7 @@ Assignment | Topic | Due Date
 1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2020/Assignment-1) | 10/7
 2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2020/Assignment-2) | 10/28
 3 | [Asynchronous Processing](https://gortonator.github.io/bsds-6650/assignments-2020/Assignment-3) | 11/22
-4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2020/Assignment-4) | 12/11
+4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2020/Assignment-4) | 12/13
 
 ## Quizzes
 Quizzes will be held at the start of class on the following 4 dates.
