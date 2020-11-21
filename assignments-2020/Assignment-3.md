@@ -47,7 +47,7 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 1. Results of a run with 512 client threads (5 points) - successful run (3 points), comparison with 256 client thread test (2 points)
 
 
-# Deadline: 11/23, 11.59pm PST 
+# Deadline: 11/25, 11.59pm PST 
 
 ## Addendum: Nulthithreading and RabbitMQ
 
