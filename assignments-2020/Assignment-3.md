@@ -22,7 +22,7 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  
  Regardless, your solution needs to be aware of the possibility of losing messages due to a queue node crash. Experiment with persistent versus non-persistent queue configuration to explore the inherent performance trade-offs.
  
- If you use RabbitMQ, there are some considerations to address concerning mutithreading. These are explained in an Addendum at the bottom of this assignment. 
+ If you use RabbitMQ, there are some considerations to address concerning multithreading. These are explained in an Addendum at the bottom of this assignment. 
 ## Load Testing
  
 Your aim here is to find the best application configuration in terms of throughput for 256 and 512 client threads. You do not need to make changes to the client - use same load profile as in assignmemt 2
@@ -49,7 +49,7 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 
 # Deadline: 11/25, 11.59pm PST 
 
-## Addendum: Nulthithreading and RabbitMQ
+## Addendum: Multithreading and RabbitMQ
 
 RabbitMQ and multithreading needs a few considerations. Read on ....
 
