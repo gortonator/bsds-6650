@@ -30,8 +30,8 @@ requires specialized skills and knowledge to build systems that scale at low cos
 In our weird pandemicy world right now, we need to run classes a little differently. Each week the lecture materials will be recorded and uploaded to Canvas. You will be expected to watch these and do the associated reading. Class time will be spent giving a summary of the key points, and answering questions. So come, physically or virtually, prepared. Each class will also have a hands-on lab for you to work through. 
 
 ## Assessment
-* There are 4 individual assigments. Each assignment is worth 18% of the final grade
-* There are 4 quizes. Each quiz is worth 7% of the final grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 30 minutes and be available at the start of the class in which it is scheduled.
+* There are 4 individual assigments. They total 70% of the final grade.
+* There are 4 quizes.  They combine to add up to the remianing 30% of the grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 45-60 minutes and be available at the start of the class in which it is scheduled.
 
 # Course Content
 
