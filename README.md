@@ -52,10 +52,10 @@ Submission instructions and exact deadlines are on the course Canvas site.
 
 Assignment | Topic | Due Date
 ---------- | ----- | --------
-1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 2/9
-2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 3/2
-3 | [Asynchronous Processing](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 3/23
-4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 4/13
+1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 2/10
+2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 3/3
+3 | [Asynchronous Processing](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 3/24
+4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 4/19
 
 ## Quizzes
 Quizzes will be held at the start of class on the following 4 dates.
