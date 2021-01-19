@@ -14,7 +14,7 @@
 - Jingyi Wang <wang.jingyi2@northeastern.edu>:
    - Office Hours: TBA
 - Weijia Deng <deng.weij@northeastern.edu>:
-   - Office Hours: TBA
+   - Office Hours: Thursday 2PM-4PM PST
 - Leah Mamaril <mamaril.l@northeastern.edu>:
    - Office Hours: Friday 2PM-4PM PST
 
