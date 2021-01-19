@@ -2,11 +2,11 @@
 
 ## Scaling the Giant Tigle
 
-##Overview
+## Overview
 A old decrepit supermarket chain has just had a huge injection of cash from a mystery multi-billionaire and is embarking on a rapid acquisition strategy to buy up new stores nationwide. 
 These new stores need to be integrated into their existing business systems. They hire your development business to help them undertake this massive exercise.
 
-## Assignment 1
+## Assignment 1: Building the Client
 For the first part of your contract, you'll build a client that generates and sends synthetic item purchases to a server in the cloud. The server will simply accept and validate requests, and send an HTTP 200/201 response. 
 In Assignment 2, we'll add the processing and storage logic to the server, and send a richer set of requests. In Assignments 3 and 4, we'll get a little crazy, so make sure you lay solid code and design foundations in the first two assignments!
 
@@ -14,7 +14,7 @@ In Assignment 2, we'll add the processing and storage logic to the server, and s
 
 The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.0.0#)
 
-In this assignment you need to implement this API using a Java servlets. The API should simply:
+In this assignment you need to implement this API using Java servlets. The API implementation for this assignment should simply:
 
 1. Accept the parameters for each operations as per the specification
 1. Do basic parameter validation, and return a 4XX response code and error message if invalid values/formats supplied
@@ -61,10 +61,12 @@ Based on these values, your client will start up and
 We also need our client to simulate the staggered opening times of stores across timezones. We need to do this as follows:
 
 Phase 1, the *east* phase, will launch (maxStores/4) threads.
-After any store thread has sent 3 hour of purchases, launch another (maxStores/4) threads - the *central* phase.
+
+After any store thread has sent 3 hours of purchases, launch another (maxStores/4) threads - the *central* phase.
+
 After any store thread has sent 5 hours of purchases, launch the remaining (maxStores/2) threads - the *west* phase.
 
-For example if numStores=64, we will launch 16 threads initially, another 16 threads after 3 hours, and 32 threads after 5 hours of purchases at any stores. 
+For example if numStores=64, we will launch 16 threads initially, another 16 threads after 3 hours, and 32 threads after 5 hours of purchases at any store. 
 
 For every request, the server will return an HTTP 200/201 response code for a successful GET/POST operation. As soon as the 200/201 is received, the client should immediately send the next request until it has exhausted the number of requests to send.
 
