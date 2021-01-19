@@ -16,7 +16,7 @@
 - Weijia Deng <deng.weij@northeastern.edu>:
    - Office Hours: Thursday 2PM-4PM PST
 - Leah Mamaril <mamaril.l@northeastern.edu>:
-   - Office Hours: Friday 2PM-4PM PST
+   - Office Hours: Friday 2:30PM-4:30PM PST
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
