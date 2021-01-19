@@ -11,8 +11,12 @@
 **Office Hours** - Monday 2-5pm (PST)
 
 ### Super Talented Teaching Assistants
-- coming soon
-   - Office Hours: coming soon
+- Jingyi Wang <wang.jingyi2@northeastern.edu>:
+   - Office Hours: TBA
+- Weijia Deng <deng.weij@northeastern.edu>:
+   - Office Hours: TBA
+- Leah Mamaril <mamaril.l@northeastern.edu>:
+   - Office Hours: Friday 2PM-4PM PST
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
