@@ -1,8 +1,8 @@
-# CS6650 Fall 2019  Assignment1
+# CS6650 Spring 2021
 
 ## Lab 2 - Simple Server with Java Servlet
-### Aims: 
-1. Build a Java Servlet to process two of the APIs in Assignment 1
+### Aims:
+1. Build a Java Servlet to process two of the APIs defined in this [Swagger](https://app.swaggerhub.com/apis/bsds-6650/HelloWorld/1.0.0) page
 1. Echo the API parameter values back to the client
 1. Learn simple testing with POSTMAN
 
@@ -10,7 +10,7 @@
 1. Open the **File** menu, point to **New** and click **Project**
 1. Choose **Maven** in the left pane, select the project SDK and click **Next**
 1. Specify `GroupId`, `ArtifactId`, `Version` and click **Next**
-   - [Guide to naming conventions on groupId, artifactId, and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html)
+    - [Guide to naming conventions on groupId, artifactId, and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html)
 
 ### Step 2: Add Web Application support to the project
 1. In IntelliJ, right click on the project root directory and click **Add Framework Support**.
@@ -44,25 +44,25 @@ This will create a simple web application structure in your project
     </project>
     ```
     - IntelliJ should resolve dependencies right after this new dependency is added
-1. Right click `src/main/java directory`, point to **New** and click **Create New Servlet**.
-   - Enter the name of the servlet, e.g. "SkierServlet"
-     - IntelliJ will then create the skeleton of the servlet with `doGet` and `doPost` methods
-   - Make sure the `java` directory is marked as sources root, which should be done by default
+1. Right click `src/main/java` directory, point to **New** and click **Create New Servlet**.
+    - Enter the name of the servlet, e.g. "SkierServlet"
+        - IntelliJ will then create the skeleton of the servlet with `doGet` and `doPost` methods
+    - Make sure the `java` directory is marked as sources root, which should be done by default
 
 1. Create servlet mapping in [web.xml](https://docs.oracle.com/cd/E13222_01/wls/docs92/webapp/configureservlet.html) by adding code below inside the `web-app` tag
 
     ```xml
         <servlet>
-            <servlet-name>SkierServlet</servlet-name>
-            <servlet-class>SkierServlet</servlet-class>
+            <servlet-name>HelloWorldServlet</servlet-name>
+            <servlet-class>HelloWorldServlet</servlet-class>
         </servlet>
 
         <servlet-mapping>
-            <servlet-name>SkierServlet</servlet-name>
-            <url-pattern>/skiers/*</url-pattern>
+            <servlet-name>HelloWorldServlet</servlet-name>
+            <url-pattern>/hello/*</url-pattern>
         </servlet-mapping>
     ```
-1. Add `doGet` and `doPost` methods to handle `GET`/`POST` requests matching `/skiers/*` which is the url patterns you specified in `<servlet-mapping>` tag in `web.xml` shown above. You can use the code below as your starting point.
+1. Add `doGet` and `doPost` methods to handle `GET`/`POST` requests matching `/hello/*` which is the url patterns you specified in `<servlet-mapping>` tag in `web.xml` shown above. You can use the code below as your starting point.
 
     ```java
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
@@ -92,15 +92,15 @@ This will create a simple web application structure in your project
 
     private boolean isUrlValid(String[] urlPath) {
         // TODO: validate the request url path according to the API spec
-        // urlPath  = "/1/seasons/2019/day/1/skier/123"
-        // urlParts = [, 1, seasons, 2019, day, 1, skier, 123]
+        // urlPath  = "/name/newUser/id/1234:"
+        // urlParts = [, name, newUser, id, 1234]
         return true;
     }
     ```
 
-    You can use similar URL validation approach for `doPost`. 
-    
-    Additionally, according to the API spec, the `POST` method to the same URL accepts a JSON request body. We can parse that information with `req.getReader()` which returns a `BufferedReader`, which can be [easily converted to a String](https://stackoverflow.com/questions/5516020/bufferedreader-read-multiple-lines-into-a-single-string) for further JSON processing.
+   You can use similar URL validation approach for `doPost`.
+
+   Additionally, according to the API spec, the `POST` method to the same URL accepts a JSON request body. We can parse that information with `req.getReader()` which returns a `BufferedReader`, which can be [easily converted to a String](https://stackoverflow.com/questions/5516020/bufferedreader-read-multiple-lines-into-a-single-string) for further JSON processing.
 
 
 ### Step 4: Install Tomcat **locally** and set up Tomcat in IntelliJ
@@ -110,7 +110,7 @@ This step is optional but highly recommended. By doing so, we can make sure our 
 1. [Install Tomcat on your machine](#install-tomcat)
 1. [Add Tomcat server run configuration on IntelliJ](https://www.mkyong.com/intellij/intellij-idea-run-debug-web-application-on-tomcat/)
 
-When that's done, if you run Tomcat server inside IntelliJ, you should see console output similar to this. 
+When that's done, if you run Tomcat server inside IntelliJ, you should see console output similar to this.
 
 ```
 ......
@@ -131,7 +131,7 @@ Connected to server
 [2019-09-16 03:42:08,111] Artifact cs6650lab:war exploded: Deploy took 714 milliseconds
 ```
 
-And if you visit http://localhost:8080/[WEB_APP]/skiers/12/seasonss/2019/day/1/skier/123 (no brackets, same below), (hopefully) you should see the response (`"It works!"`) processed by `doGet` method in your servlet.
+And if you visit http://localhost:8080/[WEB_APP]/hello/name/newUser/id/1234 (no brackets, same below), (hopefully) you should see the response (`"It works!"`) processed by `doGet` method in your servlet.
 
 If you get a 404 page, make sure `WEB_APP` matches **Application Context** specified in **Run/Debug Configurations** -> **Tomcat Server** -> **Deployment** tab.
 
@@ -141,10 +141,17 @@ In IntelliJ:
 1. Open the **Build** menu and click **Build Artifacts** and click "Edit" in "Action"
 2. In "Artifacts" tab of Project Settings, click "+" to add "Web Application: Archive" for "[WEB_APP]:war exploded" and click "OK" to finish.
 3. Open the **Build** menu and click **Build Artifacts** and click "Build" for "[WEB_APP]:war"
-   - A WAR file called "[WEB_APP].war" will be created in `out/artifacts/[WEB_APP]/[WEB_APP].war`
+    - A WAR file called "[WEB_APP].war" will be created in `out/artifacts/[WEB_APP]/[WEB_APP].war`
 4. Upload this file to the `webapps` folder in your Tomcat installation path in the EC2 instance with tools such as [scp](http://man7.org/linux/man-pages/man1/scp.1.html), for example
-   - $ `scp -i /path/to/pem/file /local/path/to/war/file ec2-user@EC2_IP_ADDR:/remote/path/to/tomcat_webapp/directory` (If you have forgotten where you installed tomcat, try rpm -ql <tomcat package name>)
-5. Visit **http://{YOUR_REMOTE_INSTANCE_IP}:8080/[WEB_APP]/skiers/12/seasonss/2019/day/1/skier/123** and you should see the same response as what you get locally
+    - $ `sudo scp -i /path/to/pem/file /local/path/to/war/file ec2-user@EC2_IP_ADDR:/remote/path/to/tomcat_webapp/directory`
+      The exact location is dependent on installation choices and version but there's a good chance it will be something like '/var/lib/tomcat8/webapps' or alternatively /usr/share/tomcat8/webapps
+      If you get permission denied, you'll have to use chmod as follows:
+~~~
+cd /var/lib/tomcat8
+sudo chmod -R 777 webapps/
+~~~
+
+5. Visit **http://{YOUR_REMOTE_INSTANCE_IP}:8080/[WEB_APP]/hello/name/newUser/id/1234** and you should see the same response as what you get locally
 
 ### Step 6: Send GET/POST request to server with Postman
 
@@ -156,14 +163,15 @@ Since `POST` requests usually also contain request body, we can utilize tools li
 
     ```json
         {
-            "time": 217,
-            "liftID": 21
+            "userName": "userFoo",
+            "userID": 231,
+            "message": "Hello World!"
         }
     ```
 
-    then click "Send".
+   then click "Send".
 
-    If all goes well, you will be able to see the response produced by your `doPost` method.
+   If all goes well, you will be able to see the response produced by your `doPost` method.
 
 
 Congratulations! You have just finished one of the most tricky part of all assignments! It may take a lot of pain to set up everything correctly and get your dev environment ready, but I assure you much more exciting stuff is coming up next!
@@ -171,9 +179,9 @@ Congratulations! You have just finished one of the most tricky part of all assig
 ### Reference Stuff:
 - [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 - <a href='#install-tomcat' id='install-tomcat' class='anchor'>Installing Tomcat on</a>
-  - [macOS](https://wolfpaulus.com/tomcat/)
-  - [Windows](https://tomcat.apache.org/tomcat-9.0-doc/setup.html#Windows)
-  - [Ubuntu](https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804)
+    - [macOS](https://wolfpaulus.com/tomcat/)
+    - [Windows](https://tomcat.apache.org/tomcat-9.0-doc/setup.html#Windows)
+    - [Ubuntu](https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804)
 #### Common HTTP Response Codes
 - 200: Done, it was okay. Generally, your GETs return this code.
 - 201: “Done, and created.” Generally, your POSTs return this code.
