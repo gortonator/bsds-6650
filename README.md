@@ -8,6 +8,7 @@
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
+
 **Office Hours** - Monday 2-5pm (PST)
 
 ### Super Talented Teaching Assistants
