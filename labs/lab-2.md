@@ -2,7 +2,7 @@
 
 ## Lab 2 - Simple Server with Java Servlet
 ### Aims: 
-1. Build a Java Servlet to process two of the APIs in Assignment 1
+1. Build a Java Servlet to process two APIs that are similar to your assignment tasks.
 1. Echo the API parameter values back to the client
 1. Learn simple testing with POSTMAN
 
@@ -19,6 +19,7 @@
 This will create a simple web application structure in your project
 
 ### Step 3: Create Servlets
+1. The API we'll work from is on [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.1#/free). We'll just work on the POST and GET for /skiers, not the full API.
 1. Add Servlet dependency to your [pom.xml](https://maven.apache.org/pom.html#What_is_the_POM) (use your own `groupId` and `artifactId`)
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
