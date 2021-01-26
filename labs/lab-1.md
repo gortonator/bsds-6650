@@ -1,6 +1,10 @@
 # CS6650 Fall 2020  
 
-## Lab 1 - Getting started with AWS
+This lab is designed to guide you to create an EC2 instance on AWS running AWS Linux.
+
+Lab 1a works for AWS Linux version 1.0. Lab 1b should be followed if you create an AWS Linux version 2 instance, which is now the supported version.
+
+## Lab 1a - Getting started with AWS Linux 1
 ### Aims: 
 1. Get AWS account up and running - you should have an AWS Educate invitation
 1. Follow the instructions in the next step to create an EC2 instance. The instructions below assume you have chosed an AWS Linux (v1) image. 
@@ -15,7 +19,7 @@ Make sure you have configured your security group that allows traffic on:
 * port 22 for ssh
 Once your instance has launched, ssh into your instance.
 ~~~
-ssh -i your-amazon.pem ec2-user@instance-address
+ssh -i your-amazon.pem ec2-user@instance-address-public-IP
 ~~~
 Install Java 8
 Check the version of java installed 
@@ -44,6 +48,14 @@ Tomcat listens on port 8080, so in your browser go to
 
 and with luck you will see the tomcat home page!
 
-It should be fine to leave a free tier instance running at zero cost. If you do stop and restart just remember you will get a new public IP address. 
+## Lab 1b - Getting started with AWS Linux 2
+### Aims: 
+1. Get AWS account up and running - you should have an AWS Educate invitation
+1. Follow the instructions in the next step to create an EC2 instance. The instructions below assume you have chosed an AWS Linux (v1) image. 
+1. [Launch a free tier AMI running Amazon Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+1. Install tomcat - [Follow the instruction for the first 3 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
+1. Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
+1. [Create an RDS MySQL Instance](https://aws.amazon.com/getting-started/tutorials/create-mysql-db/). You don't have to use MySQL, but the above gives a good introduction to the RDS Service. 
+
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
