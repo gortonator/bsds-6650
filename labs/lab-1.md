@@ -15,7 +15,7 @@ Lab 1a works for AWS Linux version 1.0. Lab 1b should be followed if you create 
 #### Install tomcat8
 Make sure you have configured your security group that allows traffic on:
 
-* port 80 and 8080 for the http
+* port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
 * port 22 for ssh
 Once your instance has launched, ssh into your instance.
 ~~~
@@ -52,10 +52,13 @@ and with luck you will see the tomcat home page!
 ### Aims: 
 1. Get AWS account up and running - you should have an AWS Educate invitation
 1. Follow the instructions in the next step to create an EC2 instance. The instructions below assume you have chosed an AWS Linux (v1) image. 
+1. Modify your security group to open port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
 1. [Launch a free tier AMI running Amazon Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 1. Install tomcat - [Follow the instruction for the first 3 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
 1. Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
 1. [Create an RDS MySQL Instance](https://aws.amazon.com/getting-started/tutorials/create-mysql-db/). You don't have to use MySQL, but the above gives a good introduction to the RDS Service. 
 
+
+Check out [this info](https://aws.amazon.com/about-aws/whats-new/2017/06/amazon-rds-supports-stopping-and-starting-of-database-instances/) on costs of RDS and automatic restarts. We will start using a database in Assignment 2 so feel free to terminate until then.
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
