@@ -34,7 +34,9 @@ First you need to get a Java client to call your server APIs. You can generate a
 
 *Export-Client SDK-Java*
 
-The generated code contains thread-safe methods for calling the server APIs. Write a simple test that calls the API before proceeding, to establish that you have connectivity.
+Unzip the client and follow the instructions in the README to incorporate the generated code in your client project.
+
+The generated code contains thread-safe methods for calling the server APIs. Write a simple test that calls the API before proceeding, to establish that you have connectivity. An example in the README is your friend ;)
 
 If you don't want to figure out the Swagger client, you can use the [Apache Java HTTP API](https://hc.apache.org/index.html).
 
