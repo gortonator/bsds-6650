@@ -58,7 +58,16 @@ and with luck you will see the tomcat home page!
 1. Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
 1. [Create an RDS MySQL Instance](https://aws.amazon.com/getting-started/tutorials/create-mysql-db/). You don't have to use MySQL, but the above gives a good introduction to the RDS Service. 
 
-
+## Notes
 Check out [this info](https://aws.amazon.com/about-aws/whats-new/2017/06/amazon-rds-supports-stopping-and-starting-of-database-instances/) on costs of RDS and automatic restarts. We will start using a database in Assignment 2 so feel free to terminate until then.
+If you stop/start your EC2 instance, the public IP address will change. The extract below is from [stackoverlow](https://stackoverflow.com/questions/55414302/an-ip-address-of-ec2-instance-gets-changed-after-the-restart#:~:text=5%20Answers&text=Actually%2C%20When%20you%20stop%2Fstart,used%20by%20other%20EC2%20instances).
+Actually, When you stop/start your instance, the IP address will change. If you reboot the instance, it will keep the same IP addresses. Unfortunately, it is not possible for us to reassign the address to your instance as that address would have been released back into the pool used by other EC2 instances.
+
+If you want to avoid this issue in the future, depending on your needs:
+
+If you only need a fixed public IP address, you can assign an Elastic IP address to your instance.
+If you need both public and private IP addresses to remain the same throughout the lifetime of the instance, you can launch your instance in VPC instead. The private IP address assigned to an instance in VPC remains with the instance through to termination.
+To learn more, see the aws documentation to assign elastic ip.
+
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
