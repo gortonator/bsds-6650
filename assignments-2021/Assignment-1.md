@@ -60,13 +60,13 @@ Based on these values, your client will start up and
 1. Each request needs to randomly select a custID and itemIDs for the order. For custIDs, generate a value between (storeIDx1000) and (storeIDx1000)+number of customers/store. 
 1. In the request body, generate a value between 1..5 for the number of items purchased.
 
-We also need our client to simulate the staggered opening times of stores across timezones. We need to do this as follows:
+We also need our client to simulate the staggered opening times of stores across timezones. We need to do this as follows using *numPurchases* as a proxy for time:
 
 Phase 1, the *east* phase, will launch (maxStores/4) threads.
 
-After any store thread has sent 3 hours of purchases, launch another (maxStores/4) threads - the *central* phase.
+After any store thread has sent 3 hours of purchases (numPurchasesx3), launch another (maxStores/4) threads - the *central* phase.
 
-After any store thread has sent 5 hours of purchases, launch the remaining (maxStores/2) threads - the *west* phase.
+After any store thread has sent 5 hours of purchases (numPurchasesx5), launch the remaining (maxStores/2) threads - the *west* phase.
 
 For example if numStores=64, we will launch 16 threads initially, another 16 threads after 3 hours, and 32 threads after 5 hours of purchases at any store. 
 
