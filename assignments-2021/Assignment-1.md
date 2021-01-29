@@ -58,7 +58,7 @@ Based on these values, your client will start up and
 1. process and validate the input parameters
 1. Create a thread for every store (1..maxStores). Each store thread will, for every hour they are open, send *numPurchases* POST requests to the server. Each POST will have the default number of items to purchase in the request body.
 1. Each request needs to randomly select a custID and itemIDs for the order. For custIDs, generate a value between (storeIDx1000) and (storeIDx1000)+number of customers/store. 
-1. In the request body, generate a value between 1..5 for the number of items purchased.
+1. In the request body, generate the default number of items purchased (randomly select itemID) and set amount to 1. 
 
 We also need our client to simulate the staggered opening times of stores across timezones. We need to do this as follows using *numPurchases* as a proxy for time:
 
