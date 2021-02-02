@@ -99,7 +99,7 @@ To this end, for each POST:
 Once all phases have completed, we need to calculate:
 * mean response time for POSTs (millisecs)
 * median response time for POSTs (millisecs)
-* the total wall time
+* the total wall time (secs)
 * throughput = requests per second = total number of requests/wall time
 * p99 (99th percentile) response time for POSTs [Here’s a nice article](https://www.elastic.co/blog/averages-can-dangerous-use-percentile) about why percentiles are important and why calculating them is not always
 easy.
