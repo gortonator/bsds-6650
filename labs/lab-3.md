@@ -110,6 +110,8 @@ N = Throughput * Response Time
 
 Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary the number of client and server threads, and the servlet sleep time?
 
+And can you use Little's Law to estimate the throughput you'd expect to see in yyour first Assignment. Assume service time is maybe 1-5 milliseconds?
+
 ### Additional Issues to Explore - Tomcat Performance Monitoring
 
 Server technolgies like Tomcat and MySQL provide sophisticated tools to monitor and measure server performance. [This article](https://www.datadoghq.com/blog/tomcat-monitoring-tools/) walks you through various Tomcat monitoring capabilities. 
