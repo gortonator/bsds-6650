@@ -50,11 +50,13 @@ Build, deploy to tomcat, test with Postman. You know the gig ;)
 Note that this servlet will take _at least_ 1 second to respond. This delay is inserted to simulate the processing delay in a real application.
 
 ### Build a HTTP Client
-We now need to build a Java client that will call our server. We'll use the Apache HttpClient library. There's an excellent tutorial [here](https://hc.apache.org/httpclient-3.x/tutorial.html). Here are a [Java 11 HttpClient Examples](https://mkyong.com/java/java-11-httpclient-examples/) and the [mvn dependency](http://www.java2s.com/Open-Source/Maven_Repository/Http/httpclient/httpclient_4_3_1.htm).
+We now need to build a Java client that will call our server. We'll use the Apache HttpClient library. There's an excellent tutorial [here](https://hc.apache.org/httpclient-3.x/tutorial.html). 
 
-It shouldn't take more than a few minutes to work through the tutorial and the code example at the end provides all you need for your client. Steal selectively :)
+You could also look at the [Java 11 HttpClient Examples](https://mkyong.com/java/java-11-httpclient-examples/) and the [mvn dependency](http://www.java2s.com/Open-Source/Maven_Repository/Http/httpclient/httpclient_4_3_1.htm).
 
-Test the client against your server. When it connects and get a valid response. move on to the next section.
+It shouldn't take more than a few minutes to work through the tutorials and the code example at the end provides all you need for your client. Steal selectively :)
+
+Test the client against your server. When it connects and get a valid response, move on to the next section.
 
 ### Make the client multithreaded
 We want to create a client that exerts a load on our server using multiple threads. There's an example from the lecture in Week 2 that provides a template for this - RequestCountBarrier.java.
@@ -114,5 +116,66 @@ Server technolgies like Tomcat and MySQL provide sophisticated tools to monitor 
 
 Understanding how to use the built-in Tomcat monitoring tools and JConsole will probably be very helpful in the assignments in this course ;)
 
+To enable Tomcat admin in your EC2 instance, there are some additional steps. We need to install the admin tools, and set the permission to allow access the admin tools from remote machine. The detailed steps are:
+
+Install web admin tools. SSH into your EC2 instance. If you are using the default provided tomcat, run the following command (If you are using tomcat9 based on the guide in lab1, you can skip this step):
+For Amazon Linux AMI:
+~~~
+sudo yum install tomcat8-admin-webapps
+~~~
+
+For Amazon Linux AMI2:
+~~~
+sudo yum install tomcat-admin-webapps
+~~~
+
+cd to the tomcat conf path(in AMI it is /usr/share/tomcat8/conf, in AMI2 it is /usr/share/tomcat/conf)
+
+Open the tomcat-users.xml
+~~~
+sudo vim tomcat-user.xml
+~~~
+
+Uncomment the following lines:
+Before:
+~~~
+<!-- <role rolename="manager"/> -->
+<!-- <role rolename="manager-gui"/> -->
+<!-- <role rolename="manager-script"/> -->
+<!-- <role rolename="manager-jmx"/> -->
+<!-- <role rolename="manager-status"/> -->
+<!-- <user name="admin" password="adminadmin" roles="admin,manager,admin-gui,admin-script,manager-gui,manager-script,manager-jmx,manager-status" /> -->
+~~~
+
+After:
+~~~
+<role rolename="manager"/>
+<role rolename="manager-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user name="admin" password="adminadmin" roles="admin,manager,admin-gui,admin-script,manager-gui,manager-script,manager-jmx,manager-status" />
+~~~
+
+ Go to the catalina localhost config folder (In AMI it is /usr/share/tomcat8/conf/Catalina/localhost, In AMI2 it is /usr/share/tomcat/conf/Catalina/localhost)
+
+Create the manager.xml file
+~~~
+sudo vim manager.xml
+~~~
+
+Fill in the following content:
+~~~
+<Context privileged="true" antiResourceLocking="false" 
+         docBase="${catalina.home}/webapps/manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^YOUR.IP.ADDRESS.HERE$" />
+</Context>
+~~~
+
+and now restart tomcat.
+
+Now you can use tomcat admin tools in your EC2 instance.
+
+Reference: [StackOverflow](https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
