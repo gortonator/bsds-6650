@@ -36,7 +36,9 @@ First you need to get a Java client to call your server APIs. You can generate a
 
 Unzip the client and follow the instructions in the README to incorporate the generated code in your client project.
 
-The generated code contains thread-safe methods for calling the server APIs. Write a simple test that calls the API before proceeding, to establish that you have connectivity. An example in the README is your friend ;)
+The generated code contains thread-safe methods for calling the server APIs. 
+Write a simple test that calls the API before proceeding, to establish that you have connectivity. 
+The example in the README is your friend ;). You just need to look at the ApiClient methods to figure out how to point the example at your server. 
 
 If you don't want to figure out the Swagger client, you can use the [Apache Java HTTP API](https://hc.apache.org/index.html).
 
@@ -99,7 +101,7 @@ To this end, for each POST:
 Once all phases have completed, we need to calculate:
 * mean response time for POSTs (millisecs)
 * median response time for POSTs (millisecs)
-* the total wall time (secs)
+* the total wall time
 * throughput = requests per second = total number of requests/wall time
 * p99 (99th percentile) response time for POSTs [Here’s a nice article](https://www.elastic.co/blog/averages-can-dangerous-use-percentile) about why percentiles are important and why calculating them is not always
 easy.
@@ -123,7 +125,7 @@ Submit your work to Canvas Assignment 1 as a pdf document. The document should c
 You will get extra credit for either (or both) of the following:
 
 ### Break Things :)
-Experiment with the number of threads your server can support and report when something breaks. Perhaps with 1000 threads your server will overload an IP buffer somewhere, or requests will take so long they will timeout and fail? Or depending on how you are capturing latencies, your client may start throwing OutOfMemory exceptions? Stress testing is fun and instructive. It’s a skill you should be taking away from this course, so here’s a chance to practise! *Beware, the school network limits requests - run tests with more than 256 threads somewhere else!*
+Experiment with the number of threads your server can support and report when something on the server breaks. Perhaps with 1000 threads your server will overload an IP buffer somewhere, or requests will take so long they will timeout and fail? Or depending on how you are capturing latencies, your client may start throwing OutOfMemory exceptions? Stress testing is fun and instructive. It’s a skill you should be taking away from this course, so here’s a chance to practise! *Beware, the school network limits requests - run tests with more than 256 threads somewhere else!*
 
 ### Charting
 It is usually interesting to plot average latencies over the whole duration of a test run. To do this you will have to capture  timestamps of when the request occurs, and then generate a plot that shows latencies against time (there’s a good example in the percentile article earlier). You might want to plot every request, or thinking ahead for assignment 2, put them in buckets of, for
@@ -140,4 +142,13 @@ example, a second interval, and plot the average response time for that time int
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 
+## Odds and Ends
+### Problems with GSON import in .war filr in Intellij
+Sometimes there's an issue building the GSON jar file into a servlet, such that when the servlet is deployed it fails because GSON is missing.
 
+Try adding the gson jar to your project from the [Maven website](https://mvnrepository.com/artifact/com.google.code.gson/gson)
+
+For more details [check this out](https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project)
+
+### Building Swagger Client with Java 11
+https://piazza.com/class/kjwapgyd8xk487?cid=31
