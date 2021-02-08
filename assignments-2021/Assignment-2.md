@@ -99,4 +99,6 @@ You can view your Read/Write IOPS AND Burst Balance under the "Monitoring" tab (
 
 You may also start an entirely new RDS instance with a fresh set of burst credits for fimal testing.
 
-Addendum: Effect on costs not obvious - so be careful!
+Finally - effect on costs not obvious - so be careful!
+
+[Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
