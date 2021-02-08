@@ -47,7 +47,7 @@ You may find you get database deadlocks. You will need to find a way to work aro
 
 Your tests should successfully execute every request and store each purchase in the database.
 
-Also see below about AWS RDS Burst Mode. This may be influential in your testing :)
+Also don't forget the information below about Burst Mode. This may be influential in your testing :)
 
 ## Load Balancing
 The previous section probably has a bottleneck in the single server instance. So let's try and add capacity to our system and see what happens,
@@ -79,6 +79,7 @@ Submit your work to Canvas  Assignment 2 as a pdf document. The document should 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 
+# Additional Notes
 ## Burst Mode
 You may experience extreme slowdowns after bursting your database with a heavy number of requests because of something known as I/O credit balance AKA Burst Balance.
 
