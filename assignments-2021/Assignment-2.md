@@ -14,10 +14,12 @@ The server API is specified using [Swagger](https://app.swaggerhub.com/apis/gort
 Next we need to design a database schema and deploy this to your MySQL RDS instance. The database must store each individual purchase request for subsequent processing in later assignments. 
 You can choose another database if you like, but just be aware you may be on your own!
 
-When creating your instance, don't choose backup or mirroring options - this will save $$s. 
-You can also read about [burst mode here(https://aws.amazon.com/blogs/database/understanding-burst-vs-baseline-performance-with-amazon-rds-and-gp2/).
+When creating your instance, don't choose backup or mirroring options - this will save $$s.Turn on monitor though - it will be useful/ 
 
-Think carefully about the design as you need to support an insert-heavy workload. 
+Also - see the discussion at the end of this assugnment about Burst Mode - tl;dr choosing 'Provisioned SSD' is probably wise. 
+You can read more about [burst mode here](https://aws.amazon.com/blogs/database/understanding-burst-vs-baseline-performance-with-amazon-rds-and-gp2/) and 
+
+Think carefully about the schema design as you need to support an insert-heavy workload. 
 
 Also thnk carefully about indexing as inserts are slower when indexes exist on a table. 
 You can read all about SQL indexes [here](https://www.tutorialspoint.com/mysql/mysql-indexes.htm).
@@ -44,6 +46,8 @@ As in assignment 1, we want to test your new server/database with our load gener
 You may find you get database deadlocks. You will need to find a way to work around these through SQL/schema changes or request retries. Some useful advise on MYSQL deadlocks is [here](https://dev.mysql.com/doc/refman/8.0/en/innodb-deadlocks.html).
 
 Your tests should successfully execute every request and store each purchase in the database.
+
+Also see below about AWS RDS Burst Mode. This may be influential in your testing :)
 
 ## Load Balancing
 The previous section probably has a bottleneck in the single server instance. So let's try and add capacity to our system and see what happens,
@@ -75,3 +79,23 @@ Submit your work to Canvas  Assignment 2 as a pdf document. The document should 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 
+## Burst Mode
+You may experience extreme slowdowns after bursting your database with a heavy number of requests because of something known as I/O credit balance AKA Burst Balance.
+
+Thus is explained [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#EBSVolumeTypes_gp2).
+
+To sum up: If you set your RDS instance's "Storage Type" to "General Purpose" as the RDS tutorial from lab 1 taught you to do, then your RDS instance's ability to handle large loads is limited. 
+
+General Purpose SSD storage has a limited amount of "I/O burst credits", which are credits allocated to your storage that depletes when your RDS instance experiences extremely large I/O loads. Once these burst credits are depleted, your RDS instance will return to "baseline performance", which is dependent on how large your storage is (generally 3 I/O operations per second (IOPS) PER gigabyte of storage).
+
+So, if you configured your RDS instance to "General Purpose (SSD)" with a size of 20GB, then your IOPS will reduce to 60 IOPS once your "burst balance" has been depleted.
+
+You may notice this problem if your RDS instance slows down after sustaining high IOPS levels for prolonged periods of time. 
+
+So how do you fix this? Well, you can modify your "Storage Type" to "Provisioned SSD" instead of "General Purpose SSD". With Provisioned SSD, you can achieve consistent performance by setting the IOPS to what ever you desire. 2,500 IOPS? 3,000 IOPS? You choose :)
+
+You can view your Read/Write IOPS AND Burst Balance under the "Monitoring" tab (if you turned it on) of your AWS RDS Console when viewing your database instance. (Burst Balance is on page 3 of this tab). If your Burst Balance goes to 0%, then expect slow performance.
+
+You may also start an entirely new RDS instance with a fresh set of burst credits for fimal testing.
+
+Addendum: Effect on costs not obvious - so be careful!
