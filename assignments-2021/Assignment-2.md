@@ -14,7 +14,7 @@ The server API is specified using [Swagger](https://app.swaggerhub.com/apis/gort
 Next we need to design a database schema and deploy this to your MySQL RDS instance. The database must store each individual purchase request for subsequent processing in later assignments. 
 You can choose another database if you like, but just be aware you may be on your own!
 
-When creating your instance, don't choose backup or mirroring options - this will save $$s.Turn on monitor though - it will be useful/ 
+When creating your instance, don't choose backup or mirroring options - this will save $$s.Turn on monitor though - it will be useful. 
 
 Also - see the discussion at the end of this assugnment about Burst Mode - tl;dr choosing 'Provisioned SSD' is probably wise. 
 You can read more about [burst mode here](https://aws.amazon.com/blogs/database/understanding-burst-vs-baseline-performance-with-amazon-rds-and-gp2/) and 
@@ -65,7 +65,7 @@ Submit your work to Canvas  Assignment 2 as a pdf document. The document should 
 
 1. The URL for your git repo. 
 1. A 1-2 page description of your server design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works
-1. Single Server Tests - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, numLifts=40. Include the output window of each run in your submission (showing the wall time and performance stats) and plot a simple chart showing the throughput and mean response by the number of threads
+1. Single Server Tests - run your client with 32, 64, 128 and 256 store threads, and default values elsewhere. Include the output window of each run in your submission (showing the wall time and performance stats) and plot a simple chart showing the throughput and mean response by the number of threads
 1. Load Balanced Server Tests - run the client as above, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads.
 
 ## Grading:
