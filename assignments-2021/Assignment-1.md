@@ -125,11 +125,17 @@ Submit your work to Canvas Assignment 1 as a pdf document. The document should c
 You will get extra credit for either (or both) of the following:
 
 ### Break Things :)
-Experiment with the number of threads your server can support and report when something on the server breaks. Perhaps with 1000 threads your server will overload an IP buffer somewhere, or requests will take so long they will timeout and fail? Or depending on how you are capturing latencies, your client may start throwing OutOfMemory exceptions? Stress testing is fun and instructive. It’s a skill you should be taking away from this course, so here’s a chance to practise! *Beware, the school network limits requests - run tests with more than 256 threads somewhere else!*
+Experiment with the number of threads your server can support and report when something on the server breaks. 
+
+Perhaps with 4000 client threads your server will overload an IP buffer somewhere, or requests will take so long they will timeout and fail? 
+
+Or depending on how you are capturing latencies, your client may start throwing OutOfMemory exceptions? 
+
+Stress testing is fun and instructive. It’s a skill you should be taking away from this course, so here’s a chance to practise! *Beware, the school network limits requests - run tests with more than 256 threads somewhere else!*
 
 ### Charting
 It is usually interesting to plot average latencies over the whole duration of a test run. To do this you will have to capture  timestamps of when the request occurs, and then generate a plot that shows latencies against time (there’s a good example in the percentile article earlier). You might want to plot every request, or thinking ahead for assignment 2, put them in buckets of, for
-example, a second interval, and plot the average response time for that time interval bucket.
+example, a second interval, and plot the number of requests (throughput) or average response time for that time interval bucket.
 
 ## Grading:
 1. Server implementation working (5 points)
