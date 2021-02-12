@@ -16,7 +16,7 @@ You can choose another database if you like, but just be aware you may be on you
 
 When creating your instance, don't choose backup or mirroring options - this will save $$s.Turn on monitor though - it will be useful. 
 
-Also - see the discussion at the end of this assugnment about Burst Mode - tl;dr choosing 'Provisioned SSD' is probably wise. 
+Also - see the discussion at the end of this assignment about Burst Mode - tl;dr choosing 'Provisioned SSD' is probably wise. 
 You can read more about [burst mode here](https://aws.amazon.com/blogs/database/understanding-burst-vs-baseline-performance-with-amazon-rds-and-gp2/) and 
 
 Think carefully about the schema design as you need to support an insert-heavy workload. 
@@ -24,7 +24,7 @@ Think carefully about the schema design as you need to support an insert-heavy w
 Also thnk carefully about indexing as inserts are slower when indexes exist on a table. 
 You can read all about SQL indexes [here](https://www.tutorialspoint.com/mysql/mysql-indexes.htm).
 
-A simple servlet example for accessing MySQL is [here]https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-glassfish-config-servlet.html) and Lab 7 expands on this.
+A simple servlet example for accessing MySQL is [here](https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-glassfish-config-servlet.html) and Lab 7 expands on this.
 
 You then need build the servlet business logic to implement this API. The API should:
 
@@ -43,7 +43,7 @@ Business is improving at the Tigle! So we want to modify the client to send 300 
 ## Performance Testing
 As in assignment 1, we want to test your new server/database with our load generating client. Test with {32, 64, 128, 256} client threads and report the outputs for each.
 
-You may find you get database deadlocks. You will need to find a way to work around these through SQL/schema changes or request retries. Some useful advise on MYSQL deadlocks is [here](https://dev.mysql.com/doc/refman/8.0/en/innodb-deadlocks.html).
+You may find you get database deadlocks. You will need to find a way to work around these through SQL/schema changes or request retries. Some useful advice on MYSQL deadlocks is [here](https://dev.mysql.com/doc/refman/8.0/en/innodb-deadlocks.html).
 
 Your tests should successfully execute every request and store each purchase in the database.
 
@@ -70,7 +70,7 @@ Submit your work to Canvas  Assignment 2 as a pdf document. The document should 
 
 ## Grading:
 1. Server implementation working (15 points)
-1. Server design description (5 points) - clarity of description, good design practies used
+1. Server design description (5 points) - clarity of description, good design practices used
 1. Single Server Tests - (10 points) - 1 point per run output, 1 point for the chart, 5 points for sensible results. 
 1. Load Balanced Tests - (10 points) - 1 point per run, 1 point for the chart. 5 points for sensible results. 
 1. Bonus  - (3 points) - A successful test run with 512 clients as max threads.
