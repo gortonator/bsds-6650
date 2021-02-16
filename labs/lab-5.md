@@ -67,3 +67,7 @@ PS C:\Program Files\MySQL\MySQL Server 8.0\bin>.\mysqlslap --concurrency=1 --ite
 - Step 8: Explore yourself and think about different primary key strategies' impact on other types of queries in terms of time complexity and space complexity.
 
 
+## MySQL JSON Data Type
+MySQL now supports a [JSON Data Type](https://dev.mysql.com/doc/refman/5.7/en/json.html) natively. This may be something to consider for your assignment.
+
+The effect on performaance of inserting JSON into tables is something that you may want to test using the above load generator tool approach we've explored above.
