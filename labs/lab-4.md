@@ -32,5 +32,8 @@
 
 If you want to look at some solutions, they are [here](https://github.com/gortonator/bsds-6650/tree/master/code/week-3/solutions)
 
+If you want to know more, a good comprehensive overview of Java sockets programming is [here](https://www.baeldung.com/a-guide-to-java-sockets). 
+Armed with this knowledge you could for example modify the client and server to reuse a single socket to send a series of requests rather than creating a new socket each time.
+
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
