@@ -142,7 +142,7 @@ example, a second interval, and plot the number of requests (throughput) or aver
 1. Client design description (5 points) - clarity of description, good design practies used, accepts command line options/parameter file
 1. Client Part 1 - (10 points) - 1 point per run output, 1 point for the chart, 5 points for sensible results!
 1. Client Part 2 - (20 points) - 1 point per run, 1 point for the chart. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible). 10 points for wall time within 5% of wall time for Client Step 1.
-1. Bonus Points: Up to 5 bonus points for experiemnts and impressive outputs!!
+1. Bonus Points: Up to 4 bonus points for experiemnts and impressive outputs!!
 
 # Deadline: 2/10, 11.59pm PST 
 
