@@ -33,7 +33,7 @@ You then need build the servlet business logic to implement this API. The API sh
 1. If the request is valid, store the request payload in the database.
 1. Construct the correct response message and return a 200/201 response code 
 
-Test the servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
+Test the servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools. For debugging write to /var/log/tomcat8/catalina.out using the Logger functionality or simpley System.out.println().
 
 Make sure you can load the resulting .war file onto your EC2 free tier instance you have created and configured in lab 1 and call the API successfully.
 
@@ -55,6 +55,8 @@ The previous section probably has a bottleneck in the single server instance. So
 Set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ load balancers. Enable load balancing with 4 free tier EC2 instances and see what effect this has on your performance.  
 
 You will need to create scripts to automatically start tomcat on instance boot. [Here's an example for AWS Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html), and for AWS Linux 1 look [here](https://medium.com/@shrunk7byadagi/automatically-start-tomcat-on-instance-startup-reboot-in-amazon-ec2-ubuntu-instance-33849a9d9090).
+
+[Here's the instructions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-more-like-this.html) for creating new EC@ instances based on your single working instance.
 
 Depending on your data model, you may find you free tier RDS server becomes a bottleneck. If so then allocate a more powerful RDS instance and see what effect it has. Just watch your costs.
 
@@ -99,6 +101,6 @@ You can view your Read/Write IOPS AND Burst Balance under the "Monitoring" tab (
 
 You may also start an entirely new RDS instance with a fresh set of burst credits for fimal testing.
 
-Finally - effect on costs can be high so only turn this option on for testing, and off as soon as finished to be on the safe side - so be careful!
+Finally - effect on costs not obvious - so be careful!
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
