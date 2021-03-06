@@ -22,6 +22,8 @@ The first short video in this playlist is important to watch as it covers the ba
 
 [Chapter 4](https://gortonator.github.io/bsds-6650/reading/chapter-4.pdf)
 
+[AWS Networking Overview](https://aws.amazon.com/blogs/apn/aws-networking-for-developers/)
+
 [Time Services at FaceBook](https://engineering.fb.com/production-engineering/ntp-service/)
 
 ## Optional, Highly Recommended Reading/Viewing
