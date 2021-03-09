@@ -22,7 +22,7 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  
  A new version of the Swagger API is [here](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.1). Use this as the service specification.
  
- In this assignment you can build data structures for *Store* in memory to answer these queries. No database is required. You may also use any server technology you like - servlets are not reuired.
+ In this assignment you can build data structures for *Store* in memory to answer these queries. No database is required. You may also use any server technology you like - servlets are not required.
   
  You may choose a queueing solution of your choice. RabbitMQ is an obvious one, AWS SQS is equally simple, but beware of [costs](https://aws.amazon.com/sqs/pricing/) of course.
  
@@ -44,18 +44,18 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 
 1. The URL for your git repo. Create a new folder for your Assignment 3 server code
 1. A 1-2 page description of your messaging and server architecture design. Include database schema, major classes, packages, relationships, how read requests get processed, etc
-1. A commparison of the results for 256 client threads between this assignment and assignment 2, either single server and load balanced based on your design and performance. 
+1. A commparison of the results for 256 client threads between this assignment and assignment 2, either single server or load balanced based on your design and performance. 
 1. Results for a test with 512 client threads
-1. An example of the output from querying the Store microservice. Use cURL to call the GET after a test run to illustrate the outputs. 
+1. An example of the output from querying the Store microservice. Use cURL to call the GETs after a test run to illustrate the outputs. 
 
 ## Grading:
 1. Asynchronous servers implementation working (10 points)
-1. Server design description (5 points) - clarity of description, good design practies used
+1. Server design description (5 points) - clarity of description, good design practicies used
 1. Results comparison (10 points) - throughput, persistent/non-persistent queues, different instances, basically describe and analyze what experiments you did
 1. Results of a run with 512 client threads (5 points) - successful run (3 points), comparison with 256 client thread test (2 points)
 1. Outputs from calling GET on the Store microservice (5 points each)
 
-# Deadline: 11/25, 11.59pm PST 
+# Deadline: 4/5, 11.59pm PST 
 
 ## Addendum: Multithreading and RabbitMQ
 
