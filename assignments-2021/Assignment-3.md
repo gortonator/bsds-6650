@@ -20,7 +20,7 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  1. What are the top 10 most purchased items at Store N
  2. Which are the top 5 stores for sales for item N
  
- A new version of the Swagger API is [here](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.1). Use this as the service specification.
+ A new version of the Swagger API is [here](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.11). Use this as the service specification.
  
  In this assignment you can build data structures for *Store* in memory to answer these queries. No database is required. You may also use any server technology you like - servlets are not required.
   
