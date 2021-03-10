@@ -22,8 +22,8 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  
  A new version of the Swagger API is [here](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.11). Use this as the service specification.
  
- In this assignment you can build data structures for *Store* in memory to answer these queries. No database is required. You may also use any server technology you like - servlets are not required.
-  
+ In this assignment you can build data structures for *Store* in memory to answer these queries. No database is required. 
+   
  You may choose a queueing solution of your choice. RabbitMQ is an obvious one, AWS SQS is equally simple, but beware of [costs](https://aws.amazon.com/sqs/pricing/) of course.
  
  Regardless, your solution needs to be aware of the possibility of losing messages due to a queue node crash. Experiment with persistent versus non-persistent queue configuration to explore the inherent performance trade-offs.
