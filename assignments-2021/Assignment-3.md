@@ -9,7 +9,7 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
 
 ## Implement the Server 
  
- A heavy concurrent write load exerts considerale stress on a relational database, as many of you have discovered in Assignment 2.
+ A heavy concurrent write load exerts considerable stress on a relational database, as many of you have discovered in Assignment 2.
  
  In this step modify your server to write all new POST request payloads to a queue instead of the database. 
  Design a producer-consumer based solution to write purchase data to the database 'eventually'. 
@@ -23,6 +23,7 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  A new version of the Swagger API is [here](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.11). Use this as the service specification.
  
  In this assignment you can build data structures for *Store* in memory to answer these queries. No database is required. 
+ You can send GET requests to *Store* using the queue broker, or use a proxy call from your client facing servlet using HTTP/REST. 
    
  You may choose a queueing solution of your choice. RabbitMQ is an obvious one, AWS SQS is equally simple, but beware of [costs](https://aws.amazon.com/sqs/pricing/) of course.
  
