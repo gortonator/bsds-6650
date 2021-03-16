@@ -21,6 +21,7 @@ We'll use lecture materials from last year's class as these haven't changed in c
 ## Optional, Highly Recommended Reading/Viewing
 
 1. [RabbitMQ web site](https://www.rabbitmq.com/)
+1. [RabbitMQ Best Practices](https://www.cloudamqp.com/blog/part4-rabbitmq-13-common-errors.html)
 1. Enterprise Messaging: JMS 1.1 and JMS 2.0 Fundamentals, Mark Richards, O'Reilly 2014 (available online from library)
 
 ## Lab 6
