@@ -25,9 +25,7 @@ Class Exercise:
 Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
 
 
-### Lab 10: Group Lab: 
-[Quiz make-up points available](https://gortonator.github.io/bsds-6650/labs/lab-10)
-At the start of class we will randomly allocate people to teams to tackle this problem. Don't be late ...
+
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
