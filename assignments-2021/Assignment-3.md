@@ -17,8 +17,8 @@ In Assignment 3, we'll build upon your server and database design in Assignment 
  In addition, create a new microservice called *Store*. Store should also receive every purchase record and create a data structure that records the quantity of each item purchased at each store.
  The Store microservice should be designed to answer two queries:
  
- 1. What are the top 10 most purchased items at Store N
- 2. Which are the top 10 stores for sales for item N
+ 1. What are the top 10 most purchased items at Store N?
+ 2. Which are the top 10 stores for sales for item N?
  
  A new version of the Swagger API is [here](https://app.swaggerhub.com/apis/gortonator/GianTigle/1.11). Use this as the service specification.
  
