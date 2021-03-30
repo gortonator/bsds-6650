@@ -8,6 +8,7 @@
 
 
 ## Mandatory Materials
+this weeks you get to listen to talks from industry experts on Flink, Kafka and ZooKeeper. Enjoy!
 1. [Apache Flink Introduction](https://www.youtube.com/watch?v=DkNeyCW-eH0)
 1. [Apache Kafka Introduction](https://www.youtube.com/watch?v=UEg40Te8pnE)
 1. [ZooKeeper Case Study](https://www.youtube.com/watch?v=Vv4HpLfqAz4)
