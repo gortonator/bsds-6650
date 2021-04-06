@@ -13,7 +13,7 @@ As you've hopefully learned though, there's many ways to design this system. You
 So here's some ideas:
 1. Scale out your purchase database. Maybe shard the purchases across multiple instances? Use DynamoDB? Use MongoDB?
 1. Replace RabbitMQ with a partitioned Kafka broker.
-1. Implement a distributed database for yoru Store microservice? You may want to test this with a GET-heavy load (so feel free to change the client test case)
+1. Implement a distributed database for your Store microservice? You may want to test this with a GET-heavy load (so feel free to change the client test case)
 1. Use Apache Flink to provide a streaming-based answer to your GETs. The [data analytics section in this outline](https://flink.apache.org/usecases.html) provides hints on how this might work. 
 
 ## Results Analysis
