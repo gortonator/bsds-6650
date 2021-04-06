@@ -37,5 +37,5 @@ Submit your work to Canvas Assignment 4 as a pdf document. The document should c
 1. Successful test with 1024 clients that shows the solution is still scalable (5 points)
 1. Assignments results analysis (10 points) 
 
-
+IMPORTANT NOTE - AWS Educate classroom is set to expire (unfortunately) on 23rd April. so make sure you complete your experiments by then!
 # Deadline: 4/26, 11.59pm PST 
