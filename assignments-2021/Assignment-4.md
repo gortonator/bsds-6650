@@ -20,6 +20,8 @@ So here's some ideas:
 
 Compare the results you obtained in assignments 2 and 3 with the results in assignment 4 for 256 and 512 clients. 
 
+If you make major changes to your database to improve performance, feel free to roll back to assignment 2 code in order to demonstrate improvements. 
+
 Make sure you explain any anomolous characteristics, and if you need to re-run previous tests, just be clear about what you did.
 
 ## Submission Requirements
