@@ -1,18 +1,19 @@
 # Building Scalable Distributed Systems
 
 ## CS6650 Summer 1 2021
-**Instructor**: Ian Gorton, Khoury College of Computer Sciences, Northeastern University
+**Instructor**: Ian Gorton, Khoury College of Computer Sciences, Northeastern University, Seattle Campus
 
 ## Logistics
-This is an online class compressed into SUmmer 1. It will be intense. You have been warned!
+This is an online class compressed into Summer 1. It will be intense. You have been warned!
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
-**Office Hours** - Tuesday, Thursday 2-5pm (PST)
+**Office Hours** - Tuesday, Thursday 2-4pm (PST)
 
 ### Super Talented Teaching Assistants
-- Aakash more to come
+- Aakash - to add email and office hours
+- Yanchen - to add email and office hours
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
@@ -30,7 +31,7 @@ This is an online class. This site gives you links to all the information you ne
 
 ## Assessment
 * There are 3 individual assigments. They total 70% of the final grade.
-* There are 4 quizes.  They combine to add up to the remianing 30% of the grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 45-60 minutes and be available at the start of the class in which it is scheduled.
+* There are 4 quizes.  They combine to add up to the remianing 30% of the grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 45 minutes and be available at the start of the class in which it is scheduled.
 
 # Course Content
 
@@ -57,10 +58,9 @@ Submission instructions and exact deadlines are on the course Canvas site.
 
 Assignment | Topic | Due Date
 ---------- | ----- | --------
-1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 2/10
-2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 3/10
-3 | [Asynchronous Processing](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 4/5
-4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 4/26
+1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 5/31
+2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 6/16
+3 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 6/30
 
 ## Quizzes
 Quizzes on Tuesdays, dates below. You will have all day to complete the quiz at a time of your choice. Once you start you must finish within 45 minutes. 
