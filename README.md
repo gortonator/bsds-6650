@@ -1,23 +1,18 @@
 # Building Scalable Distributed Systems
 
-## CS6650 Spring 2021
+## CS6650 Summer 1 2021
 **Instructor**: Ian Gorton, Khoury College of Computer Sciences, Northeastern University
 
 ## Logistics
-**Class:** 3.00-6.15pm Tuesday, 225 Terry Ave N, Seattle Campus and online (Zoom info on Canvas site)
+This is an online class compressed into SUmmer 1. It will be intense. You have been warned!
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
 
-**Office Hours** - Monday 2-5pm (PST)
+**Office Hours** - Tuesday, Thursday 2-5pm (PST)
 
 ### Super Talented Teaching Assistants
-- Jingyi Wang <wang.jingyi2@northeastern.edu>:
-   - Office Hours: Tuesday 1PM-3PM PST
-- Weijia Deng <deng.weij@northeastern.edu>:
-   - Office Hours: Thursday 2PM-4PM PST
-- Leah Mamaril <mamaril.l@northeastern.edu>:
-   - Office Hours: Friday 2:30PM-4:30PM PST
+- Aakash more to come
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
@@ -26,10 +21,15 @@ methods for building scalable systems. Scalability is an essential quality of In
 requires specialized skills and knowledge to build systems that scale at low cost. 
 
 ## Course Delivery
-In our weird pandemicy world right now, we need to run classes a little differently. Each week the lecture materials will be recorded and uploaded to Canvas. You will be expected to watch these and do the associated reading. Class time will be spent giving a summary of the key points, and answering questions. So come, physically or virtually, prepared. Each class will also have a hands-on lab for you to work through. 
+This is an online class. This site gives you links to all the information you need. More specifically:
+* there are 12 modules. We'll cover roughly 2 each week
+* all module lecture materials are online. You are expected to watch these 
+* each module has associated reading materials. You are expected to read the ones marked mandatory
+* each moduel has a lab associated with it. These are optional but working through them will reinforce the materials.
+* There will be at least 4 3 hours slost each week for you to consult with the Professor and TAs online using Teams
 
 ## Assessment
-* There are 4 individual assigments. They total 70% of the final grade.
+* There are 3 individual assigments. They total 70% of the final grade.
 * There are 4 quizes.  They combine to add up to the remianing 30% of the grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 45-60 minutes and be available at the start of the class in which it is scheduled.
 
 # Course Content
@@ -38,19 +38,19 @@ In our weird pandemicy world right now, we need to run classes a little differen
 
 Week | Topic | Date
 ---- | ----- | ----
-1  | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1) | 1/19
-2  | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2) | 1/26
-3  | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3) | 2/2
-4  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4) | 2/9
-5  | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5) | 2/16
-6  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 2/23
-7  | [Microservices](http://gortonator.github.io/bsds-6650/Week-7) | 3/2
-8  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-8) | 3/9
-9  | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-9) | 3/16
-10 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-10) | 3/23
-11 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 3/30
-12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 4/6
-13 | Final Quiz and Course Wrap up | 4/13
+1  | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1) | 5/10
+1  | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2) | 5/10
+2  | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3) | 5/17
+2  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4) | 5/17
+3  | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5) | 5/24
+3  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 5/24
+4  | [Microservices](http://gortonator.github.io/bsds-6650/Week-7) | 5/31
+4  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-8) | 5/31
+5 | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-9) | 6/7
+5 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-10) | 6/14
+6 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 6/21
+6 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 6/21
+7 | Final Quiz  | 6/29
 
 ## Assignments
 Submission instructions and exact deadlines are on the course Canvas site. 
@@ -63,14 +63,14 @@ Assignment | Topic | Due Date
 4 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 4/26
 
 ## Quizzes
-Quizzes will be held at the start of class on the following 4 dates.
+Quizzes on Tuesdays, dates below. You will have all day to complete the quiz at a time of your choice. Once you start you must finish within 45 minutes. 
 
 Quiz | Date
 ---- | ----
-1 | 2/9
-2 | 3/2
-3 | 3/30
-4 | 4/13
+1 | 5/25
+2 | 6/8
+3 | 6/22
+4 | 6/29
 
 # Reading
 Course specific reading will be provided each week for the first half of the course. 
@@ -90,10 +90,8 @@ If you need more time, come beg :). Communications usually give a positive outco
 Without warning, you'll lose 5% of your final grade each day overdue. 
 
 **Missed Quizzes**
-Quizzes are held in class and last approximately 30 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let me know_ in advance. Failure to do this will result in a zero for the quiz you miss. 
+Quizzes last approximately 45 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let me know_ in advance. Failure to do this will result in a zero for the quiz you miss. 
 
 **Do your own work**
 You know the rules. Helping each other out is fine, but design and build your own system. Any unwarrented collaboration will result in a zero grade for the assignment. 
 
-**Come to class**
-In person or virtually. Most classes contain a lab exercise that builds on the lecture materials and supports the assignments. These are great opportunities to work on problems that deepen and broaden your knowledge.
