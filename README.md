@@ -12,7 +12,8 @@ This is an online class compressed into Summer 1. It will be intense. You have b
 **Office Hours** - Tuesday, Thursday 2-4pm (PST)
 
 ### Super Talented Teaching Assistants
-- Aakash - to add email and office hours
+- Aakash Shah <shah.aakas@northeastern.edu>
+  - Wednesday, Friday 1-3pm (PST)
 - Yanchen - to add email and office hours
 
 ## Overview
