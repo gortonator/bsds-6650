@@ -14,7 +14,8 @@ This is an online class compressed into Summer 1. It will be intense. You have b
 ### Super Talented Teaching Assistants
 - Aakash Shah <shah.aakas@northeastern.edu>
   - Wednesday, Friday 1-3pm (PST)
-- Yanchen - to add email and office hours
+- Yanchen Xu <xu.yanc@northeastern.edu>
+  - Saturday, Sunday 1-3 pm (PST)
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
