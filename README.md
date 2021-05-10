@@ -13,7 +13,7 @@ This is an online class compressed into Summer 1. It will be intense. You have b
 
 ### Super Talented Teaching Assistants
 - Aakash - to add email and office hours
-- Yanchen <xu.yanc@northeastern.edu>
+- Yanchen Xu <xu.yanc@northeastern.edu>
   - Saturday, Sunday 1-3 pm (PST)
 
 ## Overview
