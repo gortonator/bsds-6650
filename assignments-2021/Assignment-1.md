@@ -138,7 +138,7 @@ example, a second interval, and plot the number of requests (throughput) or aver
 1. Client Part 2 - (20 points) - 1 point per run, 1 point for the chart. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible). 10 points for wall time within 5% of wall time for Client Step 1.
 1. Bonus Points: Up to 4 bonus points for experiemnts and impressive outputs!!
 
-# Deadline: 2/10, 11.59pm PST 
+# Deadline: 5/31, 11.59pm PST 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 
