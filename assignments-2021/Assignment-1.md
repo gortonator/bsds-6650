@@ -59,7 +59,7 @@ Your client should accept 2 arguments
 
 Based on these values, your client will start up and 
 1. process and validate the input parameters
-1. read the input file one line at a time 
+1. read the input file one line at a time (ignore empty lines)
 1. create maxThreads client threads that continuosly send a line from the file to the server
 
 Basically you have to figure out how to distribute lines of the file to threads so that one line gets processed exactly once. 
