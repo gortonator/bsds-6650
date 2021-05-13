@@ -13,7 +13,7 @@ In Assignment 3, we'll get a little crazy, so make sure you lay solid code and d
 
 ## Implement the Server API 
 
-The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/gortonator/TextProcessor/1.0.0#)
+The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/gortonator/TextProcessor/1.0.2)
 
 In this assignment you need to implement this API using a server technology of your choice. The course labs guide you through how to do this with Java servlets.
 From SwaggerHub however, you can generate a server stub for application servers in Java, Python, Go, Scala from following menu option.
@@ -121,9 +121,9 @@ You will get extra credit for either (or both) of the following:
 ### Break Things :)
 Experiment with the number of threads your server can support and report when something on the server breaks. 
 
-Perhaps with 4000 client threads your server will overload an IP buffer somewhere, or requests will take so long they will timeout and fail? 
+Perhaps with 4000 client threads your server will overload an IP buffer somewhere and refuse requests, or requests will take so long they will timeout and fail? 
 
-Or depending on how you are capturing latencies, your client may start throwing OutOfMemory exceptions? 
+Or depending on how you are capturing latencies, your client may start throwing OutOfMemory exceptions? This is probably a bug in your client, but still ;)
 
 Stress testing is fun and instructive. It’s a skill you should be taking away from this course, so here’s a chance to practise! *Beware, the school network limits requests - run tests with more than 256 threads somewhere else!*
 
