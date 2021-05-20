@@ -152,7 +152,7 @@ For IntelliJ you also need to:
 
 1. Go to project structure
 1. choose the artifacts tab
-1. select the gson maven package and put it into the root of the artifact. 
+1. select the gson maven package and put it into the lib directory of the artifact. 
 
 Compile and deploy ... and cross your fingers and toes!!
 
