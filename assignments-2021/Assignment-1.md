@@ -148,6 +148,14 @@ Sometimes there's an issue building the GSON jar file into a servlet, such that 
 
 Try adding the gson jar to your project from the [Maven website](https://mvnrepository.com/artifact/com.google.code.gson/gson)
 
+For IntelliJ you also need to:
+
+1. Go to project structure
+1. choose the artifacts tab
+1. select the gson maven package and put it into the root of the artifact. 
+
+Compile and deploy ... and cross your fingers and toes!!
+
 For more details [check this out](https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project)
 
 ### Building Swagger Client with Java 11
@@ -179,9 +187,3 @@ You need to modify your POM, add the lines below:
 	<version>1.3.2</version>
 </dependency>
 
-For IntelliJ you also need to:
-1. Go to project structure
-1. choose the artifacts tab
-1. select the gson maven package and put it into the root of the artifact. 
-
-Compile and deploy ... and cross your fingers and toes!!
