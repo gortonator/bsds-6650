@@ -159,7 +159,8 @@ Compile and deploy ... and cross your fingers and toes!!
 For more details [check this out](https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project)
 
 ### Building Swagger Client with Java 11
-You need to modify your POM, add the lines below:
+You need to modify your POM, add the following dependencies:
+```
 <dependency>
     <groupId>javax.xml.bind</groupId>
     <artifactId>jaxb-api</artifactId>
@@ -182,8 +183,8 @@ You need to modify your POM, add the lines below:
 </dependency>
 
 <dependency>
-	<groupId>javax.annotation</groupId>
-	<artifactId>javax.annotation-api</artifactId>
-	<version>1.3.2</version>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
 </dependency>
-
+```
