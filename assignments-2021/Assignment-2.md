@@ -41,7 +41,7 @@ The questions you need to explore are:
 * How many queue consumers threads do I need to keep the queue size as close to zero as possible. 
 
 Just to make things fun, [use this one for testing](https://github.com/gortonator/bsds-6650/blob/master/assignments-2021/bsds-summer-2021-testdata-assignment2.txt)
-It's a little big bigger - might be wise to test assignment 1 with this before get adventurous ;)
+It's a _little_ big bigger - might be wise to test assignment 1 with this before getting adventurous ;)
 
 You can use the RabbitMQ management console to track the number of messages in the queue, and producers and consumer rates.
  
@@ -50,14 +50,13 @@ Submit your work to Canvas Assignment 2 as a pdf document. The document should c
 
 1. The URL for your git repo. Create a new folder for your Assignment 2 server code
 1. A 1-2 page description of your server design. Include major classes, packages, relationships, how messages get sent/received, etc
-1. Test runs (command lines, RMQ management windows showing queue size) for 64, 128 and 256 client threads
-1. A commparison of the results for 256 client threads between this assignment and assignment 1. 
+1. Test runs (command lines, RMQ management windows showing queue size, send/receive rates) for 64, 128 and 256 client threads
 1. Bonus Points - Results for a test with 512 client threads
 
 ## Grading:
-1. Server and consumer  implementations working (10 points)
+1. Server and consumer  implementations working (15 points)
 1. Server design description (5 points) - clarity of description, good design practies used
-1. Results (15 points) - throughput, persistent/non-persistent queues, different instances, basically describe and analyze what you did
+1. Results (20 points) - throughput, persistent/non-persistent queues, different instances, basically describe and analyze what you did
 1. Results of a successful run with 512 client threads (5 points) 
 
 # Deadline: 6/16 11.59pm PST 
@@ -68,18 +67,18 @@ RabbitMQ and multithreading needs a few considerations. Read on ....
 
 The basic abstraction that needs to be operated on by each thread is the channel. This means:
 
-In your servlet:
+In your servlet (or equivalent if not using a servlet):
 
 1. In the init() method, initialize the connection (this is the socket, so is slow)
 1. In the dopost(), create a channel and use that to publish to RabbitMQ. Close it at end of the request.
 
 This should work fine, although the [documentation](https://www.rabbitmq.com/api-guide.html#concurrency) say channels are meant to be long-lived and caution again churn. 
 
-So a better solution would be to create a channel pool that shares a bunch of pre-created channels (in .init()) just like your Database connection pool. 
+So a better solution would be to create a channel pool that shares a bunch of pre-created channels (in .init()) to form a connection pool. 
 
 Roll your own is not too hard, but apache commons has a [generic pool implementation](http://commons.apache.org/proper/commons-pool/examples.html) that you could build on.
 
-On the consumer side, you probably want a multi-threaded consumer that just gets a message and writes to the database. In this case you can just create a channel per thread and all should be fine. 
+On the consumer side, you probably want a multi-threaded consumer that just gets a message and writes to the hash map. In this case you can just create a channel per thread and all should be fine. 
 
 There's an excellent write up that describes the complexities of multi-threaded RMQ clients [here](http://moi.vonos.net/bigdata/rabbitmq-threading/)
 
