@@ -1,6 +1,6 @@
 # CS6650 Summer 2021  Assignment 2
 
-## Improving Responsiveness
+## Building the Server
 This assignment builds on assignment 1. Your client won't change (unless it has a bug in it!). 
 Your will implement processing logic in your server and post the result to a queue for subsequent processing in assignment 3.
 
