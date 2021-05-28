@@ -12,11 +12,11 @@ You need to implemet the following business logic in your server:
 1. Return the number of unique words in the line to the client
 
 For example if the line contains "Hello Polly want a banana" you would generate 5 tuples:
-{Hello, 1}
-{Polly, 1}
-{want, 1}
-{a, 1}
-{banana, 1}
+1. {Hello, 1}
+1. {Polly, 1}
+1. {want, 1}
+1. {a, 1}
+1. {banana, 1}
 
 For simplicity, treat symbols like '*' as words too, and URL. Basically just split the line and everything is a word. 
 
