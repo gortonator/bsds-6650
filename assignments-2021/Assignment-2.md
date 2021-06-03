@@ -21,7 +21,7 @@ For example if the line contains "Hello Polly want a banana" you would generate 
 For simplicity, treat symbols like '*' as words too, and URL. Basically just split the line and everything is a word. 
 
 Choose your own queue technology. RabbitMQ is an obvious one, AWS SQS another. Make sure you deploy RabbitMQ on its own EC2 instance.
-Instructions for installing RMQ on your fave OS [lurk here](https://www.rabbitmq.com/download.html).
+Instructions for installing RMQ on your fave OS [lurk here](https://www.rabbitmq.com/download.html) and AWS Linux [here](https://techviewleo.com/install-latest-rabbitmq-on-amazon-linux/).
 Your aim is to keep response times as low as possible. One free tier server will probably get pretty busy, so you may want to introdue load balancing or scale up your server (it'll cost you!).
 
 You can set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ or _Network_ load balancers. 
