@@ -8,7 +8,7 @@ Your will implement processing logic in your server and post the result to a que
 You need to implemet the following business logic in your server:
 
 1. Split the line of text into individual words and generate a tuple of {word, count} for every word in the lines
-1. Post the results from each line to a queue
+1. Post the results from processing each line to a queue - this is the series of tuples generated for each line
 1. Return the number of unique words in the line to the client
 
 For example if the line contains "Hello Polly want a banana" you would generate 5 tuples:
