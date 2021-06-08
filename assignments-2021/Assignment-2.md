@@ -82,6 +82,7 @@ Roll your own is not too hard, but apache commons has a [generic pool implementa
 On the consumer side, you probably want a multi-threaded consumer that just gets a message and writes to the hash map. In this case you can just create a channel per thread and all should be fine. 
 
 There's an excellent write up that describes the complexities of multi-threaded RMQ clients [here](http://moi.vonos.net/bigdata/rabbitmq-threading/)
+And [this](https://wheleph.gitlab.io/posts/2015-09-06-rabbitmq-async-consumption/) explains it perfectly with Java examples.
 
 And [here's](https://github.com/gortonator/bsds-6650/tree/master/code/week-6) some sample code you can work from. 
 
