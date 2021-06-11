@@ -8,7 +8,7 @@ Your will implement processing logic in your server and post the result to a que
 You need to implemet the following business logic in your server:
 
 1. Split the line of text into individual words and generate a tuple of {word, count} for every word in the lines
-1. Post the results from processing each line to a queue - this is the series of tuples generated for each line
+1. Post the results from each line to a queue
 1. Return the number of unique words in the line to the client
 
 For example if the line contains "Hello Polly want a banana" you would generate 5 tuples:
@@ -20,8 +20,7 @@ For example if the line contains "Hello Polly want a banana" you would generate 
 
 For simplicity, treat symbols like '*' as words too, and URL. Basically just split the line and everything is a word. 
 
-Choose your own queue technology. RabbitMQ is an obvious one, AWS SQS another. Make sure you deploy RabbitMQ on its own EC2 instance.
-Instructions for installing RMQ on your fave OS [lurk here](https://www.rabbitmq.com/download.html) and AWS Linux [here](https://techviewleo.com/install-latest-rabbitmq-on-amazon-linux/).
+Choose your own queue technology. RabbitMQ is an obvious one, AWS SQS another. Make sure you deploy RabbitMQ on its own EC2 instance. You can find various installation instructions [here](https://www.rabbitmq.com/download.html).
 Your aim is to keep response times as low as possible. One free tier server will probably get pretty busy, so you may want to introdue load balancing or scale up your server (it'll cost you!).
 
 You can set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ or _Network_ load balancers. 
@@ -82,7 +81,6 @@ Roll your own is not too hard, but apache commons has a [generic pool implementa
 On the consumer side, you probably want a multi-threaded consumer that just gets a message and writes to the hash map. In this case you can just create a channel per thread and all should be fine. 
 
 There's an excellent write up that describes the complexities of multi-threaded RMQ clients [here](http://moi.vonos.net/bigdata/rabbitmq-threading/)
-And [this](https://wheleph.gitlab.io/posts/2015-09-06-rabbitmq-async-consumption/) explains it perfectly with Java examples.
 
 And [here's](https://github.com/gortonator/bsds-6650/tree/master/code/week-6) some sample code you can work from. 
 
