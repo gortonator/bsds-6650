@@ -62,7 +62,7 @@ Assignment | Topic | Due Date
 ---------- | ----- | --------
 1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 5/31
 2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 6/16
-3 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 6/30
+3 | [Scaling the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 6/30
 
 ## Quizzes
 Quizzes on Tuesdays, dates below. You will have all day to complete the quiz at a time of your choice. Once you start you must finish within 45 minutes. 
