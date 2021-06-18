@@ -15,6 +15,7 @@ this weeks you get to listen to talks from industry experts on Flink, Kafka and 
 
 ## Optional Materials)
 1. [Streaming platforms survey](https://www.youtube.com/watch?v=ZWez6hOpirY)
+1. [A Kafka Childrens Book - it's great](http://www.gentlydownthe.stream/)
 1. [A longer Kafka description](https://www.youtube.com/watch?v=X40EozwK75s)
 1. [Apache Flink internals](https://www.youtube.com/watch?v=pPqNNkLFGYM)
 1. [Comprehensive Flink Training Materials](https://flink.apache.org/training.html)
