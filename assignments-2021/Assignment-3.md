@@ -14,7 +14,7 @@ Whatever database you choose, the challenge is to write to the databse ideally a
 Test this configuration by reporting the same results as assignment 2 for 64, 128, 256 clients
 
 ## Step 2
-Take a look at the [new version of the API](https://app.swaggerhub.com/apis/gortonator/TextProcessor/1.0.3). A GET method has been added.
+Take a look at the [new version of the API](https://app.swaggerhub.com/apis/gortonator/TextProcessor/1.0.4). A GET method has been added.
 You need to implement this GET method as part of your servlet. It accepts the arguments in the URL and queries the database to return the count of teh specified word.
 
 Test this out with POSTMAN or your fave HTTP testing tool. Make sure it works. 
