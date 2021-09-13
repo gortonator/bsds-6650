@@ -22,11 +22,19 @@ Can be found on Canvas site
 
 ## Reading
 Mandatory: 
-- [Chapter 1](https://gortonator.github.io/bsds-6650/reading/chapter-1.pdf)
+- Chapter 1 of Concurrency and Scalability for Distributed Systems
 
 Recommended:
 - Distributed systems : concepts and design, CHAPTER 1, Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon.
 Harlow, England ; Addison-Wesley 5th Edition, 
+
+## Lab 1
+### Aims
+1. Get you up and running on AWS EC2. 
+2. Create a free tier VM and an RDS instance
+3. Install and test tomcat
+
+Follow the instructions [here](https://gortonator.github.io/bsds-6650/labs/lab-1)
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)

@@ -27,6 +27,11 @@ requires specialized skills and knowledge to build systems that scale at low cos
 This site contains all the informtion for the course, except the quiz questions.
 Class will meet each week for 3 hour 15 mins. Classes will be a mix of lectures and labs.
 
+## Course Book
+The book for the course, Concurrency and Scalability for Distributed Syetms, is in development. 
+The first 11 chapters should be available online [here](https://www.oreilly.com/library/view/concurrency-and-scalability/9781098106058/)
+You should be able to access this and all O'Reilly books through the library. 
+
 ## Assessment
 * There are 4 individual assigments. They total 70% of the final grade.
 * There are 4 quizes.  They combine to add up to the remianing 30% of the grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 45 minutes and be available at the start of the class in which it is scheduled.
