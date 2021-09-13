@@ -4,7 +4,7 @@
 **Instructor**: Ian Gorton, Khoury College of Computer Sciences, Northeastern University, Seattle Campus
 
 ## Logistics
-This is an onground clss taught on the Seattle Campus, Tuesday 3-6pm
+This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 307, Tuesday 3-6.15pm
 
 ### Course Lead
 **Ian Gorton** - i.gorton(at)northeastern.edu
