@@ -22,7 +22,7 @@ Can be found [here](https://github.com/gortonator/bsds-6650/tree/master/code/wee
 
 ## Reading
 Mandatory:
-- [Chapter 3](https://gortonator.github.io/bsds-6650/reading/chapter-3.pdf)
+- Chapter 4 of Concurrency and Scalability for Distributed Systems 
 
 Optional:
 * Java Concurrency in Practice 1st Edition, by Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
@@ -30,13 +30,7 @@ Optional:
 * [Shooting yourself in the foot with Random number generators](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators)
 * [Interesting article on thread-safe Java collections](https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java)
 
-## Lab 1
-### Aims
-1. Get you up and running on AWS EC2. 
-2. Create a free tier VM and an RDS instance
-3. Install and test tomcat
 
-Follow the instructions [here](https://gortonator.github.io/bsds-6650/labs/lab-1)
 
 ## Lab 2 - Simple Server with Java Servlet
 ### Aims: 
