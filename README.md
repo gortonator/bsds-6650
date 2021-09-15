@@ -29,7 +29,9 @@ Class will meet each week for 3 hour 15 mins. Classes will be a mix of lectures 
 
 ## Course Book
 The book for the course, Concurrency and Scalability for Distributed Syetms, is in development. 
-The first 11 chapters should be available online [here](https://www.oreilly.com/library/view/concurrency-and-scalability/9781098106058/)
+
+The first 11 chapters should be progressively available online [here](https://www.oreilly.com/library/view/concurrency-and-scalability/9781098106058/).
+
 You should be able to access this and all O'Reilly books through the library. 
 
 ## Assessment
@@ -50,7 +52,7 @@ Week | Topic | Date
 6  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 10/19
 7  | [Microservices](http://gortonator.github.io/bsds-6650/Week-7) | 10/26
 8  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-8) | 11/2
-9 | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-9) | 11/9
+9  | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-9) | 11/9
 10 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-10) | 11/16
 11 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 11/23
 12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 11/30
@@ -77,11 +79,7 @@ Quiz | Date
 4 | 12/?
 
 # Reading
-Course specific reading will be provided each week for the first half of the course. 
-
-We also cover a lot of material that is not really covered by a single book Each week will give you some resoures to read/view that are relevant to the materials. 
-
-The following are great resources however, and can be excellent references for this course and your future career.
+In addition to the course book,  the following are great resources, and can be excellent references for this course and your future career.
 
 * Java Concurrency in Practice 1st Edition, Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
 * Distributed systems : concepts and design, Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon. Harlow, England ; Addison-Wesley c2012
