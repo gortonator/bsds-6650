@@ -12,8 +12,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 30
 **Office Hours** - Wednesday 2-4pm (PST)
 
 ### Super Talented Teaching Assistants
-- TBA
-  - time TBD
+- Heejun You
+  - Tuesday 1-3pm (PST)
 - TBA
   - time TBD
 
