@@ -12,9 +12,9 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 30
 **Office Hours** - Wednesday 2-4pm (PST)
 
 ### Super Talented Teaching Assistants
-- TBA
+- Tiffany Marthin - marthin.t(at)northeastern.edu
   - time TBD
-- TBA
+- Hee Jun You - you.he(at)northeastern.edu
   - time TBD
 
 ## Overview
