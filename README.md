@@ -13,9 +13,9 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 30
 
 ### Super Talented Teaching Assistants
 - Tiffany Marthin - marthin.t(at)northeastern.edu
-  - time TBD
-- Hee Jun You - you.he(at)northeastern.edu
-  - time TBD
+  - Thursday 3-5pm (Tentative, Room TBD)
+- Heejun You - you.he(at)northeastern.edu
+  - Tuesday 1-3pm (Tentative, Room TBD)
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
