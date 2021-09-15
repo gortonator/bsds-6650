@@ -12,11 +12,10 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 30
 **Office Hours** - Wednesday 2-4pm (PST)
 
 ### Super Talented Teaching Assistants
-
-- Heejun You
-  - Tuesday 1-3pm (PST)
-- Tiffany Marthin
-  - Thursday 3-5pm (PST), room is TBD
+- TBA
+  - time TBD
+- TBA
+  - time TBD
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
@@ -74,7 +73,7 @@ Quizzes on Tuesdays, dates below. You will have all day to complete the quiz at 
 
 Quiz | Date
 ---- | ----
-1 | 9/?
+1 | 10/12
 2 | 10/?
 3 | 11/?
 4 | 12/?
