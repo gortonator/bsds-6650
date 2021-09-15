@@ -69,7 +69,7 @@ Assignment | Topic | Due Date
 4 | [Scaling the System](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 12/10
 
 ## Quizzes
-Quizzes on Tuesdays, in class. Once you start you must finish within 45 minutes. 
+Quizzes are held on Tuesdays, in class. Once you start you must finish within 45 minutes. 
 
 Quiz | Date
 ---- | ----
