@@ -12,9 +12,9 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 30
 **Office Hours** - Wednesday 2-4pm (PST)
 
 ### Super Talented Teaching Assistants
-- Tiffany Marthin - marthin.t(at)northeastern.edu
+- TBA
   - time TBD
-- Hee Jun You - you.he(at)northeastern.edu
+- TBA
   - time TBD
 
 ## Overview
@@ -69,7 +69,7 @@ Assignment | Topic | Due Date
 4 | [Scaling the System](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 12/10
 
 ## Quizzes
-Quizzes on Tuesdays, dates below. You will have all day to complete the quiz at a time of your choice. Once you start you must finish within 45 minutes. 
+Quizzes on Tuesdays, in class. Once you start you must finish within 45 minutes. 
 
 Quiz | Date
 ---- | ----
