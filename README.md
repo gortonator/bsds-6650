@@ -74,9 +74,9 @@ Quizzes are held on Tuesdays, in class. Once you start you must finish within 45
 Quiz | Date
 ---- | ----
 1 | 10/12
-2 | 10/?
-3 | 11/?
-4 | 12/?
+2 | 11/2
+3 | 11/23
+4 | Last class!
 
 # Reading
 In addition to the course book,  the following are great resources, and can be excellent references for this course and your future career.
