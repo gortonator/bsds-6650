@@ -51,7 +51,7 @@ For example if numThreads=64 and numSkiers=1024, we will launch 16 threads, with
 Once each thread has started it should send (numRunsx0.2)x(numSkiers/(numThreads/4)) POST requests to the server. Each POST should *randomly* select:
 1. a skierID from the range of ids passed to the thread
 1. a lift number (liftID)
-1. a time from the range of minutes passed to each thread (start and end time - same for each thread)
+1. a time value from the range of minutes passed to each thread (between start and end time)
 
 With our example, if numRuns=20, each thread will send 2x(1024/16) POST requests. 
 
@@ -121,6 +121,7 @@ example, a second interval, and plot the average response time for that time int
 1. Client Part 2 - (20 points) - 1 point per run, 1 point for the chart. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible). 10 points for wall time within 5% of wall time for Client Step 1.
 1. Bonus Points: Up to 3 bonus points 
 
+## Additional Useful Information
 ### Building Swagger Client with Java 11
 You need to modify your POM, add the following dependencies:
 ```
@@ -151,3 +152,5 @@ You need to modify your POM, add the following dependencies:
     <version>1.3.2</version>
 </dependency>
 ```
+### Randon number generation in Java Threads
+Worth a read for [random number generation](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators) in your client ;)
