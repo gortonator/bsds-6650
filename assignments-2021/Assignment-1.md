@@ -78,7 +78,7 @@ When all threads from all phases are complete, the programs should print out:
 You should run the client on your laptop. Thus means each request will incur latency depending on where your server resides. 
 You should test how long a single request takes to estimate this latency. Run a simple test and send eg 10000 requests from a single threadto do this.
 You can then calculate the expected throughput your client will see using Little's Law. 
-If your eentual throughput is not close to this estimate, you may havea bug.
+If your throughput is not close to this estimate for each of the test runs, you probably  have a bug.
 
 ## Building the Client (Part 2)
 With your load generating client working wonderfully, we want to now instrument the client so we have deeper insights into the performance of the system. 
@@ -104,7 +104,7 @@ The client should calculate these and display them in the output window in addit
 Submit your work to Blackboard Assignment 1 as a pdf document. The document should contain:
 
 1. the URL for your git repo. *Make sure that the code for the client part 1 and part 2 are in seperate folders in your repo*
-1. a 1-2 page description of your client design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works
+1. a 1-2 page description of your client design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works.Include Little's Law throughput predictions.
 1. Client (Part 1) - run your client with 32, 64, 128 and 256 threads, with numSkiers=20000, and numLifts=40. Include the outputs of each run in your submission (showing the wall time) and plot a simple chart showing the wall time by the number of threads. This should be a screen shot of your output window.
 1. Client (Part 2) - run the client as per Part 1, showing the output window for each run. Also generate a plot of throughput and mean response time against number of threads. Again, this should be a screen shot of your output window.
 
@@ -117,7 +117,7 @@ example, a second interval, and plot the average response time for that time int
 ## Grading:
 1. Server implementation working (5 points)
 1. Client design description (5 points) - clarity of description, good design practies used
-1. Client Part 1 - (10 points) - 1 point per run output, 1 point for the chart, 5 points for sensible results!
+1. Client Part 1 - (10 points) - 1 point per run output, 1 point for the chart, 5 points for sensible results! Points deducted if actual throughput not close to Little'sLaw predictions.
 1. Client Part 2 - (20 points) - 1 point per run, 1 point for the chart. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible). 10 points for wall time within 5% of wall time for Client Step 1.
 1. Bonus Points: Up to 3 bonus points 
 
