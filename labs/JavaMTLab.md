@@ -4,7 +4,7 @@
 
 Write a Java multithreaded programs that 
 
-1. take a time stamp, and start N threads, default 1K
+1. takes a time stamp, and start N threads, default 1K
 1. each thread updates a shared synchronized counter and terminates
 1. when all threads are completed, the main thread takes a time stamp and prints out the counter value and the duration it takes to run the program
 

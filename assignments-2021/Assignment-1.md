@@ -53,7 +53,7 @@ Once each thread has started it should send (numRunsx0.2)x(numSkiers/(numThreads
 1. a lift number (liftID)
 1. a time value from the range of minutes passed to each thread (between start and end time)
 
-With our example, if numRuns=20, each thread will send 2x(1024/16) POST requests. 
+With our example, if numRuns=20, each thread will send 4x(1024/16) POST requests. 
 
 The server will return an HTTP 201 response code for a successful POST operation. As soon as the 201 is received, the client should immediately send the next request until it has exhausted the number of requests to send.
 
