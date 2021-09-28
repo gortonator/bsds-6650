@@ -30,7 +30,9 @@ Optional:
 * [Shooting yourself in the foot with Random number generators](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators)
 * [Interesting article on thread-safe Java collections](https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java)
 
-
+## Java Multithreading Lab
+### Aim
+Write some simple Java multithreaded programs using basic collections.Instructions are [here](https://gortonator.github.io/bsds-6650/labs/JavaMTLab)
 
 ## Lab 2 - Simple Server with Java Servlet
 ### Aims: 
