@@ -65,7 +65,7 @@ Once 10% (rounded up) of the threads in Phase 1 have completed, Phase 2, the *pe
 * each thread is passed a disjoint skierID range of size (numSkiers/numThreads)
 
 As above, each thread will randomly select a skierID, liftID and time from the ranges provided and sends a POST request. It will do this (numRunsx0.6)x(numSkiers/numThreads) times.
-Back to our example above, this means phase 2 would create 64 threads, and and each sends 16*(1024/64) POSTs.
+Back to our example above, this means phase 2 would create 64 threads, and and each sends 12*(1024/64) POSTs.
 
 Finally, once 10% of the threads in Phase 2 complete, Phase 3 should begin. Phase 3, the *cooldown phase*, is identical to Phase 1, starting 25% of numThreads, with each thread sending (0.1xnumRuns) POST requests, and with a time interval range of 361 to 420.
 
