@@ -9,7 +9,7 @@
 1. Distributed databases
 1. Queuing
 
-## Mandatory Lecture Materials)
+## Mandatory Lecture Materials
 [Distributed Systems Architecture: Whirlwind Tour](https://youtu.be/fzInqxi__CE)
 
 [Lessons learned from Netflix Migration to AWS](https://www.youtube.com/watch?v=XrWII4ewrXA)
