@@ -15,6 +15,7 @@ Run the program with a variable number of threads (e.g.1,10k etc) and see if you
 Write a Java program that uses a single thread to add a lot of elements (100k?) to a:
 * Vector
 * ArrayList
+
 Time how long each test takes to quantify the overheads of synchronization.
 
 ## Collections (2)
