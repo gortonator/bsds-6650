@@ -15,7 +15,7 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave n, room 30
 - Tiffany Marthin - marthin.t(at)northeastern.edu
   - Thursday 3-5pm (Room 142 in *401 building*)
 - Heejun You - you.he(at)northeastern.edu
-  - Tuesday 1-3pm (Room 142 in *401 building*)
+  - Tuesday 1-3pm (Room 307 in *225 building*)
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
