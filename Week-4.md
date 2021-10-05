@@ -8,7 +8,7 @@
 1. Time in distributed systems
 
 
-## Mandatory Lecture Materials)
+## Mandatory Lecture Materials
 1. [Communications hardware and software](https://youtu.be/O_XvP6CMQjA)
 1. [Remote Procedure Calls](https://youtu.be/wWUlfHwecvY)
 1. [Distributed Coordination and Time](https://youtu.be/--fyMrn5MTo)
@@ -18,9 +18,9 @@ The first short video in this playlist is important to watch as it covers the ba
 [SOAP Web Services Overview](https://www.youtube.com/watch?v=mKjvKPlb1rA&list=PLqq-6Pq4lTTZTYpk_1DOowOGWJMIH5T39)
 
 
-## Manadatory Reading
+## Mandatory Reading
 
-[Chapter 4](https://gortonator.github.io/bsds-6650/reading/chapter-4.pdf)
+Chapter 3 of Concurrency and Scalability for Distributed Systems 
 
 [AWS Networking Overview](https://aws.amazon.com/blogs/apn/aws-networking-for-developers/)
 
