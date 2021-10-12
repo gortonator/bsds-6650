@@ -102,7 +102,7 @@ Little’s Law assumes a stable system so the arrival rate and exit rate are ide
 
 We can use Little’s Law in distributed systems to relate the total number of users/requests, server throughput & the average request latency.
 
-Throughput is number of requests processed per unit time; It can be used as the exit rate = arrival rate (λ).
+Throughput is number of requests processed per unit time. It can be used as the exit rate = arrival rate (λ).
 
 Response time – average response time is amount of time a request spends in the System (W). 
 
@@ -112,7 +112,9 @@ N = Throughput * Response Time
 
 Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary the number of client and server threads, and the servlet sleep time?
 
-And can you use Little's Law to estimate the throughput you'd expect to see in yyour first Assignment. Assume service time is maybe 1-5 milliseconds?
+And can you use Little's Law to estimate the throughput you'd expect to see in your first Assignment. Assume service time is maybe 1-5 milliseconds?
+
+You can read more on Little's Law [here](http://highscalability.com/blog/2014/2/5/littles-law-scalability-and-fault-tolerance-the-os-is-your-b.html).
 
 ### Additional Issues to Explore - Tomcat Performance Monitoring
 
