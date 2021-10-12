@@ -13,7 +13,7 @@
 1. [Caching](https://youtu.be/e82qdixkqpo)
 
 
-## Manadatory Reading
+## Mandatory Reading
 
 1. Chapter 5 of course book 
 1. Chapter 6 of course book
