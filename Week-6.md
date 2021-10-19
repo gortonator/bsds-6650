@@ -14,9 +14,9 @@ We'll use lecture materials from last year's class as these haven't changed in c
 1. [Messaging Patterns](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a00a8c9-136e-4fcd-a8b1-ab9100dda9d2)
 
 
-## Manadatory Reading
+## Mandatory Reading
 
-1. Chapter 6.1-6.4, Coulouris et al, Distributed Systems: Concepts and Design, 5th Edition
+Chapter7 of course book
 
 ## Optional, Highly Recommended Reading/Viewing
 
