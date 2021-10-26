@@ -12,10 +12,11 @@ We'll use lecture materials from last year's class as these haven't changed in c
 [Microservices](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80e8535b-1f86-4c0c-b4e6-ab9100dda93c)
 
 ## Mandatory Reading
-1. Chapter 1 and 2, Building Microservices, Sam Newman, O'Reilly Publishing (available online at Snell library)
+Chapter 9 of course book
 
 ## Optional Reading
 1. Release it!, 2nd Edition, Michael Nygaard
+1. Chapter 1 and 2, Building Microservices, Sam Newman, O'Reilly Publishing (available online at Snell library)
 1. [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
 
 ## Labs
