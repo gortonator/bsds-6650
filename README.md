@@ -65,7 +65,7 @@ Assignment | Topic | Due Date
 ---------- | ----- | --------
 1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 10/6
 2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 10/27
-3 | [Adding the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 11/17
+3 | [Adding the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 11/23 
 4 | [Scaling the System](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 12/10
 
 ## Quizzes
