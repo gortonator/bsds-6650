@@ -13,6 +13,7 @@ We'll use lecture materials from last year's class as these haven't changed in c
 1. [Raft in Neo4j](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=489ec07a-1ea0-4378-bcb4-ab9100ddadac)
 
 ## Mandatory Reading
+1. Chapter 12 of course book (not yet available)
 1. Chapter 9, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
 
 ## Optional Reading
