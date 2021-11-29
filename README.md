@@ -57,6 +57,7 @@ Week | Topic | Date
 11 | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-11) | 11/23
 12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 11/30
 13 | Final Quiz  | 12/7
+14 | Assignment 4 presentations | 12/14
 
 ## Assignments
 Submission instructions and exact deadlines are on the course Canvas site. 
