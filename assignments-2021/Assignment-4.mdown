@@ -1,10 +1,10 @@
 # CS6650 Fall 2021  Assignment 4
 
 ## Time to do some reading ....
-The first three assignments have focused on writing data from POST requests. Finally, in thie assignment, we will do some reading!
+The first three assignments have focused on writing data from POST requests. Finally, in this assignment, we will do some reading!
 
 ### Step 1 Populate the Databases
-First, we're going to run assignment 3 to populate your databases. First, empty your databases.
+We're going to run assignment 3 to populate your databases. First, empty your databases.
 
 You should then do 3 seperate client runs, as follows:
 * keep resort and season constant in all 3 runs
@@ -25,9 +25,9 @@ You should then do 3 seperate client runs, as follows:
 ### Step 3 Load test the GETs
 In this step you'll load test the new GET APIs. To generate a load testing client, we'll use a load generating tool. 
 
-[Apache JMeter}(https://jmeter.apache.org/) is widely used and straightforward to set up, so this is the recommended tool. 
+[Apache JMeter](https://jmeter.apache.org/) is widely used and straightforward to set up, so this is the recommended tool. 
 
-Use Jmeter to create test cases. [These instructions](https://jmeter.apache.org/usermanual/build-web-test-plan.html) provide the basics of what you need to do.
+Use JMeter to create test cases. [These instructions](https://jmeter.apache.org/usermanual/build-web-test-plan.html) provide the basics of what you need to do.
 The basic requirements are as follows. For each of the three GET requests, define a test with a thread group with:
 * 100 threads
 * 50 iterations
@@ -35,13 +35,13 @@ The basic requirements are as follows. For each of the three GET requests, defin
 
 Randomly generate a skierID and dayID for each requests.
 
-JMeter produces a bunch of statistics for each run. Experiemnt and see how low you can get the response times and p99s.
+JMeter produces a bunch of statistics for each run. Experiment and see how low you can get the response times and p99s.
  
  
 ### Submission requirements
 You'll present your results in class on December 14th. Plan 5 of so minutes, mostly focus on test results and any design/technical issues you think you should highlight.
 
-Also submit your slides and results as pdfs to canvas.
+Also submit your slides and results as pdfs to canvas. You may refine your results and presentation after the presentation if desired. 
  
 ### Grading
 JMeter results for all 3 test cases: 20 points
