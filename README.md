@@ -1,6 +1,6 @@
 # Building Scalable Distributed Systems
 
-## CS6650 Fall 2021
+## CS6650 Spring 2022
 **Instructors**: 
 * Section 1 - Ian Gorton, Khoury College of Computer Sciences, Northeastern University, Seattle Campus
 * Section 2 - Vishal Rajpal, Khoury College of Computer Sciences, Northeastern University, Seattle Campus
