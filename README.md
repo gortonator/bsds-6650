@@ -11,8 +11,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 * Section 2 - Room 416, Friday 6-9:20pm
 
 ### Course Lead
-**Ian Gorton** - i.gorton(at)northeastern.edu
-**Vishal Rajpal** - v.rajpav(at)northeastern.edu
+* **Ian Gorton** - i.gorton(at)northeastern.edu
+* **Vishal Rajpal** - v.rajpal(at)northeastern.edu
 
 **Office Hours** - 
 * Section 1 : Wednesday 2-4PM (PST)
