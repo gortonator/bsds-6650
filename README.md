@@ -68,8 +68,8 @@ Submission instructions and exact deadlines are on the course Canvas site.
 
 Assignment | Topic | Due Date (Same for both sections)
 ---------- | ----- | --------
-1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 2/11
-2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 3/4
+1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-1) | 2/17 
+2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-2) | 3/11 
 3 | [Adding the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-3) | 4/8 
 4 | [Mix Request Loads](https://gortonator.github.io/bsds-6650/assignments-2021/Assignment-4) | 4/29
 
