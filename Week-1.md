@@ -22,7 +22,7 @@ Can be found on Canvas site
 
 ## Reading
 Mandatory: 
-- Chapter 1 of Concurrency and Scalability for Distributed Systems
+- Chapter 1 of Foundations of Scalable Systems
 
 Recommended:
 - Distributed systems : concepts and design, CHAPTER 1, Coulouris, George F. ; Dollimore, Jean. ; Kindberg, Tim. ; Blair, Gordon.

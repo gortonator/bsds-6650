@@ -32,9 +32,9 @@ This site contains all the informtion for the course, except the quiz questions.
 Class will meet each week for 3 hour 15 mins. Classes will be a mix of lectures and labs.
 
 ## Course Book
-The book for the course, Concurrency and Scalability for Distributed Syetms, is in development. 
+The book for the course, Foundations of Scalable Systems, is being written as you read
 
-The first 11 chapters should be progressively available online [here](https://www.oreilly.com/library/view/concurrency-and-scalability/9781098106058/).
+The first 15 chapters should be progressively available online [here](https://www.oreilly.com/library/view/concurrency-and-scalability/9781098106058/).
 
 You should be able to access this and all O'Reilly books through the library. 
 
@@ -97,8 +97,8 @@ If you need more time, come beg :). Communications usually give a positive outco
 Without warning, you'll lose 5% of your final grade each day overdue. 
 
 **Missed Quizzes**
-Quizzes last approximately 45 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let me know_ in advance. Failure to do this will result in a zero for the quiz you miss. 
+Quizzes last approximately 45 minutes. If you are not able to attend and take the quiz at the same time as others, _you must let your instructor know_ in advance. Failure to do this will result in a zero for the quiz you miss. 
 
 **Do your own work**
-You know the rules. Helping each other out is fine, but design and build your own system. Any unwarrented collaboration will result in a zero grade for the assignment. 
+You know the rules. Helping each other out is fine, but design and build and test your own system. Any unwarranted collaboration will result in a zero grade for the assignment. 
 

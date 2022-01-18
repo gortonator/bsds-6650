@@ -1,10 +1,48 @@
 # CS6650 Fall 2020 
 
-## Lab 2 - Simple Server with Java Servlet
-### Aims: 
+## Lab 2 - Java Concurrency and Servlets 
+1. Experiment with Java threads
 1. Build a Java Servlet to process two APIs that are similar to your assignment tasks.
 1. Echo the API parameter values back to the client
 1. Learn simple testing with POSTMAN
+
+# Java Multithreaded Exercises
+
+## Counter
+
+Write a Java multithreaded programs that
+
+1. takes a time stamp, and start N threads, default 1K
+2. each thread increments a shared synchronized counter 10 times and terminates
+3. when all threads are completed, the main thread takes a time stamp and prints out the counter value and the duration it takes to run the program
+
+Run the program with a variable number of threads (e.g.1,10k etc) and see if you can observe any relationship between number of threads and total run time?
+
+## Collections (1)
+
+Write a Java program that uses a single thread to add a lot of elements (100k?) to a:
+
+- Vector
+- ArrayList
+
+Time how long each test takes to quantify the overheads of synchronization.
+
+## Collections (2)
+
+Write a Java program that uses a single thread to add a lot of elements (100k?) to a:
+
+- HashTable
+- HashMap
+- ConcurrentHashMap
+
+1. Time how long each test takes to quantify the overheads of synchronization.
+2. Make your program mulththreaded with e.g 100 threads and and again compare performance.
+
+You will have to make access to the HashMap threadsafe using Collections.synchronizedMap.
+
+
+
+## Java Servlets
 
 ### Step 1: Create a new Maven project in IntelliJ
 1. Open the **File** menu, point to **New** and click **Project**
@@ -27,11 +65,11 @@ This will create a simple web application structure in your project
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
-
+    
         <groupId>cs6650-lab</groupId>
         <artifactId>cs6650-lab</artifactId>
         <version>1.0-SNAPSHOT</version>
-
+    
     <dependencies>
         <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
@@ -40,7 +78,7 @@ This will create a simple web application structure in your project
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
+    
     </dependencies>
     </project>
     ```
@@ -57,7 +95,7 @@ This will create a simple web application structure in your project
             <servlet-name>SkierServlet</servlet-name>
             <servlet-class>SkierServlet</servlet-class>
         </servlet>
-
+    
         <servlet-mapping>
             <servlet-name>SkierServlet</servlet-name>
             <url-pattern>/skiers/*</url-pattern>
@@ -69,14 +107,14 @@ This will create a simple web application structure in your project
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         res.setContentType("text/plain");
         String urlPath = req.getPathInfo();
-
+    
         // check we have a URL!
         if (urlPath == null || urlPath.isEmpty()) {
             res.setStatus(HttpServletResponse.SC_NOT_FOUND);
             res.getWriter().write("missing paramterers");
             return;
         }
-
+    
         String[] urlParts = urlPath.split("/");
         // and now validate url path and return the response status code
         // (and maybe also some value if input is valid)
@@ -90,7 +128,7 @@ This will create a simple web application structure in your project
             res.getWriter().write("It works!");
         }
     }
-
+    
     private boolean isUrlValid(String[] urlPath) {
         // TODO: validate the request url path according to the API spec
         // urlPath  = "/1/seasons/2019/day/1/skier/123"

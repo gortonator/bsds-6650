@@ -22,7 +22,7 @@ Can be found [here](https://github.com/gortonator/bsds-6650/tree/master/code/wee
 
 ## Reading
 Mandatory:
-- Chapter 4 of Concurrency and Scalability for Distributed Systems 
+- Chapter 4 of Foundations of Scalable Systems
 
 Optional:
 * Java Concurrency in Practice 1st Edition, by Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea
@@ -30,12 +30,11 @@ Optional:
 * [Shooting yourself in the foot with Random number generators](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators)
 * [Interesting article on thread-safe Java collections](https://www.codejava.net/java-core/collections/understanding-collections-and-thread-safety-in-java)
 
-## Java Multithreading Lab
-### Aim
-Write some simple Java multithreaded programs using basic collections.Instructions are [here](https://gortonator.github.io/bsds-6650/labs/JavaMTLab)
 
-## Lab 2 - Simple Server with Java Servlet
+
+## Lab 2 
 ### Aims: 
+1. Experiment with threads
 1. Build a Java Servlet to process two of the APIs in Assignment 1
 1. Echo the API parameter values back to the client
 1. Learn simple testing with POSTMAN
