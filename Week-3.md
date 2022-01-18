@@ -17,7 +17,7 @@
 
 ## Manadatory Reading
 
-Chapter 2 of Concurrency and Scalability for Distributed Systems 
+Chapter 2 of Foundations of Scalable Systems 
 
 ## Optional, Highly Recommended Reading/Viewing
 
