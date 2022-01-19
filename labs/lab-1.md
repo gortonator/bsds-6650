@@ -8,7 +8,7 @@ AWS Linux 2 is the version to use. Deprecated instructions for AWS Linux 1 are b
 ### Aims: 
 * Get AWS account up and running - you should have an AWS Academy invitation
 * Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step.
-* [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+* [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
 * Make sure you have configured your security group that allows traffic on:
   ** port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
   ** port 22 for ssh. Make these ports accessible from "My IP" to be totally safe and ensure the instances are not hacked
