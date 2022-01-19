@@ -6,13 +6,21 @@ AWS Linux 2 is the version to use. Deprecated instructions for AWS Linux 1 are b
 
 ## Lab 1 - Getting started with AWS Linux 2
 ### Aims: 
-* Get AWS account up and running - you should have an AWS Educate invitation
+* Get AWS account up and running - you should have an AWS Academy invitation
+* Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step.
 * [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
 * Make sure you have configured your security group that allows traffic on:
-** port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
-** port 22 for ssh. Make these ports accessible from "My IP" to be totally safe and ensure the instances are not hacked
+  ** port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
+  ** port 22 for ssh. Make these ports accessible from "My IP" to be totally safe and ensure the instances are not hacked
 * Install tomcat - [Follow the instruction for the first 3 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
 * Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
+
+Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'l; be able to do all this in your sleep. 
+
+Some notes based on first experience with the Learner Lab:
+
+- Download a new key pair when you launch your first instance. You can then use this for all subsequent instances you launch
+- a .cer file seems to be teh same as a .pem file, so you can use that in ssh commands
 
 
 ## Notes on AWS Academy Learner Labs and Charging
