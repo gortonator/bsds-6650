@@ -1,4 +1,4 @@
-# CS6650 Fall 2021  Assignment 1
+# CS6650 Spring 2022  Assignment 1
 
 ## Overview
 
@@ -13,7 +13,7 @@ In Assignment 1, we'll build a client that generates and sends lift ride data to
 
 ## Implement the Server API 
 
-The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.0.2)
+The initial server API is specified using [Swagger]https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/1.16)
 
 In this assignment you need to implement this API using a Java servlets. Each API should:
 
@@ -23,7 +23,7 @@ In this assignment you need to implement this API using a Java servlets. Each AP
 
 Good simple illustrations of how to handle JSON request payloads are [here](https://edwin.baculsoft.com/2011/11/how-to-create-a-simple-servlet-to-handle-json-requests/) and [here](https://www.baeldung.com/servlet-json-response).
 
-This should be a pretty simple task. Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools.
+This should be a pretty simple task. Test each servlet API with [POSTMAN](https://www.getpostman.com/downloads/) or an equivalent HTTP testing tools. Deploy your server on us-west2 on AWS Academy.
 
 Make sure you can load the resulting .war file onto your EC2 free tier instance you have created and configured in lab 1 and call the APIs successfully.
 
@@ -32,7 +32,7 @@ Make sure you can load the resulting .war file onto your EC2 free tier instance 
 This is the major part of this assignment. We want a multithreaded Java client we can configure to upload a day of lift rides to the server and exert various loads on the server.
 
 Your client should accept a set of parameters from the command line (or a parameter file) at startup. These are:
-1. maximim number of threads to run (numThreads - max 256)
+1. maximum number of threads to run (numThreads - max 1024)
 1. number of skier to generate lift rides for  (numSkiers - max 100000), This is effectively the skier's ID (skierID)
 1. number of ski lifts  (numLifts - range 5-60, default 40)
 1. mean numbers of ski lifts each skier rides each day (numRuns - default 10, max 20)
@@ -52,6 +52,7 @@ Once each thread has started it should send (numRunsx0.2)x(numSkiers/(numThreads
 1. a skierID from the range of ids passed to the thread
 1. a lift number (liftID)
 1. a time value from the range of minutes passed to each thread (between start and end time)
+1. a wait time between 0 and 10
 
 With our example, if numRuns=20, each thread will send 4x(1024/16) POST requests. 
 
@@ -59,7 +60,7 @@ The server will return an HTTP 201 response code for a successful POST operation
 
 If the client receives a 5XX response code (Web server error), or a 4XX response code (from your servlet), it should retry the request up to 5 times before counting it as a failed request.
 
-Once 10% (rounded up) of the threads in Phase 1 have completed, Phase 2, the *peak phase* should begin. Phase 2 behaves like Phase 1, except:
+Once 20% (rounded up) of the threads in Phase 1 have completed, Phase 2, the *peak phase* should begin. Phase 2 behaves like Phase 1, except:
 * it creates *numThreads* threads
 * the start and end time interval is 91 to 360
 * each thread is passed a disjoint skierID range of size (numSkiers/numThreads)
@@ -67,7 +68,7 @@ Once 10% (rounded up) of the threads in Phase 1 have completed, Phase 2, the *pe
 As above, each thread will randomly select a skierID, liftID and time from the ranges provided and sends a POST request. It will do this (numRunsx0.6)x(numSkiers/numThreads) times.
 Back to our example above, this means phase 2 would create 64 threads, and and each sends 12*(1024/64) POSTs.
 
-Finally, once 10% of the threads in Phase 2 complete, Phase 3 should begin. Phase 3, the *cooldown phase*, is identical to Phase 1, starting 25% of numThreads, with each thread sending (0.1xnumRuns) POST requests, and with a time interval range of 361 to 420.
+Finally, once 20% of the threads in Phase 2 complete, Phase 3 should begin. Phase 3, the *cooldown phase*, is identical to Phase 1, starting 10% of numThreads, with each thread sending (0.1xnumRuns) POST requests, and with a time interval range of 361 to 420.
 
 When all threads from all phases are complete, the programs should print out:
 1. number of successful requests sent
@@ -76,9 +77,11 @@ When all threads from all phases are complete, the programs should print out:
 1. the total throughput in requests per second (total number of requests/wall time)
 
 You should run the client on your laptop. Thus means each request will incur latency depending on where your server resides. 
-You should test how long a single request takes to estimate this latency. Run a simple test and send eg 10000 requests from a single threadto do this.
+You should test how long a single request takes to estimate this latency. Run a simple test and send eg 10000 requests from a single thread to do this.
+
 You can then calculate the expected throughput your client will see using Little's Law. 
-If your throughput is not close to this estimate for each of the test runs, you probably  have a bug.
+
+If your throughput is not close to this estimate for each of the test runs, you probably  have a bug in your client.
 
 ## Building the Client (Part 2)
 With your load generating client working wonderfully, we want to now instrument the client so we have deeper insights into the performance of the system. 
@@ -91,10 +94,9 @@ To this end, for each POST request:
 Once all phases have completed, we need to calculate:
 * mean response time (millisecs)
 * median response time (millisecs)
-* throughput = total number of requests/wall time
-* p99 (99th percentile) response time. [Here’s a nice article](https://www.elastic.co/blog/averages-can-dangerous-use-percentile) about why percentiles are important and why calculating them is not always
-easy.
-* max response time
+* throughput = total number of requests/wall time (requests/second)
+* p99 (99th percentile) response time. [Here’s a nice article](https://www.elastic.co/blog/averages-can-dangerous-use-percentile) about why percentiles are important and why calculating them is not always easy. (millisecs)
+* min and max response time (millisecs)
 
 You may want to do all the processing of latencies in your client after the test completes, or you may want to write a separate program to run after the test has completed that generates the results. Check your results against those calculated in a spreadsheet. 
 
