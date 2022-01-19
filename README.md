@@ -19,7 +19,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 * Section 2 : Monday 5-6:30PM (PST)
 
 ### Super Talented Teaching Assistants
-**TODO**
+* **Yaqin Zhou** - zhou.yaq(at)northeastern.edu
+* **Peilin Guo** - guo.peil(at)northeastern.edu
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
