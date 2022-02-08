@@ -12,7 +12,7 @@
 All lectures are available online.
 
 1. [Internet Scale Systems - History](https://youtu.be/rO7LrLUhFsc)
-1. [Modern Web Sites and Scale](https://youtu.be/TOjVEFzx5Dc)
+1. Modern Web Sites and Scale - materials now in book chapter
 1. [What is Scalability?](https://youtu.be/-Ygn8k7bjhg)
 1. [Course Overview](https://youtu.be/20keG8-oREc)
 
