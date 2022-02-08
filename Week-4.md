@@ -20,7 +20,7 @@ The first short video in this playlist is important to watch as it covers the ba
 
 ## Mandatory Reading
 
-Chapter 3 of Concurrency and Scalability for Distributed Systems 
+Chapter 3 of Foundation of Scalable Systems
 
 [AWS Networking Overview](https://aws.amazon.com/blogs/apn/aws-networking-for-developers/)
 
