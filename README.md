@@ -23,6 +23,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
   * Thursday 1-3PM (PST) via Teams
 * **Peilin Guo** - guo.peil(at)northeastern.edu
   * Friday 1-3PM (PST) via Teams
+* **Emiliano Zhu** - zhu.em(at)northeastern.edu
+  * Tuesday 1-3PM (PST) via Teams
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that
