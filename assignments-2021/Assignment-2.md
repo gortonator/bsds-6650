@@ -1,4 +1,4 @@
-# CS6650 Fall  2021  Assignment 2
+# CS6650 Spring 2022  Assignment 2
 
 
 ## Building the Server
@@ -31,8 +31,8 @@ This means your consumer will need to be multithreaded and your hash map thread 
 Your aim here is to find the 'best' application configuration in terms of responsiveness to the client and managing queue size. 
 
 The questions you need to explore are:
-* Do I need to scale out with load balancing for my server? Or can my system work with 1 free-tier server
-* How many queue consumers threads do I need to keep the queue size as close to zero as possible. 
+* Do I need to scale out with load balancing for my server? Or can my system work with 1 free-tier server. Or a single, maybe small instance? Or ....?
+* How many queue consumers threads do I need to keep the queue size as close to zero as possible?
 
 You can use the RabbitMQ management console to track the number of messages in the queue, and producers and consumer rates.
 
@@ -42,15 +42,15 @@ Submit your work to Canvas Assignment 2 as a pdf document. The document should c
 1. The URL for your git repo. Create a new folder for your Assignment 2 server code
 1. A 1-2 page description of your server design. Include major classes, packages, relationships, how messages get sent/received, etc
 1. Test runs (command lines, RMQ management windows showing queue size, send/receive rates) for 64, 128 and 256 client threads
-1. Bonus Points - Results for a test with 512 client threads
+1. Results for a test with 512 client threads
 
 ## Grading:
 1. Server and consumer  implementations working (15 points)
 1. Server design description (5 points) - clarity of description, good design practies used
-1. Results (20 points) - throughput, different instances, basically describe and analyze what you did
+1. Results (15 points) - throughput, different instances, basically describe and analyze what you did
 1. Results of a successful run with 512 client threads (5 points) 
 
-# Deadline: 10/27 11.59pm PST 
+# Deadline: 3/11 11.59pm PST 
 
 ## Addendum: Multithreading and RabbitMQ
 
