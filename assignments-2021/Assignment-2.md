@@ -19,6 +19,8 @@ One free tier server will probably get pretty busy, so you will want to introduc
 You can set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ or _Network_ load balancers. 
 Enable load balancing with e.g. 4 free tier EC2 instances and see what effect this has on your performance.
 
+A tutorial [here](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html) should help.
+
 ## Step 2 - Implement a Consumer
 Implement a plain old Java program to pull messages off the queue. 
 This program simply receives messages from the queue and keeps a record of the individual lift rides for each skier in a hash map. 
