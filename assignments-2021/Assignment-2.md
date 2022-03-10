@@ -11,7 +11,7 @@ In this assignment, you will implement the doPost() method in your servlet to:
 1. fully validate the URL and JSON payload
 1. if valid, format the incoming data and send it as a payload to queue
 
-Choose your own queue technology. RabbitMQ is an obvious one, AWS SQS another. Make sure you deploy RabbitMQ on its own EC2 instance. You can find various installation instructions [here](https://www.rabbitmq.com/download.html).
+Choose your own queue technology. RabbitMQ is an obvious one, AWS SQS another. Make sure you deploy RabbitMQ on its own EC2 instance. You can find various installation instructions [here](https://www.rabbitmq.com/download.html). We have tested the Ubuntu install and it works fine.
 
 Your aim is to keep response times as low as possible. 
 One free tier server will probably get pretty busy, so you will want to introduce load balancing. 
