@@ -73,7 +73,7 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 
 #### Redis Info
 
-You can install Redis on AWS Linux or utilize AWS Elasticache which is a managed Redis service.
+You can install Redis on AWS Linux or utilize AWS Elasticache which is a managed Redis service. Unfortunately Elasticache is not offered as part of the AWS Learner Lab so that makes it tricky if you are using that service!
 
 Install instructions on AWS Linux are [here](https://shawn-shi.medium.com/how-to-install-redis-on-ec2-server-for-fast-in-memory-database-f30c3ef8c35e) or if Medium access is painful [here](https://www.phaedrasolutions.com/blog/setup-redis-on-aws).
 
