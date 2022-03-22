@@ -17,7 +17,7 @@ Redis is a simple Key-Value store with native hash map support
 The data model you design in the database should enable queries like:
 
 * "For skier N, how many days have they skied this season?"
-* "For skier N, what are the vertical totals for each ski day?"
+* "For skier N, what are the vertical totals for each ski day?" (calculate vertical as liftID*10)
 * "For skier N, show me the lifts they rode on each ski day"
 
 The challenge is to write to the database ideally as fast as you can consume messages from RabbitMQ. This may be challenging based on the EC2 resources you choose, so experiments required. You can tune Redis by looking at the parameters used to periodically store data to disk.
