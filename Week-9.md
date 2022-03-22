@@ -25,7 +25,9 @@ We'll use lecture materials from last year's class as these haven't changed in c
 **Class Exercises:** 
 Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
 
-Install Redis on EC2. Install instructions on AWS Linux are [here](https://shawn-shi.medium.com/how-to-install-redis-on-ec2-server-for-fast-in-memory-database-f30c3ef8c35e) or if Medium access is painful [here](https://www.phaedrasolutions.com/blog/setup-redis-on-aws).
+Install Redis on EC2. The Quickstart is [here](https://redis.io/topics/quickstart).
+
+More install instructions on AWS Linux are [here](https://shawn-shi.medium.com/how-to-install-redis-on-ec2-server-for-fast-in-memory-database-f30c3ef8c35e) or if Medium access is painful [here](https://www.phaedrasolutions.com/blog/setup-redis-on-aws).
 
 Choose and test a Redis Java client from [here](https://redis.io/clients#java). [Jedis](https://github.com/redis/jedis) is popular,
 
