@@ -20,12 +20,13 @@
 
 ## Mandatory Reading
 
-1. [Comparing Riak with the original Dynamo paper](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/)
-1. [MongoDB 4.2 Architecture](https://info-mongodb-com.s3.us-east-1.amazonaws.com/MongoDB_Architecture_Guide.pdf)
-1. [CAP Theorem explained](https://dzone.com/articles/understanding-the-cap-theorem)
+1. Chapter 13 of course book - Distributed Database Implementations
 
 ## Optional Reading
 1. [A nice explanation of the complexities of consistent hashing in practise](https://ably.com/blog/implementing-efficient-consistent-hashing)
+1. [Comparing Riak with the original Dynamo paper](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/)
+3. [MongoDB 4.2 Architecture](https://info-mongodb-com.s3.us-east-1.amazonaws.com/MongoDB_Architecture_Guide.pdf)
+4. [CAP Theorem explained](https://dzone.com/articles/understanding-the-cap-theorem)
 
 ## Labs
 
