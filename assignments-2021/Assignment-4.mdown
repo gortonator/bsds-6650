@@ -3,6 +3,8 @@
 ## Time to do some reading ....
 The first three assignments have focused on writing data from POST requests. Finally, in this assignment, we will do some reading!
 
+You can work on this assignment in groups of up to 3 people.
+
 ### Step 1 Populate the Databases
 We're going to run assignment 3 to populate your databases. First, empty your databases.
 
