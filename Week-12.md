@@ -2,18 +2,17 @@
 
 ### Outline
 1. Stream and Event Processing Motivations
-1. Apache Flink Stream Processing
 1. Apache Kafka Event Processing
-1. An Overview of ZooKeeper
+1. Apache Flink Stream Processing
 
 
 ## Mandatory Materials
-this weeks you get to listen to talks from industry experts on Flink, Kafka and ZooKeeper. Enjoy!
-1. [Apache Flink Introduction](https://www.youtube.com/watch?v=DkNeyCW-eH0)
-1. [Apache Kafka Introduction](https://www.youtube.com/watch?v=UEg40Te8pnE)
+1. Lecture notes are posted on Canvas
 1. [ZooKeeper Case Study](https://www.youtube.com/watch?v=Vv4HpLfqAz4)
 
 ## Optional Materials)
+1. [Apache Flink Introduction](https://www.youtube.com/watch?v=DkNeyCW-eH0)
+1. [Apache Kafka Introduction](https://www.youtube.com/watch?v=UEg40Te8pnE)
 1. [Streaming platforms survey](https://www.youtube.com/watch?v=ZWez6hOpirY)
 1. [A Kafka Childrens Book - it's great](http://www.gentlydownthe.stream/)
 1. [A longer Kafka description](https://www.youtube.com/watch?v=X40EozwK75s)
