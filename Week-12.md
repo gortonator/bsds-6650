@@ -8,6 +8,7 @@
 
 ## Mandatory Materials
 1. Lecture notes are posted on Canvas
+1. Chapters 14-16 of course book
 1. [ZooKeeper Case Study](https://www.youtube.com/watch?v=Vv4HpLfqAz4)
 
 ## Optional Materials)
