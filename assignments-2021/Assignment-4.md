@@ -41,7 +41,7 @@ JMeter produces a bunch of statistics for each run. Experiment and see how low y
 
 
 ### Submission requirements
-You'll present your results in class on April 26th. Plan 5-10 minutes, with a structure as follows:
+You'll present your results in class on April 26th. Plan 5-ish minutes, with a structure as follows:
 
 - Team Name (must be funny)
 - 1-2 slides showing your architecture, how microservices communicate, deployment
