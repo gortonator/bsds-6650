@@ -8,15 +8,11 @@
 
 
 ## Mandatory Lecture Materials
-We'll use lecture materials from last year's class as these haven't changed in content - just the order (they were week 8 last year)
-
-1. [Introduction to Asynchronous Systems](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c675602-7478-4093-bd20-ab9100ddaa9c)
-1. [Messaging Patterns](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a00a8c9-136e-4fcd-a8b1-ab9100dda9d2)
-
+TO DO 
 
 ## Mandatory Reading
 
-Chapter7 of course book
+Chapter 7 of course book
 
 ## Optional, Highly Recommended Reading/Viewing
 

@@ -1,26 +1,30 @@
-# Week 11: 
+# Week 11:  NoSQL Databases
 
-## Serverless Computing Platforms
+## Learning Objectives
 
-### Outline
-1. Why serverless computing?
-1. Google App Engine Overview
-1. Some Experimental Results
-1. AWS Lambda Overview
+To DO
 
-### Lecture (Mandatory)
-1. [Serverless Computing Platforms](https://youtu.be/wqpK6NMH3OU)
+## Module Outline
 
-### Additional Materials (Mandatory)
-1. Course Book, Chapter 8
+TO  DO
 
+## Lectures
+TO DO 
 
-### Additional Materials (Optional)
-1. [Video: Introduction to AWS Lambda](https://www.youtube.com/watch?v=EBSdyoO3goc)
-2. [AWS Lambda Description](https://medium.com/faun/in-depth-aws-lambda-overview-1eeb4580696b)
-3. [GAE Experiment Description](https://levelup.gitconnected.com/dont-accept-the-defaults-how-to-reduce-costs-with-google-app-engine-autoscaling-316af4804a01)
+## Mandatory Reading
 
+1. Chapter 13 of course book - Distributed Database Implementations
 
+## Optional Reading
+1. [A nice explanation of the complexities of consistent hashing in practise](https://ably.com/blog/implementing-efficient-consistent-hashing)
+1. [Comparing Riak with the original Dynamo paper](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/)
+3. [MongoDB 4.2 Architecture](https://info-mongodb-com.s3.us-east-1.amazonaws.com/MongoDB_Architecture_Guide.pdf)
+4. [CAP Theorem explained](https://dzone.com/articles/understanding-the-cap-theorem)
+
+## Labs
+
+### Lab 11. : Consistent Hashing Exerise
+[Study and extend a simple consistent hashing implementation](https://gortonator.github.io/bsds-6650/labs/lab-11)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
 

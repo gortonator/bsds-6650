@@ -1,27 +1,26 @@
-# Week 7: Microservices
+# Week 7: 
 
-## Learning Objectives
-1. Explain the advantages of microservices architectures
-1. Give an example of a cascading failure
-1. Explain the key features of a Circuit Breaker
-1. Describe the purpose of bulkheads in resilient systems
+## Serverless Computing Platforms
 
-## Mandatory Lecture Materials
-We'll use lecture materials from last year's class as these haven't changed in content - just the order (they were week 9 last year)
+### Outline
+1. Why serverless computing?
+1. Google App Engine Overview
+1. Some Experimental Results
+1. AWS Lambda Overview
 
-[Microservices](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80e8535b-1f86-4c0c-b4e6-ab9100dda93c)
+### Lecture (Mandatory)
+TO DO 
 
-## Mandatory Reading
-Chapter 9 of course book
+### Additional Materials (Mandatory)
+1. Course Book, Chapter 8
 
-## Optional Reading
-1. Release it!, 2nd Edition, Michael Nygaard
-1. Chapter 1 and 2, Building Microservices, Sam Newman, O'Reilly Publishing (available online at Snell library)
-1. [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
 
-## Labs
-Lab 7 [Tomcat and MySQL](https://gortonator.github.io/bsds-6650/labs/lab-7)
+### Additional Materials (Optional)
+1. [Video: Introduction to AWS Lambda](https://www.youtube.com/watch?v=EBSdyoO3goc)
+2. [AWS Lambda Description](https://medium.com/faun/in-depth-aws-lambda-overview-1eeb4580696b)
+3. [GAE Experiment Description](https://levelup.gitconnected.com/dont-accept-the-defaults-how-to-reduce-costs-with-google-app-engine-autoscaling-316af4804a01)
 
-Lab 8 [Circuit Breaker Experiments](https://gortonator.github.io/bsds-6650/labs/lab-8)
+
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
+

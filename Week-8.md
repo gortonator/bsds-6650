@@ -1,27 +1,25 @@
-# Week 8: Scaling the Data Layer - Fundamentals
+# Week 8: Microservices
 
 ## Learning Objectives
-1. Explain the difficulties of scaling relational databases
-1. Describe the advantages and disadvantages of partitioning and replication 
-1. Describe the strengths and weaknesses of distributed database  architectures
-1. Explain how consistency and conflicts are handled in leaderless systems
+1. Explain the advantages of microservices architectures
+1. Give an example of a cascading failure
+1. Explain the key features of a Circuit Breaker
+1. Describe the purpose of bulkheads in resilient systems
 
 ## Mandatory Lecture Materials
-1. [Scaling Databases Fundamentals](https://youtu.be/uynmnvmzAgs)
-1. [Eventual Consistency](https://youtu.be/foyrZ5kYdno)
+TO DO 
 
 ## Mandatory Reading
-Chapters 10 and 11 of course book
+Chapter 9 of course book
 
-
-## Optional Reading/Viewing
-1. Chapter 5 and 6, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
-1. [Scaling Relational Databases on AWS](https://www.youtube.com/watch?v=lQEMV_Qgjrw)
-1. A good general [distribued architecture talk](https://www.youtube.com/watch?v=tpspO9K28PM)
-1. This video is a deep dive into [conflict resolution](https://www.youtube.com/watch?v=8_DfwEpHE88&list=PLeKd45zvjcDHJxge6VtYUAbYnvd_VNQCx&index=5) for you algos nerds :) 
+## Optional Reading
+1. Release it!, 2nd Edition, Michael Nygaard
+1. Chapter 1 and 2, Building Microservices, Sam Newman, O'Reilly Publishing (available online at Snell library)
+1. [Cloud Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/)
 
 ## Labs
-Lab 9 [Experiment with Lamport Clocks](https://gortonator.github.io/bsds-6650/labs/lab-9)
+Lab 7 [Tomcat and MySQL](https://gortonator.github.io/bsds-6650/labs/lab-7)
 
+Lab 8 [Circuit Breaker Experiments](https://gortonator.github.io/bsds-6650/labs/lab-8)
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)

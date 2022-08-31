@@ -1,42 +1,26 @@
-# Week 9: Strong Consistency and Distributed Databases
+# Week 9: Scaling the Data Layer - Fundamentals
 
 ## Learning Objectives
-1. Explain how 2 phase commit works and how it handles failures
-1. Explain the implications of the FLP result
-1. Describe the Raft consensus algorithm
-1. Explain causal consistency in Neo4j
+1. Explain the difficulties of scaling relational databases
+1. Describe the advantages and disadvantages of partitioning and replication 
+1. Describe the strengths and weaknesses of distributed database  architectures
+1. Explain how consistency and conflicts are handled in leaderless systems
 
 ## Mandatory Lecture Materials
-We'll use lecture materials from last year's class as these haven't changed in content - just the order (they were week 5 last year)
-
-1. [Strong Consistency and Transactions](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=060abd7e-7f6c-4f03-a6bf-ab9100ddae42)
-1. [Raft in Neo4j](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=489ec07a-1ea0-4378-bcb4-ab9100ddadac)
+TO DO 
 
 ## Mandatory Reading
-1. Chapter 12 of course book
-1. Chapter 9, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
+Chapters 10 and 11 of course book
 
-## Optional Reading
-1. Chapter 7, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
-1. [Raft versus Paxos from MIT Lecture Series](https://www.youtube.com/watch?v=9QGGB5sCr1g)
-1. [Raft Features in MongoDB](https://www.youtube.com/watch?v=jCk0FCbqCz0)
+
+## Optional Reading/Viewing
+1. Chapter 5 and 6, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
+1. [Scaling Relational Databases on AWS](https://www.youtube.com/watch?v=lQEMV_Qgjrw)
+1. A good general [distribued architecture talk](https://www.youtube.com/watch?v=tpspO9K28PM)
+1. This video is a deep dive into [conflict resolution](https://www.youtube.com/watch?v=8_DfwEpHE88&list=PLeKd45zvjcDHJxge6VtYUAbYnvd_VNQCx&index=5) for you algos nerds :) 
 
 ## Labs
-**Class Exercises:** 
-Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
-
-Install Redis on EC2. The Quickstart is [here](https://redis.io/topics/quickstart).
-
-More install instructions on AWS Linux are [here](https://shawn-shi.medium.com/how-to-install-redis-on-ec2-server-for-fast-in-memory-database-f30c3ef8c35e) or if Medium access is painful [here](https://www.phaedrasolutions.com/blog/setup-redis-on-aws).
-
-Choose and test a Redis Java client from [here](https://redis.io/clients#java). [Jedis](https://github.com/redis/jedis) is popular,
-
-
-
-
-
-
-
+Lab 9 [Experiment with Lamport Clocks](https://gortonator.github.io/bsds-6650/labs/lab-9)
 
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)

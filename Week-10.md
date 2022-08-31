@@ -1,37 +1,39 @@
-# Week 10:  NoSQL Databases
+# Week 10: Strong Consistency and Distributed Databases
 
 ## Learning Objectives
+1. Explain how 2 phase commit works and how it handles failures
+1. Explain the implications of the FLP result
+1. Describe the Raft consensus algorithm
+1. Explain causal consistency in Neo4j
 
-1. Describe how a leaderless system is implemented in Riak
-1. Explain the purpose of consistent hashing
-1. Describe how a leader-based system is implemented in MongoDB
-1. Explain the trade offs implied by the CAP theorem
-
-## Module Outline
-
-1. Riak Architecture
-1. Consistent Hashing
-1. MongoDB Architecture
-1. CAP Theorem
-
-## Lectures
-1. [Key Values Stores and Riak](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5ea466d3-5de5-48ec-990b-ab9100ddaccf)
-2. [MongoDB and the CAP Theorem](https://northeastern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2143b087-4f23-4a96-bbee-ab9100ddac01)
+## Mandatory Lecture Materials
+TO DO 
 
 ## Mandatory Reading
-
-1. Chapter 13 of course book - Distributed Database Implementations
+1. Chapter 12 of course book
+1. Chapter 9, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
 
 ## Optional Reading
-1. [A nice explanation of the complexities of consistent hashing in practise](https://ably.com/blog/implementing-efficient-consistent-hashing)
-1. [Comparing Riak with the original Dynamo paper](https://docs.riak.com/riak/kv/2.2.2/learn/dynamo/)
-3. [MongoDB 4.2 Architecture](https://info-mongodb-com.s3.us-east-1.amazonaws.com/MongoDB_Architecture_Guide.pdf)
-4. [CAP Theorem explained](https://dzone.com/articles/understanding-the-cap-theorem)
+1. Chapter 7, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
+1. [Raft versus Paxos from MIT Lecture Series](https://www.youtube.com/watch?v=9QGGB5sCr1g)
+1. [Raft Features in MongoDB](https://www.youtube.com/watch?v=jCk0FCbqCz0)
 
 ## Labs
+**Class Exercises:** 
+Work through the Raft explanation [here](http://thesecretlivesofdata.com/raft/) and make sure you understand how the protocol works.
 
-### Lab 11. : Consistent Hashing Exerise
-[Study and extend a simple consistent hashing implementation](https://gortonator.github.io/bsds-6650/labs/lab-11)
+Install Redis on EC2. The Quickstart is [here](https://redis.io/topics/quickstart).
+
+More install instructions on AWS Linux are [here](https://shawn-shi.medium.com/how-to-install-redis-on-ec2-server-for-fast-in-memory-database-f30c3ef8c35e) or if Medium access is painful [here](https://www.phaedrasolutions.com/blog/setup-redis-on-aws).
+
+Choose and test a Redis Java client from [here](https://redis.io/clients#java). [Jedis](https://github.com/redis/jedis) is popular,
+
+
+
+
+
+
+
+
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
-
