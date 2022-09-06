@@ -6,17 +6,6 @@
 1. Explain the difficulties inherent in achieving linear scalability
 1. Explain performance, availability and scalability
 
-
-## Module Content
-
-All lectures are available online.
-
-1. [Internet Scale Systems - History](https://youtu.be/rO7LrLUhFsc)
-1. Modern Web Sites and Scale - materials now in book chapter
-1. [What is Scalability?](https://youtu.be/-Ygn8k7bjhg)
-1. [Course Overview](https://youtu.be/20keG8-oREc)
-
-
 ## Lecture Slides
 Can be found on Canvas site
 

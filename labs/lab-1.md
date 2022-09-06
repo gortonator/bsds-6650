@@ -2,17 +2,21 @@
 
 This lab is designed to guide you to create an EC2 instance on AWS running AWS Linux.
 
-AWS Linux 2 is the version to use. Deprecated instructions for AWS Linux 1 are below.
+AWS Linux 2 is the version to use. You may choose another Linux instance but will be on your own.
 
 ## Lab 1 - Getting started with AWS Linux 2
 ### Aims: 
 * Get AWS account up and running - you should have an AWS Academy invitation
 * Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step.
 * [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
+* You must configure access to your virtual machine uisng AWS Security Groups. [This is a good overview](https://www.javatpoint.com/aws-security-group) if you rae unfamiliar
 * Make sure you have configured your security group that allows traffic on:
   ** port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
-  ** port 22 for ssh. Make these ports accessible from "My IP" to be totally safe and ensure the instances are not hacked
-* Install tomcat - [Follow the instruction for the first 3 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
+  ** port 22 for ssh. 
+  ** Make these ports accessible from "My IP" for when you are working from home and the University subnet for when you are working on campus
+  ** Under no circumstances open any port to everywhere. You will get hacked and lose your account.
+* Install tomcat - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
+  ** ignore the instructions to configure the firewall service atthe end of Step 3.
 * Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
 
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'l; be able to do all this in your sleep. 
@@ -47,16 +51,7 @@ You are not billed for stopped EC2 instances.
 * When an instance is stopped and then started, a new billing period begins for a minimum of one minute.
 
 
-## Lab 1 Deprecated - Getting started with AWS Linux 1
-AT some stage you won't be able to create an AWS Linux 1 instance, so teh below will be moot.
-### Aims: 
-1. Get AWS account up and running - you should have an AWS Educate invitation
-1. Follow the instructions in the next step to create an EC2 instance. The instructions below assume you have chosed an AWS Linux (v1) image. 
-1. [Launch a free tier AMI running Amazon Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
-1. Install tomcat - see below.
-1. [Create an RDS MySQL Instance](https://aws.amazon.com/getting-started/tutorials/create-mysql-db/). You don't have to use MySQL, but the above gives a good introduction to the RDS Service. 
-
-#### Install tomcat8
+#### Install tomcat8 (DEPRECATED INSTRUCTIONS)
 Make sure you have configured your security group that allows traffic on:
 
 * port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
