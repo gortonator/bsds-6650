@@ -19,6 +19,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 * Section 2 : ???
 
 ### Super Talented Teaching Assistants
+* **Hongjian Cui** - cui.ho(at)northeastern.edu
+  * Monday 1-3PM (PST) via Teams
 * **Sean Stevens** - stevens.se(at)northeastern.edu
   * Friday 1-3PM (PST) via Teams
 
