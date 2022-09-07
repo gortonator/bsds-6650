@@ -23,7 +23,7 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
   * Monday 1-3PM (PST) via Teams
 * **Sean Stevens** - stevens.se(at)northeastern.edu
   * Friday 1-3PM (PST) via Teams
-  **Heng Su** - su.he@northeastern.edu
+* **Heng Su** - su.he(at)northeastern.edu
   * Thursday 1-3PM (PST) via Teams
 
 ## Overview
