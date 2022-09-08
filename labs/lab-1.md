@@ -16,7 +16,8 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
   - Make these ports accessible from "My IP" for when you are working from home and the University subnet for when you are working on campus
   - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
 * Install tomcat - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
-  - ignore the instructions to configure the firewall service atthe end of Step 3.
+  - ignore the instructions to configure the firewall service at the end of Step 3.
+  - ignore setting up httpd - we are using tomcat instead
 * Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
 
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'l; be able to do all this in your sleep. 
@@ -35,6 +36,7 @@ We will be using AWS Academy Learner Labs for this course.
 Each session lasts for 4 hours by default, although you can extend a session to run longer by pressing the start button to reset your session timer. At the end of each session, any resources you created will persist. However, AWS automatically shuts EC2 instances down. Other resources, such as RDS instances, keep running. Keep in mind that AWS  does not stop some AWS features, so they can still incur charges between sessions. For example, an Elastic Load Balancer or a NAT. You may wish to delete those types of resources and recreate them as needed to test your work during a session. You will have access to this environment for the duration of the class they enrolled you in. When the class ends, your access to the learner lab will also end.
 
 When you stop/start your EC2 instance, the public IP address will change. The extract below is from [stackoverlow](https://stackoverflow.com/questions/55414302/an-ip-address-of-ec2-instance-gets-changed-after-the-restart#:~:text=5%20Answers&text=Actually%2C%20When%20you%20stop%2Fstart,used%20by%20other%20EC2%20instances).
+
 Actually, When you stop/start your instance, the IP address will change. If you reboot the instance, it will keep the same IP addresses. Unfortunately, it is not possible for us to reassign the address to your instance as that address would have been released back into the pool used by other EC2 instances.
 
 If you want to avoid this issue in the future, depending on your needs:
@@ -51,40 +53,5 @@ You are not billed for stopped EC2 instances.
 * When an instance is stopped and then started, a new billing period begins for a minimum of one minute.
 
 
-#### Install tomcat8 (DEPRECATED INSTRUCTIONS)
-Make sure you have configured your security group that allows traffic on:
-
-* port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
-* port 22 for ssh
-Once your instance has launched, ssh into your instance.
-~~~
-ssh -i your-amazon.pem ec2-user@instance-address-public-IP
-~~~
-Install Java 8
-Check the version of java installed 
-~~~
-java -version
-~~~
-If its not Java 8, install as below
-~~~
-sudo yum install java-1.8.0
-sudo yum remove java-1.7.0-openjdk
-~~~
-Now install Tomcat 8
-~~~
-sudo yum install tomcat8 tomcat8-webapps
-~~~
-You can check the installation locations using
-~~~
-rpm -ql tomcat
-~~~
-Now start tomcat
-~~~
-sudo service tomcat8 start
-~~~
-Tomcat listens on port 8080, so in your browser go to 
-* http://{your public IP address}:8080
-
-and with luck you will see the tomcat home page!
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
