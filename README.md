@@ -21,10 +21,12 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 ### Super Talented Teaching Assistants
 * **Hongjian Cui** - cui.ho(at)northeastern.edu
   * Monday 1-3PM (PST) via Teams
-* **Sean Stevens** - stevens.se(at)northeastern.edu
-  * Friday 1-3PM (PST) via Teams
 * **Heng Su** - su.he(at)northeastern.edu
   * Thursday 1-3PM (PST) via Teams
+* **Sean Stevens** - stevens.se(at)northeastern.edu
+  * Friday 1-3PM (PST) via Teams
+* **Haonan Sun** - sun.haon(at)northeastern.edu
+  * Saturday 10-12AM (PST) via Teams
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that knowledge with engineering principles and practical experience with state-of-the-art technologies and methods for building scalable systems. Scalability is an essential quality of Internet-facing systems, and requires specialized skills and knowledge to build systems that scale at low cost. 
