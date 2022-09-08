@@ -11,12 +11,12 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
 * [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
 * You must configure access to your virtual machine uisng AWS Security Groups. [This is a good overview](https://www.javatpoint.com/aws-security-group) if you rae unfamiliar
 * Make sure you have configured your security group that allows traffic on:
-  ** port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
-  ** port 22 for ssh. 
-  ** Make these ports accessible from "My IP" for when you are working from home and the University subnet for when you are working on campus
-  ** Under no circumstances open any port to everywhere. You will get hacked and lose your account.
+  - port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
+    port 22 for ssh. 
+  - Make these ports accessible from "My IP" for when you are working from home and the University subnet for when you are working on campus
+  - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
 * Install tomcat - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
-  ** ignore the instructions to configure the firewall service atthe end of Step 3.
+  - ignore the instructions to configure the firewall service atthe end of Step 3.
 * Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
 
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'l; be able to do all this in your sleep. 
