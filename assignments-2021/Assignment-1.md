@@ -1,4 +1,4 @@
-# CS6650 Spring 2022  Assignment 1
+# CS6650 Fall 2022  Assignment 1
 
 ## Overview
 
