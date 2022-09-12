@@ -13,7 +13,7 @@ In Assignment 1, we'll build a client that generates and sends lift ride data to
 
 ## Implement the Server API 
 
-The initial server API is specified using [Swagger]https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/2.0#/info)
+The initial server API is specified using [Swagger](https://app.swaggerhub.com/apis/cloud-perf/SkiDataAPI/2.0#/info)
 
 In this assignment you need to implement the POST API for the /skiers endpoint using Java servlets. The API should:
 
@@ -29,7 +29,7 @@ This should be a pretty simple task. Test each servlet API with [POSTMAN](https:
 
 This is the major part of this assignment. We want a multithreaded Java client we can configure to upload a day of lift rides to the server and exert various loads on the server.
 
-First you need to get a Java client to call your server APIs. You can generate a client API from the Swagger specification. Look at:
+First you need to get a Java client to call your server APIs. You can generate a client API from the Swagger specification page. Look at:
 
 *Export-Client SDK-Java*
 
@@ -74,23 +74,25 @@ If the client receives a 5XX response code (Web server error), or a 4XX response
 
 ### On Completion
 
-When all 200k requests have been successfully sent, all threads should terminate cleanly. The programs should finally print out:
+When all 200k requests have been successfully sent, all threads should terminate cleanly.   The programs should finally print out:
 1. number of successful requests sent
 1. number of unsuccessful requests (should be 0)
 1. the total run time (wall time) for all phases to complete. Calculate this by taking a timestamp before you startany threads and another after all threads are complete.
 1. the total throughput **in requests per second** (total number of requests/wall time)
 
-You should run the client on your laptop. Thus means each request will incur latency depending on where your server resides. By using us-west2, this latenciy will be pretty low. 
+You should run the client on your laptop. Thus means each request will incur latency depending on where your server resides. By using us-west2, this latency will be pretty low from Seattle.
 
 You should test how long a single request takes to estimate this latency. Run a simple test and send eg 10000 requests from a single thread to do this.
 
-You can then calculate the expected throughput your client will see using Little's Law. 
+You can then calculate the expected throughput your client will see using Little's Law and use this to guide your design.
 
-If your throughput is not close to this estimate for each of the test runs, you probably  have a bug in your client.
+If your throughput is not close to this estimate for your test runs, you probably  have a bug in your client.
 
 ## Building the Client (Part 2)
 With your load generating client working wonderfully, we want to now instrument the client so we have deeper insights into the performance of the system. 
+
 To this end, for each POST request:
+
 * before sending the POST, take a timestamp
 * when the HTTP response is received, take another timestamp
 * calculate the latency (end - start) in milliseconds
@@ -103,9 +105,7 @@ Once all phases have completed, we need to calculate:
 * p99 (99th percentile) response time. [Here’s a nice article](https://www.elastic.co/blog/averages-can-dangerous-use-percentile) about why percentiles are important and why calculating them is not always easy. (millisecs)
 * min and max response time (millisecs)
 
-You may want to do all the processing of latencies in your client after the test completes, or you may want to write a separate program to run after the test has completed that generates the results. Check your results against those calculated in a spreadsheet. 
-
-The client should calculate these and display them in the output window in addition to the output from the previous step, and then cleanly terminate. 
+You want to do all the processing of latencies in your client after the test completes. The client should calculate these and display them in the output window in addition to the output from the previous step, and then cleanly terminate. 
 
 ## Bonus Points
 
