@@ -8,7 +8,7 @@
 ## Logistics
 This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 * Section 1 - Room 402, Wed 2.40-6pm
-* Section 2 - ???
+* Section 2 - Room 307, Fri 6-9:20PM
 
 ### Course Lead
 * **Ian Gorton** - i.gorton(at)northeastern.edu
@@ -24,9 +24,11 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 * **Heng Su** - su.he(at)northeastern.edu
   * Thursday 1-3PM (PST) via Teams
 * **Sean Stevens** - stevens.se(at)northeastern.edu
-  * Friday 1-3PM (PST) via Teams
+  * Friday 1-3PM (PST) via [Zoom](https://northeastern.zoom.us/j/91285359314?pwd=NlQyZGNRR3RYV0dWK08xNXZSZWhKUT09)
 * **Haonan Sun** - sun.haon(at)northeastern.edu
   * Saturday 10-12AM (PST) via Teams
+* **Peihao Zhu** - zhu.pei@northeastern.edu
+  * Office Hours
 
 ## Overview
 This course will cover the essential elements of distributed, concurrent systems and build upon that knowledge with engineering principles and practical experience with state-of-the-art technologies and methods for building scalable systems. Scalability is an essential quality of Internet-facing systems, and requires specialized skills and knowledge to build systems that scale at low cost. 
@@ -50,20 +52,20 @@ You can also access this and all O'Reilly books online through the Snell library
 
 Week | Topic | Date (Section 1) | Date (Section 2)
 ---- | ----- | ---- | ----
-1  | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1) | 9/7 | 1/21
-2  | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2) | 9/16 | 1/28
-3  | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3) | 9/23 | 2/4
-4  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4) | 9/30 | 2/11
-5  | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5) | 10/5 | 2/18
-6  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 10/12 | 2/25
-7  | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-7) | 10/19 | 3/4
-8  | [Microservices](http://gortonator.github.io/bsds-6650/Week-8) | 10/26 | ?? 
-9  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-9) | 11/2 | ??? 
-10 | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-10) | 11/9 | ??? 
-11 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-11) | 11/16 | 4/8
-12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 11/30 | 4/15
-13 | Final Quiz  | 12/7 | 4/22
-14 | Assignment 4 presentations | 12/14 | 4/29
+1  | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1) | 9/7 | 9/9
+2  | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2) | 9/16 | 9/16
+3  | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3) | 9/23 | 9/23
+4  | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4) | 9/30 | 2/30
+5  | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5) | 10/5 | 10/7
+6  | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6) | 10/12 | 10/14
+7  | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-7) | 10/19 | 10/21
+8  | [Microservices](http://gortonator.github.io/bsds-6650/Week-8) | 10/26 | 10/28 
+9  | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-9) | 11/2 | 11/4 
+10 | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-10) | 11/9 | 11/11 
+11 | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-11) | 11/16 | 11/18
+12 | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12) | 11/30 | 12/2
+13 | Final Quiz  | 12/7 | 12/9
+14 | Assignment 4 presentations | 12/14 | 12/16
 
 ## Assignments
 Submission instructions and exact deadlines are on the course Canvas site. 
@@ -80,10 +82,10 @@ Quizzes are held in class. Once you start you must finish within 45 minutes.
 
 Quiz | Date (Section 1) | Date (Section 2)
 ---- | ---- | ----
-1 | 10/5 | ? 
-2 | 11/2 | ? 
-3 | 11/30 | ? 
-4 | 12/7 | ?? 
+1 | 10/5 | 10/7 
+2 | 11/2 | 11/4 
+3 | 11/30 | 12/2 
+4 | 12/7 | 12/9 
 
 # Reading
 In addition to the course book,  the following are great resources, and can be excellent references for this course and your future career.
