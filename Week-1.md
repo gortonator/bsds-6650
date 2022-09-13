@@ -3,11 +3,13 @@
 ## Learning Objectives
 
 1. Describe the evolution of software systems to achieve web scale
-1. Explain the difficulties inherent in achieving linear scalability
-1. Explain performance, availability and scalability
+1. Explain the difficulties inherent in achieving scalability
+1. Explain performance and scalability and the relationship to cost
 
 ## Lecture Slides
 Can be found on Canvas site
+
+You can find video lessons on this material [here](https://sites.google.com/view/scalability/lessons)
 
 ## Reading
 Mandatory: 
