@@ -146,6 +146,11 @@ This will create a simple web application structure in your project
 
 This step is optional but highly recommended. By doing so, we can make sure our servlets fully work in our local Tomcat server before we are confident enough to deploy it to the server in EC2. You can also set breakpoints in doGet/doPost methods, and the debugger will be triggered once the corresponding request comes.
 
+**Important:**
+
+- **install the same version (we can support v8 and 9) of Tomcat on both your EC2 instances and locally.** 
+- **build your servlet with the same Java version as you have installed on your EC2 instance. This will eliminate 'weird' errors that you might get downstream.**
+
 1. [Install Tomcat on your machine](#install-tomcat)
 1. [Add Tomcat server run configuration on IntelliJ](https://www.mkyong.com/intellij/intellij-idea-run-debug-web-application-on-tomcat/)
 
@@ -220,6 +225,8 @@ Congratulations! You have just finished one of the most tricky part of all assig
   - [macOS](https://wolfpaulus.com/tomcat/)
   - [Windows](https://tomcat.apache.org/tomcat-9.0-doc/setup.html#Windows)
   - [Ubuntu](https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804)
+- Finding a file - example Linux command 
+  - find / -name "tomcat-users.xml" 2>/dev/null
 #### Common HTTP Response Codes
 - 200: Done, it was okay. Generally, your GETs return this code.
 - 201: “Done, and created.” Generally, your POSTs return this code.
