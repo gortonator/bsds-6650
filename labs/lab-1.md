@@ -9,18 +9,19 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
 * Get AWS account up and running - you should have an AWS Academy invitation
 * Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step.
 * [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
-* You must configure access to your virtual machine uisng AWS Security Groups. [This is a good overview](https://www.javatpoint.com/aws-security-group) if you rae unfamiliar
+* You must configure access to your virtual machine uisng AWS Security Groups. [This is a good overview](https://www.javatpoint.com/aws-security-group) if you are unfamiliar
 * Make sure you have configured your security group that allows traffic on:
   - port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
     port 22 for ssh. 
   - Make these ports accessible from "My IP" for when you are working from home and the University subnet for when you are working on campus
   - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
-* Install tomcat - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
+* Install tomcat  9 - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
   - ignore the instructions to configure the firewall service at the end of Step 3.
   - ignore setting up httpd - we are using tomcat instead
-* Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage
+  - Follow the instructions to enable administrator access to tomcat. This will make deploying your application .war file easier as you can use the "Deploy" option on the administration page. 
+* Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage. Hit the manager app button and on the homepage and you should be able to log in with your credentials. If you can't and get a 403 error, follow [this link](https://stackoverflow.com/questions/43232878/apache-tomcat-9-unable-to-access-manager-webapp) to fix it.
 
-Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'l; be able to do all this in your sleep. 
+Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'll be able to do all this in your sleep. 
 
 Some notes based on first experience with the Learner Lab:
 
