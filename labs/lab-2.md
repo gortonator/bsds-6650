@@ -13,7 +13,7 @@
 Write a Java multithreaded programs that
 
 1. takes a time stamp, and start N threads, default 1K
-2. each thread increments a shared synchronized counter 10 times and terminates
+2. each thread calls a method that increments a shared synchronized counter 10 times, and then terminates
 3. when all threads are completed, the main thread takes a time stamp and prints out the counter value and the duration it takes to run the program
 
 Run the program with a variable number of threads (e.g.1,10k etc) and see if you can observe any relationship between number of threads and total run time?

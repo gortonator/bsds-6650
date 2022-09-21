@@ -19,7 +19,8 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
   - ignore the instructions to configure the firewall service at the end of Step 3.
   - ignore setting up httpd - we are using tomcat instead
   - Follow the instructions to enable administrator access to tomcat. This will make deploying your application .war file easier as you can use the "Deploy" option on the administration page. 
-* Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage. Hit the manager app button and on the homepage and you should be able to log in with your credentials. If you can't and get a 403 error, follow [this link](https://stackoverflow.com/questions/43232878/apache-tomcat-9-unable-to-access-manager-webapp) to fix it.
+* Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage. Hit the manager app button and on the homepage and you should be able to log in with your credentials. If you can't and get a 403 error, follow [this link](https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host) to fix it.
+* Once you can log in, scroll down the 'Manager App' page and you will see a Deploy button. This will be how you deploy your code in lab 2 - its easier than using an scp command.
 
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'll be able to do all this in your sleep. 
 
