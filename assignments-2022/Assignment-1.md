@@ -160,7 +160,7 @@ You need to modify your POM, add the following dependencies:
 </dependency>
 ```
 
-### Problems with GSON import in .war filr in Intellij
+### Problems with GSON import in .war file in Intellij
 Sometimes there's an issue building the GSON jar file into a servlet, such that when the servlet is deployed it fails because GSON is missing.
 
 Try adding the gson jar to your project from the [Maven website](https://mvnrepository.com/artifact/com.google.code.gson/gson)
