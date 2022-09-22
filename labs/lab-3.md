@@ -50,7 +50,11 @@ Build, deploy to tomcat, test with Postman. You know the gig ;)
 Note that this servlet will take _at least_ 1 second to respond. This delay is inserted to simulate the processing delay in a real application.
 
 ### Build a HTTP Client
-We now need to build a Java client that will call our server. We'll use the Apache HttpClient library. 
+We now need to build a Java client that will call our server. 
+
+This should be a separate, plain old Java/Maven project in IntelliJ. You'll build and deploy it totally separately from the servlet.
+
+We'll use the Apache HttpClient library. 
 
 There's an excellent example [here](https://hc.apache.org/httpclient-3.x/tutorial.html) and the [maven dependencies are here](https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient/3.1).
 
