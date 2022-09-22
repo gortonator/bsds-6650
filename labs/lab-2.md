@@ -44,7 +44,10 @@ You will have to make access to the HashMap threadsafe using Collections.synchro
 
 ## Java Servlets
 
+**First, make sure you are using the latest version of IntelliJ. Old versions seem to have build problems**
+
 ### Step 1: Create a new Maven project in IntelliJ
+
 1. Open the **File** menu, point to **New** and click **Project**
 1. Choose **Maven** in the left pane, select the project SDK and click **Next**
 1. Specify `GroupId`, `ArtifactId`, `Version` and click **Next**
