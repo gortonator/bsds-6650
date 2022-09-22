@@ -114,7 +114,16 @@ This gives us:
 
 N = Throughput * Response Time
 
-Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary the number of client and server threads, and the servlet sleep time?
+N is basically the amount of concurrency in your server. If the server threads available is less than the client threads, N is the server threads. Otherwise it is the number of client threads.
+
+Simple example:
+
+- each request takes 100ms (W)
+- you have 10 client threads and 200 Tomcat threads, and hence the maximum is 10 concurrent requests (N)
+
+We can use Little Laws to estimate throughput as 10/0.1 =100 requests per second. 
+
+Can you use Little's Law to make sense of the client execution times you are seeing in your tests in this lab as your vary the number of client and server threads, and the servlet sleep time? 
 
 And can you use Little's Law to estimate the throughput you'd expect to see in your first Assignment. Assume service time is maybe 1-5 milliseconds?
 
