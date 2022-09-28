@@ -12,6 +12,8 @@
 ## Mandatory Lecture Materials
 Distributed Systems Architecture: Whirlwind Tour (slides on Canvas)
 
+You can find video lessons on this material [here](https://sites.google.com/view/scalability/lessons)
+
 [Lessons learned from Netflix Migration to AWS](https://www.youtube.com/watch?v=XrWII4ewrXA)
 
 
