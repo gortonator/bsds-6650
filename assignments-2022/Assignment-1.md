@@ -115,7 +115,7 @@ You want to do all the processing of latencies in your client after the test com
 A popular alternative to servlets for creating HTTP servers is Spring/SpringBoot. Spring has lots of very clever mechanisms for making it easy to write HTTP methods. As an experiment, deploy a Spring(boot) server on your EC2 instance that implements the POST method and run your fastest client configuration against this server. How does the throughput compare?
 
 ## Submission Requirements
-Submit your work to Blackboard Assignment 1 as a pdf document. The document should contain:
+Submit your work to Canvas Assignment 1 as a pdf document. The document should contain:
 
 1. the URL for your git repo. *Make sure that the code for the client part 1 and part 2 are in seperate folders in your repo*
 1. a 1-2 page description of your client design. Include major classes, packages, relationships, whatever you need to convey concisely how your client works.Include Little's Law throughput predictions.
