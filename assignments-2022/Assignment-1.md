@@ -179,5 +179,10 @@ Compile and deploy ... and cross your fingers and toes!!
 For more details [check this out](https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project)
 
 
-### Randon number generation in Java Threads
+### Random number generation in Java Threads
 Worth a read for [random number generation](https://plumbr.io/blog/locked-threads/shooting-yourself-in-the-foot-with-random-number-generators) in your client ;)
+
+### Connection management with Apache HttpClient
+
+Your client threads want to keep a connection open and send many requests. Check out this [stackoverflow post](https://stackoverflow.com/questions/30889984/whats-the-difference-between-closeablehttpresponse-close-and-httppost-release) to delve into the complexities of how to do it properly.
+
