@@ -1,24 +1,22 @@
 # Week 4: Distributed Systems Foundations
 
 ## Learning Objectives:
+
 1. Communications hardware and software
-1. Remote Procedure Calls
-1. Partial Failures
-1. Distributed coordination
-1. Time in distributed systems
+2. Remote Procedure Calls
+3. Partial Failures
+4. Distributed coordination
+5. Time in distributed systems
+
+## Lecture Materials
+
+Slides are on Canvas
+
+You can find video lessons on this material [here](https://sites.google.com/view/scalability/lessons)
 
 
-## Mandatory Lecture Materials
-1. [Communications hardware and software](https://youtu.be/O_XvP6CMQjA)
-1. [Remote Procedure Calls](https://youtu.be/wWUlfHwecvY)
-1. [Distributed Coordination and Time](https://youtu.be/--fyMrn5MTo)
 
-The first short video in this playlist is important to watch as it covers the basics of Web Services. Watch more in the series if you like ;)
-
-[SOAP Web Services Overview](https://www.youtube.com/watch?v=mKjvKPlb1rA&list=PLqq-6Pq4lTTZTYpk_1DOowOGWJMIH5T39)
-
-
-## Mandatory Reading
+## Reading
 
 Chapter 3 of Foundation of Scalable Systems
 
@@ -39,10 +37,9 @@ Chapter 3 of Foundation of Scalable Systems
 Chapter 4, Architecture Characteristics Defined, in Fundamentals of Software Architecture, Mark Richards and Neal Ford, Available through NU library at https://learning.oreilly.com/
 
 ## Lab 4
+
 This week we're going to experiment with TCP and UDP sockets.
 
 [Instructions for Lab 4 are here](https://gortonator.github.io/bsds-6650/labs/lab-4)
 
-
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
-

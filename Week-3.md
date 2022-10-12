@@ -9,7 +9,7 @@
 1. Distributed databases
 1. Queuing
 
-## Mandatory Lecture Materials
+## Lecture Materials
 Distributed Systems Architecture: Whirlwind Tour (slides on Canvas)
 
 You can find video lessons on this material [here](https://sites.google.com/view/scalability/lessons)
@@ -17,7 +17,7 @@ You can find video lessons on this material [here](https://sites.google.com/view
 [Lessons learned from Netflix Migration to AWS](https://www.youtube.com/watch?v=XrWII4ewrXA)
 
 
-## Mandatory Reading
+## Reading
 
 Chapter 2 of Foundations of Scalable Systems 
 
