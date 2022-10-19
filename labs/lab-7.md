@@ -1,4 +1,18 @@
-# Lab 7: Connecting Tomcat Servlet to MySQL using JDBC
+# Lab 7: 
+
+# 1. Playing with AWS Lambda
+
+### Aims:
+
+Deploy a simple AWS Lambda function
+
+### Instructions
+
+Follow the tutorial [here](https://www.baeldung.com/java-aws-lambda) to deploy an AWS Lambda Function
+
+Additional AWS docs can he found [here](https://docs.aws.amazon.com/lambda/latest/dg/lambda-java.html).
+
+# 2. Connecting Tomcat Servlet to MySQL using JDBC
 
 ## Aims
 
@@ -136,7 +150,7 @@ This step should be very straightforward once you have tested that your DAO obje
  - extract values from URL path params and request body
  - construct a `LiftRide` object with those values, and 
  - pass that object to the DAO layer
- 
+
 of course, don't forget path validations and some other necessary steps.
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
