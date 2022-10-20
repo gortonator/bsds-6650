@@ -31,6 +31,6 @@ Lab 7
 
 [PLay with AWS Lambda and RDS Instances](https://gortonator.github.io/bsds-6650/labs/lab-7)
 
-
+For the Lambda lab, choose the 'Author from Scratch' options and attach the role 'LabRole' to make it work in AWS Academy.
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
