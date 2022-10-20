@@ -25,4 +25,12 @@ You can find video lessons on this material [here](https://sites.google.com/view
 2. [AWS Lambda Description](https://medium.com/faun/in-depth-aws-lambda-overview-1eeb4580696b)
 3. [GAE Experiment Description](https://levelup.gitconnected.com/dont-accept-the-defaults-how-to-reduce-costs-with-google-app-engine-autoscaling-316af4804a01)
 
+
+
+Lab 7
+
+[PLay with AWS Lambda and RDS Instances](https://gortonator.github.io/bsds-6650/labs/lab-7)
+
+
+
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
