@@ -71,6 +71,7 @@ Submit your work to Canvas Assignment 2 as a pdf document. The document should c
 1. Server design description (5 points) - clarity of description, good design practies used
 1. Results (10 points) - single instance tests. Overall throughput, short queue sizes and profile
 1. Results (10 points) - load balanced instance tests. Overall throughput (should be greater than no load balancer), short queue sizes and profile
+1. Bonus Points 2 points for fastest 3 clients, and 1 point for next fastest 3 clients. With nice stable short queues of course!
 
 # Deadline: 10/28 11.59pm PST 
 
