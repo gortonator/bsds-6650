@@ -52,7 +52,7 @@ One free tier server for your servlets will probably get pretty busy, so you wil
 You can set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ or _Network_ load balancers. 
 Enable load balancing with say 2 and 4 free tier EC2 instances and see what effect this has on your performance.
 
-A tutorial [here](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html) should help.
+A tutorial [here](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html) should help. Remember to create [AWS templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) for your instances
 
 ### Tune the System
 

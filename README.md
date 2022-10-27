@@ -44,7 +44,13 @@ You can also access this and all O'Reilly books online through the Snell library
 
 ## Assessment
 * There are 4 individual assigments. They total 70% of the final grade.
-* There are 4 quizes.  They combine to add up to the remianing 30% of the grade. The first 3 will cover the materials in the previous 3 week's classes. The last quiz will have questions that cover the whole course. Each quiz will be allocated 45 minutes and be available at the start of the class in which it is scheduled.
+* There are 4 quizes.  They combine to add up to the remaining 30% of the grade. 
+  * Quiz  1 covers weeks 1-4. 
+  * Quiz 2 covers weeks 5-8. 
+  * Quiz 3 covers weeks 9-12.
+  *  The last quiz will have questions that cover the whole course. 
+
+* Each quiz will be allocated 45 minutes and be available at the start of the class in which it is scheduled.
 
 # Course Content
 
