@@ -10,6 +10,7 @@
 1. Lecture notes are posted on Canvas
 1. Chapters 14-16 of course book
 1. [ZooKeeper Case Study](https://www.youtube.com/watch?v=Vv4HpLfqAz4)
+1. This is a great read on [how Netflix works](https://medium.com/@nidhiupreti99/understanding-system-design-of-netflix-backend-architecture-and-cloud-services-b077162e45bc) and will hopefully help you realize the importance of what we have covered this semester
 
 ## Optional Materials)
 1. [Apache Flink Introduction](https://www.youtube.com/watch?v=DkNeyCW-eH0)
