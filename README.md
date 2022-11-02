@@ -80,7 +80,7 @@ Assignment | Topic | Due Date (Same for both sections)
 ---------- | ----- | --------
 1 | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-1) | 10/7 
 2 | [Building the Server](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-2) | 10/28 
-3 | [Adding the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-3) | 11/18 
+3 | [Adding the Data Layer](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-3) | 11/25 
 4 | [Mix Request Loads](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-4) | 12/14 
 
 ## Quizzes

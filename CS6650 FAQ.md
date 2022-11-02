@@ -55,7 +55,7 @@ This [link](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credenti
 
 This [video](https://www.youtube.com/watch?v=rSoj7PEvWFY&t=395s) is a good source. Basically, you have to check whether 1) the connectivity between your load balancer and your target group is fine; 2) whether your instances in the target group are working fine.
 
-Also, you need your target group to listen on port 8080 i using tomcat. This [excellent piazza post](https://piazza.com/class/l7qocxa6gzk5i4/post/170) from wonderful 2022 TA Heng spells it out/
+Also, you need your target group to listen on port 8080  using tomcat. This [excellent piazza post](https://piazza.com/class/l7qocxa6gzk5i4/post/170) from wonderful 2022 TA Heng spells it out.
 
 ## Intellij
 
