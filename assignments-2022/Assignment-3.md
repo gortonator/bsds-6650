@@ -1,4 +1,4 @@
-# CS6650 FALL 2022  AssignmenCS6650 Spring 2022  Assignment 3
+# CS6650 FALL 2022  Assignment 3
 
 ## Adding Persistence
 
