@@ -40,7 +40,7 @@ In this step you'll load test the new GET APIs. To generate a load testing clien
 Use JMeter to create test cases. [These instructions](https://jmeter.apache.org/usermanual/build-web-test-plan.html) provide the basics of what you need to do.The requirements are as follows. For each of the three GET requests, define a test with a thread group with:
 
 * 128 threads
-* 50 iterations
+* 500 iterations
 * 10 second ramp up time
 
 Randomly generate a skierID and dayID for each request.
