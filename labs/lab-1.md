@@ -19,20 +19,30 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
     port 22 for ssh. 
     
   - Make port 22 accessible from  "My IP" for when you are working from home. On campus you will need to redo this rule each time as your allocated IP address might change
-  
+
   - For port 80 and 8080 In Seattle, AWS would see the following incoming IP CIDRs, so create Custom TCP Rules for the following addresses. These rules should always work on campus:
-  
+
     63.208.141.34/29
-  
+
     63.208.141.234/29
-  
+
   - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
+
+* ssh into your instance, [These instructions](https://www.linuxsysadmins.com/how-to-connect-to-amazon-ec2-remotely-using-ssh/) should work. Basically the command looks like below:
+
   
+
+  * ```
+    ~~~
+    ssh -i your-amazon.pem ec2-user@instance-address
+    ~~~
+    ```
+
 * Install tomcat  9 - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
   - ignore the instructions to configure the firewall service at the end of Step 3.
   - ignore setting up httpd - we are using tomcat instead
   - Follow the instructions to enable administrator access to tomcat. This will make deploying your application .war file easier as you can use the "Deploy" option on the administration page. 
-  
+
 * Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage. Hit the manager app button and on the homepage and you should be able to log in with your credentials. If you can't and get a 403 error, follow [this link](https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host) to fix it.
 
 * Once you can log in, scroll down the 'Manager App' page and you will see a Deploy button. This will be how you deploy your code in lab 2 - its easier than using an scp command.
