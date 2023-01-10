@@ -12,7 +12,7 @@
 This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 
 * Section 1 - Room 416, Tues 9.30-1pm
-* Section 2 - ?????
+* Section 2 - Room 416, Fridays 6-9PM
 
 ### Course Lead
 
@@ -22,7 +22,7 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 **Office Hours** - 
 
 * Section 1 : Tuesday 2-4PM (PST)
-* Section 2 : ???
+* Section 2 : After the class
 
 ### Super Talented Teaching Assistants
 
@@ -32,6 +32,10 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
   * Monday 9-11AM (PST) via Teams
 * **Bingfan Tian** - tian.bin(at)northeastern.edu
   * Thursday 3-4PM (PST) via [Zoom](https://northeastern.zoom.us/j/8803758856)
+* **Peihao Zhu** - zhu.pei(at)northeastern.edu
+  * TODO: Add Office hours
+* **Ziwei Wang** - wang.ziwei2(at)northeastern.edu
+  * TODO: Add Office hours
 
 ## Overview
 
@@ -67,20 +71,20 @@ You can also access this and all O'Reilly books online through the Snell library
 
 | Week | Topic                                                                                                   | Date (Section 1) | Date (Section 2) |
 | ---- | ------------------------------------------------------------------------------------------------------- | ---------------- | ---------------- |
-| 1    | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1)           | 1/10             | 9/9              |
-| 2    | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2)                                             | 1/17             | 9/16             |
-| 3    | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3)         | 1/24             | 9/23             |
-| 4    | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4)                        | 1/31             | 2/30             |
-| 5    | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5)                                 | 2/7              | 10/7             |
-| 6    | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6)                                    | 2/14             | 10/14            |
-| 7    | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-7)                           | 2/21             | 10/21            |
-| 8    | [Microservices](http://gortonator.github.io/bsds-6650/Week-8)                                           | 2/28             | 10/28            |
-| 9    | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-9) | 3/14             | 11/4             |
-| 10   | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-10)           | 3/21             | 11/11            |
-| 11   | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-11)                                        | 3/28             | 11/18            |
-| 12   | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12)                                      | 4/4              | 12/2             |
-| 13   | Final Quiz                                                                                              | 4/11             | 12/9             |
-| 14   | Assignment 4 presentations                                                                              | 4/18             | 12/16            |
+| 1    | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1)           | 1/10             | 1/13              |
+| 2    | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2)                                             | 1/17             | 1/20             |
+| 3    | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3)         | 1/24             | 1/27             |
+| 4    | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4)                        | 1/31             | 2/3             |
+| 5    | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5)                                 | 2/7              | 2/10             |
+| 6    | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6)                                    | 2/14             | 2/17            |
+| 7    | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-7)                           | 2/21             | 2/24            |
+| 8    | [Microservices](http://gortonator.github.io/bsds-6650/Week-8)                                           | 2/28             | 3/3            |
+| 9    | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-9) | 3/14             | 3/17             |
+| 10   | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-10)           | 3/21             | 3/24            |
+| 11   | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-11)                                        | 3/28             | 3/31            |
+| 12   | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12)                                      | 4/4              | 4/7             |
+| 13   | Final Quiz                                                                                              | 4/11             | 4/14             |
+| 14   | Assignment 4 presentations                                                                              | 4/18             | 4/21            |
 
 ## Assignments
 
@@ -99,10 +103,10 @@ Quizzes are held in class. Once you start you must finish within 45 minutes.
 
 | Quiz | Date (Section 1)                 | Date (Section 2) |
 | ---- | -------------------------------- | ---------------- |
-| 1    | 2/7                              | 10/7             |
-| 2    | 3/14                             | 11/4             |
-| 3    | 4/4                              | 12/2             |
-| 4    | 4/11 | 12/9             |
+| 1    | 2/7                              | 2/10             |
+| 2    | 3/14                             | 3/17             |
+| 3    | 4/4                              | 4/7              |
+| 4    | 4/11                             | 4/14             |
 
 # Reading
 
