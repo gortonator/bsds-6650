@@ -26,13 +26,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 
 ### Super Talented Teaching Assistants
 
-* TO DO name/email
-  * time/place office hours
-* **Heng Su** - su.he(at)northeastern.edu
-* **Haonan Sun** - sun.haon(at)northeastern.edu
-  * Saturday 10-12AM (PST) via Teams
-* **Peihao Zhu** - zhu.pei@northeastern.edu
-  * Friday 10-12AM (PST) via Teams
+* **Hongjian Cui** - cui.ho(at)northeastern.edu
+  * Wednesday 10-12AM (PST) via [Zoom](https://northeastern.zoom.us/j/94025569143?pwd=dSs4YVBJZzNXZmxzdHJIb3RsUzFWUT09)
 
 ## Overview
 
