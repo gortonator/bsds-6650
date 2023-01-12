@@ -31,7 +31,7 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 * **Huiying Chen** - chen.huiyi(at)northeastern.edu
   * Monday 9-11AM (PST) via Teams
 * **Bingfan Tian** - tian.bin(at)northeastern.edu
-  * Thursday 3-4PM (PST) via [Zoom](https://northeastern.zoom.us/j/8803758856)
+  * Thursday 2-4PM (PST) via [Zoom](https://northeastern.zoom.us/j/8803758856)
 * **Peihao Zhu** - zhu.pei(at)northeastern.edu
   * Sunday 8-10AM (PST) via Teams
 * **Ziwei Wang** - wang.ziwei2(at)northeastern.edu
