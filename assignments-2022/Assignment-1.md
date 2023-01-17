@@ -34,7 +34,7 @@ The generated code contains classes and methods for calling the server APIs.
 
 Write a simple test that calls the API before proceeding, to establish that you have connectivity. The examples in the README and documentation are your friends ;).
 
-To connect to your remote server on EC2 you need to call  ApiClient class methods (hint - setBasePath(...)) . It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues. You then pass this ApiClient object to your SkiersApi object. Again, look at the constructors for SkiersApi. **(Note - you should never modify generated code !)**
+To connect to your remote server on EC2 you need to call  ApiClient class methods (hint - setBasePath(...)) . It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues. You then pass this ApiClient object to your SwipeApi object. Again, look at the constructors for SwipeApi. **(Note - you should never modify generated code !)**
 
 If you don't want to figure out the Swagger client, you can use the [Java 11 HTTP client classes](https://openjdk.org/groups/net/httpclient/intro.html) or the [Apache Java HTTP API](https://hc.apache.org/index.html). They are pretty straightforward to figure out. 
 
