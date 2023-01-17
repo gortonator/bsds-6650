@@ -20,6 +20,7 @@
 ## Intellij
 
 [ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
+[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ Version required)
 
 
 
@@ -62,3 +63,7 @@ Also, you need your target group to listen on port 8080  using tomcat. This [exc
 #### ClassNotFoundException in .war built by IntelliJ
 
 In the Project Structure menu, right-click on the (e.g.) `Lab2WebApp` folder (the first one in the Available Elements list). There should be an option to put your  dependencies into the artifact’s WEB-INF/lib directory. Once done, apply the changes and rebuild your artifact. You should (hopefully) not run into the `ClassNotFoundException` anymore, 
+
+#### IntelliJ Version required
+
+You should install Idea Ultimate version (community version has limited support for this feature)
