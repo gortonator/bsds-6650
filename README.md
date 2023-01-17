@@ -108,6 +108,9 @@ Quizzes are held in class. Once you start you must finish within 45 minutes.
 | 3    | 4/4                              | 4/7              |
 | 4    | 4/11                             | 4/14             |
 
+There is also an ever evolving [FAQ](https://gortonator.github.io/bsds-6650/FAQ) in which we try to capture common problems and their solutions. 
+You are more than welcome to contribute to this by creating a pull request.
+
 # Reading
 
 In addition to the course book,  the following are great resources, and can be excellent references for this course and your future career.
