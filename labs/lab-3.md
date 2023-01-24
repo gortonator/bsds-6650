@@ -77,7 +77,7 @@ System.currentTimeMillis();
 ~~~
 Do likewise when all threads have completed and print out the time taken to execute the program before terminating.
 
-Remember every request will take ~1 second to execute. How long does your client take to excute 100 requests? Any idea why?
+Remember every request will take approximately 1 second to execute. How long does your client take to excute 100 requests? Any idea why?
 
 ### Tomcat Configuration
 Tomcat is a highly configurable beast. You can modify the behavior of Tomcat by changing the parameter values in the server.xml file in the tomcat installation.
