@@ -74,7 +74,7 @@ When all 500k requests have been successfully sent, all threads should terminate
 
 1. number of successful requests sent
 2. number of unsuccessful requests (should be 0)
-3. the total run time (wall time) for all phases to complete. Calculate this by taking a timestamp before you start any threads and another after all threads are complete.
+3. the total run time (wall time) for all threads to complete. Calculate this by taking a timestamp before you start any threads and another after all threads are complete.
 4. the total throughput **in requests per second** (total number of requests/wall time)
 
 #### Validate results
