@@ -36,6 +36,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
   * Sunday 8-10AM (PST) via Teams
 * **Ziwei Wang** - wang.ziwei2(at)northeastern.edu
   * Friday 2-4PM (PST) via [Zoom](https://northeastern.zoom.us/j/6759325127)
+* **Zhuocai (Tsai) Li** - li.zhuoca(at)northeastern.edu
+  * Monday 2-4PM (PST) via [Zoom](https://northeastern.zoom.us/j/5268260556)
 
 ## Overview
 
