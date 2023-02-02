@@ -204,3 +204,9 @@ Worth a read for [random number generation](https://plumbr.io/blog/locked-thread
 ### Connection management with Apache HttpClient
 
 Your client threads want to keep a connection open and send many requests. Check out this [stackoverflow post](https://stackoverflow.com/questions/30889984/whats-the-difference-between-closeablehttpresponse-close-and-httppost-release) to delve into the complexities of how to do it properly.
+
+## Calculating Percentiles Using Histograms
+
+You can calculate approximate percentiles efficiently using histograms. Google around - there are lots of sites that explain the approach. I haven't tried [this implementation](https://github.com/IBM/HBPE/blob/master/README.md), but it sounds promising.
+
+
