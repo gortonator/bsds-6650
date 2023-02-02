@@ -81,9 +81,9 @@ When all 500k requests have been successfully sent, all threads should terminate
 
 You should run the client on your laptop. Thus means each request will incur latency depending on where your server resides. By using us-west2, this latency will be pretty low from Seattle. If you have problems with the Oregon region, consider running your client on an EC2 instance located in the same region as your server. 
 
-You should test how long a single request takes to estimate your latency. Run a simple test and send eg 10000 requests from a single thread to do this. Using this latency, you can calculate the expected throughput your client will see with various numbers of threads using Little's Law. Use this to guide your design.
+You should test how long a single request takes to estimate your latency. Run a simple test and send eg 10000 requests from a single thread to do this. Using this latency, you can calculate the expected throughput your client will see with various numbers of threads using Little's Law. Use this to guide your design. Remember tomcat by defualt can execute 200 requests per second, but there's only 1 CPU on a free tier instance. So you may see performance degradtion if load the server too heavily due to excessive context switching.
 
-If your overall throughput for 500K requests is not close to the Little's Law estimate for your test runs, you probably have excessive serialization in your client.
+If your overall throughput for 500K requests is not close to the Little's Law estimate for your test runs, you may have excessive serialization in your client. Experiment with low numbers of client threads (maybe 50-ish) to try and get a feel for your system's performance.
 
 ### Task 3: Building the Client (Part 2)
 
