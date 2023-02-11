@@ -4,7 +4,7 @@
 
 This assignment builds on assignment 1. Your client won't change (unless it has a bug in it!) beyond tuning thread pool counts to optimize throughput.
 
-You will implement processing logic in your server and post the result to a queue for subsequent consumption and processing.
+You will implement simple business logic in your server and post the result to a queue for subsequent consumption and processing.
 
 ## Step 1 - Implement the Server
 
@@ -23,13 +23,13 @@ Carry out testing with a relatively small number of messages as you don't have a
 
 Implement two plain old Java programs to pull messages off the queue. Each needs to consume every published message, and store it in a data structure that is designed to support two different access patterns, namely:
 
-1. Given a user id, return a list of ids who the user has swiped right on
+1. Given a user id, return the number of likes and dislikes for the user
 
-2. Given a user id, return a list of 100 user ids that the user has not swiped on yet,
+2. Given a user id, return a list of 100 users maximum who the user has matched with
 
 Your aim is to consume messages, ideally, as quickly as they are produced, as ths will give best throughput on RMQ. This means your consumer will need to be multithreaded and your data structures thread safe.
 
-Run the consumers on seperate or a single (probably not free when load testing) instance, connecting remotely to the broker queue.
+Run the consumers on seperate or a single (probably not free tier when load testing) instance, connecting remotely to the broker queue.
 
 ## Load Testing
 
@@ -37,7 +37,7 @@ Your aim here is to find the 'best' application configuration in terms of respon
 
 You should have the servlet, RMQ broker and consumers all running on their own EC2 instances.
 
-Report the same client metrics as in assignment 1. Your aim again is to maximize client throughput.
+Report the same client metrics as in assignment 1. Your aim again is to maximize client throughput while minimizing queueing delays. 
 
 The challenge is that, for example, you may have handled all requests from the client at the servlet, but still have say 100K in the queue waiting for consumption. This is unlikely to be your optimal configuration as RMQ struggles with long queue lengths. Hence you need to balance production and consumption rates, such that **production_rate** ≈ **consumption_rate. ** When this condition is met, queue lengths remain small and systems perform predictably and reliably.
 
@@ -45,16 +45,16 @@ You can use the RabbitMQ management console to track the number of messages in t
 
 The questions you need to explore are:
 
-* How many client threads are optimal  to maximize system throughput?
+* How many client threads iare optimal  to maximize system throughput?
 * How many queue consumers threads are needed to keep the queue size as close to zero as possible? Less than a 1000 max is a great target, but the main aim is to ensure the queue length doesn't continually grow, then shrink, giving a 'pointy' queue length profile, ie /\\. An increase to a plateau is fine, ie /¯¯¯¯\\. If the plateau is less than around a 1000, you are in great shape!
 
 ### Incorporate Load Balancing
 
 One free tier server for your servlets will probably get pretty busy, so you will want to introduce load balancing.
 
-You can set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ or _Network_ load balancers. Enable load balancing with say 2 and 4 free tier EC2 instances and see what effect this has on your performance.
+You can set up [AWS Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/features/?nc=sn&loc=2) using either _Application_ or _Network_ load balancers. Enable load balancing with 2 free tier EC2 instances and see what effect this has on your performance.
 
-A tutorial [here](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html) should help. Remember to create [AWS templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) for your instances
+A tutorial [here](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html) should help. Remember to create [AWS templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) for your instances.
 
 ### Tune the System
 
@@ -76,7 +76,7 @@ Submit your work to Canvas Assignment 2 as a pdf document. The document should c
 3. Results (10 points) - single instance tests. Overall throughput, short queue sizes and flat line profile
 4. Results (10 points) - load balanced instance tests. Overall throughput (should be greater than no load balancer), short queue sizes and flat line profile
 
-# Deadline: ??? 11.59pm PST
+# Deadline: 3/3 11.59pm PST
 
 ## Addendum: Multithreading and RabbitMQ
 
