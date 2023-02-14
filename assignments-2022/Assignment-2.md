@@ -23,9 +23,9 @@ Carry out testing with a relatively small number of messages as you don't have a
 
 Implement two plain old Java programs to pull messages off the queue. Each needs to consume every published message, and store it in a data structure that is designed to support two different access patterns, namely:
 
-1. Given a user id, return the number of likes and dislikes for the user
+1. Given a user id, return the number of likes and dislikes this user has swiped
 
-2. Given a user id, return a list of 100 users maximum who the user has matched with
+2. Given a user id, return a list of 100 users maximum who the user has swiped right on. These are potential matches.
 
 Your aim is to consume messages, ideally, as quickly as they are produced, as ths will give best throughput on RMQ. This means your consumer will need to be multithreaded and your data structures thread safe.
 
@@ -45,7 +45,7 @@ You can use the RabbitMQ management console to track the number of messages in t
 
 The questions you need to explore are:
 
-* How many client threads iare optimal  to maximize system throughput?
+* How many client threads are optimal  to maximize system throughput?
 * How many queue consumers threads are needed to keep the queue size as close to zero as possible? Less than a 1000 max is a great target, but the main aim is to ensure the queue length doesn't continually grow, then shrink, giving a 'pointy' queue length profile, ie /\\. An increase to a plateau is fine, ie /¯¯¯¯\\. If the plateau is less than around a 1000, you are in great shape!
 
 ### Incorporate Load Balancing
