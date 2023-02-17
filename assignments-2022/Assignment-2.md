@@ -15,7 +15,7 @@ In this assignment, you will fully implement the doPost() method in your servlet
 
 You can choose your own queue technology. RabbitMQ is an obvious one, AWS SQS another if you are keen. If you choose RMQ, check out the Addendum at the end of this file for multithreading hints.
 
-Make sure you deploy RabbitMQ on its own EC2 instance. You can find various installation instructions [here](https://www.rabbitmq.com/ec2.html). We have tested the Ubuntu install and it works fine.
+Make sure you deploy RabbitMQ on its own EC2 instance. You can find various installation instructions [here](https://www.rabbitmq.com/ec2.html). The ones [here](https://www.cherryservers.com/blog/how-to-install-and-start-using-rabbitmq-on-ubuntu-22-04), for Ubuntu have been tested recently and work fine.
 
 Carry out testing with a relatively small number of messages as you don't have a consumer yet. Clear out the queues regulalry using the RMQ management console.
 

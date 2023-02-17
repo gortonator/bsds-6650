@@ -20,9 +20,9 @@
 
 ## RabbitMQ
 
+[Installing RMQ on AWS Linux 2](#Installing RMQ)
+
 Swagger
-
-
 
 # Answers
 
@@ -62,6 +62,24 @@ In the Project Structure menu, right-click on the (e.g.) `Lab2WebApp` folder (th
 
 You should install Idea Ultimate version (community version has limited support for this feature)
 
+# RabbitMQ
+
+#### Installing RMQ
+
+sudo yum install epel-release  
+sudo amazon-linux-extras install epel  
+sudo yum install erlang  
+sudo yum install rabbitmq-server
+
+sudo rabbitmq-plugins list  
+sudo rabbitmq-plugins enable rabbitmq_management  
+sudo systemctl enable rabbitmq-server  
+sudo systemctl start rabbitmq-server  
+sudo systemctl stop rabbitmq-server
+
+whereis rabbitmq  
+sudo chown -R ec2-user: /var/log/rabbitmq
+
+http://(YourDNS):15672/
 
 
-# Building Swagger Client
