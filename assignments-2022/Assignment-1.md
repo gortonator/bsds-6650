@@ -135,18 +135,18 @@ Submit your work to Canvas Assignment 1 as a pdf document. The document should c
 5. The plot  of your throughput over time
    
    ## Grading:
-
-6. Server implementation working (10 points)
-
-7. Client design description (5 points) - clarity of description, good design practies used
-
-8. Client Part 1 - (10 points) - Output window showing best throughput. Points deducted if actual throughput not close to Little's Law predictions.
-
-9. Client Part 2 - (10 points) - 5 points for throughput within 5% of Client Part 1. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible).
-
-10. Task 4: Plot of throughput over time (5 points)
-
-11. Bonus Points: (3 points) for comparison with Spring server
+   
+   1. Server implementation working (10 points)
+   
+   2. Client design description (5 points) - clarity of description, good design practies used
+   
+   3. Client Part 1 - (10 points) - Output window showing best throughput. Points deducted if actual throughput not close to Little's Law predictions.
+   
+   4. Client Part 2 - (10 points) - 5 points for throughput within 5% of Client Part 1. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible).
+   
+   5. Task 4: Plot of throughput over time (5 points)
+   
+   6. Bonus Points: (3 points) for comparison with Spring server
 
 ## Additional Useful Information
 
@@ -208,5 +208,3 @@ Your client threads want to keep a connection open and send many requests. Check
 ## Calculating Percentiles Using Histograms
 
 You can calculate approximate percentiles efficiently using histograms. Google around - there are lots of sites that explain the approach. I haven't tried [this implementation](https://github.com/IBM/HBPE/blob/master/README.md), but it sounds promising.
-
-
