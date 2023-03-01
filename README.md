@@ -106,7 +106,7 @@ Quizzes are held in class. Once you start you must finish within 45 minutes.
 | Quiz | Date (Section 1) | Date (Section 2) |
 | ---- | ---------------- | ---------------- |
 | 1    | 2/7              | 2/10             |
-| 2    | 3/14             | 3/17             |
+| 2    | 3/21             | 3/17             |
 | 3    | 4/4              | 4/7              |
 | 4    | 4/11             | 4/14             |
 
