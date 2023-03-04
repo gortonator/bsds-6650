@@ -11,7 +11,7 @@
 
 Slides are on Canvas.
 
-Video lessons for the materials  are [here]((https://sites.google.com/view/scalability/lessons)
+Video lessons for the materials  are [here](https://sites.google.com/view/scalability/lessons)
 
 ## Mandatory Reading
 
