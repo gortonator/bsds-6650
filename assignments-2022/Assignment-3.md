@@ -16,7 +16,7 @@ The solution architecture should look something like this:
 
 2. A Servlet implements doPost and writes every Swipe event to a persistent store we'll call *TempStore*. This could be a persistent queue or a database table. Your choice. It must be safe - ie persistent.
 
-3. A consumer reads new Swipe events from *TempStore and updates a database that stores information about users and swipe events. We'll call this SwipeData*.
+3. A consumer reads new Swipe events from *TempStore* and updates a database that stores information about users and swipe events. We'll call this *SwipeData*.
 
 4. A servlet implements the GET requests and retrieves results from the *SwipeData* database directly
 
@@ -32,7 +32,7 @@ You will need to run:
 
 3. a queue broker or DB server for *TempStore*
 
-4. a POJO consumer that reads from *TempStore  and writes to  SwipeData*
+4. a Plain old Java Program consumer that reads from *TempStore  and writes to  SwipeData*
 
 5. a DB server for *SwipeData* (potentially same beast as (3) above)
 
@@ -80,4 +80,4 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 
 # Deadline: 3/31 11.59pm PST
 
-#### 
+# 
