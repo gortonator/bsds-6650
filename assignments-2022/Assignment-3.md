@@ -52,7 +52,7 @@ You need to add a single thread to your client - let's call it GetThread. GetThr
 
 1. is started after all the posting threads have started
 
-2. generates 5 GET requests with randomly generated data every second and records the latencies
+2. generates 5 GET requests with randomly generated data every second and records the latencies. There are two APIs, so just mix up which ones you call each time.
 
 3. terminates immediately after the last posting thread terminates. Before termination it prints out the min, mean and max latencies for the GETs it sent.
 
