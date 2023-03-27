@@ -56,6 +56,11 @@ You need to add a single thread to your client - let's call it GetThread. GetThr
 
 3. terminates immediately after the last posting thread terminates. Before termination it prints out the min, mean and max latencies for the GETs it sent.
 
+To get some matches, you'll probably have to modify the ranges of the swiper/swipee for your generated POSTS. Something like:
+
+swiper - between 1 and 50000
+swipee - between 1 and 50000
+
 ### Step 5 - Putting it all Together
 
 This is the fun bit. Run tests that populate the database as fast as possible. 
