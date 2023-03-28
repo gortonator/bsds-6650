@@ -6,7 +6,7 @@ This assignment builds on assignment 2. The main aim is to persist the swipes ge
 
 ## Step 1 - Implement the GET methods in a servlet
 
-Check out the API spec [here](https://app.swaggerhub.com/apis/IGORTON/Twinder/1.2), You need to implement the get methods in a servlet that your client can call.  Test them initally with POSTMAN and hardcoded results. We'll connect to a database soon. 
+Check out the API spec [here](https://app.swaggerhub.com/apis/IGORTON/Twinder/1.2.1), You need to implement the get methods in a servlet that your client can call.  Test them initally with POSTMAN and hardcoded results. We'll connect to a database soon. 
 
 ### Step 2 - Redesign your solution
 
@@ -16,9 +16,9 @@ The solution architecture should look something like this:
 
 2. A Servlet implements doPost and writes every Swipe event to a persistent store we'll call *TempStore*. This could be a persistent queue or a database table. Your choice. It must be safe - ie persistent.
 
-3. A consumer reads new Swipe events from *TempStore* and updates a database that stores information about users and swipe events. We'll call this *SwipeData*.
+3. A consumer reads new Swipe events from *TempStore* and updates a database that stores information about users and swipe events. We'll call this *SwipeData*. 
 
-4. A servlet implements the GET requests and retrieves results from the *SwipeData* database directly
+4. A servlet implements the GET requests and retrieves results from the *SwipeData* database directly. Note the /matches API only returns *potential* matches. You do not have to calculate actual matches.
 
 In the design, think about how you can get high throughput and low response times, and also keep you architecture and deployment as simple and low cost as possible. It's a balancing act.
 
@@ -56,10 +56,6 @@ You need to add a single thread to your client - let's call it GetThread. GetThr
 
 3. terminates immediately after the last posting thread terminates. Before termination it prints out the min, mean and max latencies for the GETs it sent.
 
-To get some matches, you'll probably have to modify the ranges of the swiper/swipee for your generated POSTS. Something like:
-
-swiper - between 1 and 50000
-swipee - between 1 and 50000
 
 ### Step 5 - Putting it all Together
 
