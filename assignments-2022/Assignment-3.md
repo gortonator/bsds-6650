@@ -56,7 +56,6 @@ You need to add a single thread to your client - let's call it GetThread. GetThr
 
 3. terminates immediately after the last posting thread terminates. Before termination it prints out the min, mean and max latencies for the GETs it sent.
 
-
 ### Step 5 - Putting it all Together
 
 This is the fun bit. Run tests that populate the database as fast as possible. 
@@ -79,7 +78,7 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 2. Solution architecture and database design description (10 points)
 3. Client screenshots showing your best performance and comparisons with Assignment 2 for POST requests. (15 points)
 
-# Deadline: 3/31 11.59pm PST
+# Deadline: 4/2 11.59pm PST
 
 ##### Addendum - DynamoDB
 
@@ -99,5 +98,3 @@ DynamoDBPricing
 https://aws.amazon.com/dynamodb/pricing/  
 Pay attention to the difference between “provisioned capacity mode” and“on-demand capacity mode”.  
 As to how to set billing mode in code, check link below https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/CreateTableRequest.html#billingMode()Version:1.0StartHTML:0000000105EndHTML:0000042057StartFragment:0000039335EndFragment:0000042017<style></style>
-
- 
