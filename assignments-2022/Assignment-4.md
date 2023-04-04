@@ -13,11 +13,12 @@ The resulting systems should implement CQRS.
 
 You have complete freedom to do this however you like. Don't like RMQ? Scrap it. Wanna play with MongoDB leader-followers? Go for it! Bonus points for add and weird (er ... I mean creative!) solutions!
 
+For example, [here's a recipe](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/cqrs-pattern.html) for using DynamoDB and a relational DB linked by a Lambda function. Implement this. It's cool :)
 ### Step 2 Load the Database
 
 Empty your database and then run a client that generates 500k swipe events. This should be the client from Assignment 2. You don't need the GET thread from assignmnet 3.
 
-You'll probably want to optimize this load as low latency POSTs will help in the REAL TEST  :) (see nexT)
+You'll probably want to optimize this load as low latency POSTs will help in the REAL TEST  :) (see next)
 
 ### Step 3 Load test the System
 
