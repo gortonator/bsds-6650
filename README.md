@@ -10,7 +10,7 @@
 
 This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 
-* Section 1 - Room 416, Tues 6-9pm
+* Section 1 - Room 416, Fridays 6-9pm
 
 ### Course Lead
 
