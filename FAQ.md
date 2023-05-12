@@ -3,31 +3,26 @@
 ## AWS
 
 1. [IAM Role for AWS SQS](#aws-sqs-roles)
-1. [Loan balancer issues](#Unhealthy-AWS-LB-Instances)
-
-
+2. [Loan balancer issues](#Unhealthy-AWS-LB-Instances)
 
 ## Linux
 
 1. [Starting a program/script on Linux startup](#starting-a-program-on-linux-bootup)
 2. Creating Instance Templates for AWS Load Balancing Target Groups
-2. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
+3. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
 
 ## Servlets
-
-
 
 ## Intellij
 
 [ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
-
-
+[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ Version required)
 
 ## RabbitMQ
 
+[Installing RMQ on AWS Linux 2](#Installing RMQ)
 
-
-
+Swagger
 
 # Answers
 
@@ -62,3 +57,29 @@ Also, you need your target group to listen on port 8080  using tomcat. This [exc
 #### ClassNotFoundException in .war built by IntelliJ
 
 In the Project Structure menu, right-click on the (e.g.) `Lab2WebApp` folder (the first one in the Available Elements list). There should be an option to put your  dependencies into the artifact’s WEB-INF/lib directory. Once done, apply the changes and rebuild your artifact. You should (hopefully) not run into the `ClassNotFoundException` anymore, 
+
+#### IntelliJ Version required
+
+You should install Idea Ultimate version (community version has limited support for this feature)
+
+# RabbitMQ
+
+#### Installing RMQ
+
+sudo yum install epel-release  
+sudo amazon-linux-extras install epel  
+sudo yum install erlang  
+sudo yum install rabbitmq-server
+
+sudo rabbitmq-plugins list  
+sudo rabbitmq-plugins enable rabbitmq_management  
+sudo systemctl enable rabbitmq-server  
+sudo systemctl start rabbitmq-server  
+sudo systemctl stop rabbitmq-server
+
+whereis rabbitmq  
+sudo chown -R ec2-user: /var/log/rabbitmq
+
+http://(YourDNS):15672/
+
+

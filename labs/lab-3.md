@@ -77,7 +77,7 @@ System.currentTimeMillis();
 ~~~
 Do likewise when all threads have completed and print out the time taken to execute the program before terminating.
 
-Remember every request will take ~1 second to execute. How long does your client take to excute 100 requests? Any idea why?
+Remember every request will take approximately 1 second to execute. How long does your client take to excute 100 requests? Any idea why?
 
 ### Tomcat Configuration
 Tomcat is a highly configurable beast. You can modify the behavior of Tomcat by changing the parameter values in the server.xml file in the tomcat installation.
@@ -127,7 +127,7 @@ Can you use Little's Law to make sense of the client execution times you are see
 
 And can you use Little's Law to estimate the throughput you'd expect to see in your first Assignment. Assume service time is maybe 1-5 milliseconds?
 
-You can read more on Little's Law [here](http://highscalability.com/blog/2014/2/5/littles-law-scalability-and-fault-tolerance-the-os-is-your-b.html).
+You can read more on Little's Law [here](https://sookocheff.com/post/modeling/littles-law/#:~:text=Little's%20Law%20is%20a%20useful,a%20change%20on%20system%20performance).
 
 ### Additional Issues to Explore - Tomcat Performance Monitoring
 
