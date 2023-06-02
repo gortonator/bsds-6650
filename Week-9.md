@@ -23,6 +23,7 @@ Chapters 10 and 11 of course book
 2. [Scaling Relational Databases on AWS](https://www.youtube.com/watch?v=lQEMV_Qgjrw)
 3. A good general [distribued architecture talk](https://www.youtube.com/watch?v=tpspO9K28PM)
 4. This video is a deep dive into [conflict resolution](https://www.youtube.com/watch?v=8_DfwEpHE88&list=PLeKd45zvjcDHJxge6VtYUAbYnvd_VNQCx&index=5) for you algos nerds :) 
+5. Excellent article about how [Slack scale their MySQL layer]([Scaling Datastores at Slack with Vitess - Slack Engineering](https://slack.engineering/scaling-datastores-at-slack-with-vitess/))
 
 ## Labs
 

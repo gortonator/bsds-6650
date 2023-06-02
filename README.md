@@ -132,3 +132,11 @@ Quizzes last approximately 45 minutes. If you are not able to attend and take th
 
 **Do your own work**
 You know the rules. Helping each other out is fine, but design and build and test your own system. Any unwarranted collaboration will result in a zero grade for the assignment. 
+
+**Code of Conduct and Course Values** 
+No disrespect, rudeness, or abuse will be tolerated, either in class or in online communication. During class, we will be doing a lot of sharing of ideas and open-ended work. It is important that everyone feel comfortable contributing to class discussion, and that their contributions are valued. To that end, our course values can be defined as: 
+*	Respect 
+*	Inclusion 
+*	Support 
+*	Kindness 
+
