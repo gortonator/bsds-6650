@@ -34,7 +34,12 @@ Sound easy/ confused? Here are some more guides
 2. Creating Instance Templates for AWS Load Balancing Target Groups
 3. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
 
-## Servlets
+## Servlets and Tomcats
+### Lab2 - Web Application Support and Servlet
+Check to make sure your intellij IDEA is the ultimate version. 
+
+If I cannot create a new Servlet in Intellij?
+Check this answer [Stackoverflow](https://stackoverflow.com/a/72509725)
 
 ## Intellij
 
