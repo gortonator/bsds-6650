@@ -6,12 +6,21 @@
 2. Understand how to use the tool (for example Postman) to test HTTP requests
 3. Understand how to launch an EC2 instance, access and modify the file content of your instance, and manage the security group setting (You will learn some of this by following the labs)
 
-### Typical Process Flow to Complete Assignment
-1. Code your main program on the local machine.
-2. Make sure the program runs without bugs locally. Recommended testing tools for HTTP requests: https://www.postman.com/
-3. Convert your program to the required file (war or jar)
-4. Launch the EC2 instance and upload the required program from local to EC2 (The upload is done by opening a command prompt window on your local machine and typing in the required commands)
-5. Run your tests from your local machine to send HTTP requests to the server on the EC2 instance(s). 
+### What is actually happening when you proceed with the assignments?
+1. You code your main java programs in Integrated Development Environment (IDE like IntelliJ) on your local machine.
+2. For server program, that usually means creating java servlet file and application. 
+3. You integrated it with some other services like Tomcat (for hosting your webapp), message service (Example: RabbitMQ), and database service.
+4. You test the program on your local machine to make sure they are running fine without bugs. Recommended testing tools for HTTP requests: https://www.postman.com/
+5. You Convert your program to the required file (war or jar)
+6. You set up the server machines (EC2 instances) provided by Amazon Web Services (AWS) via AWS Learner Lab, AWS Management Console, and SSH into your EC2 instances.
+7. Your EC2 instances will normally launch with OS of Amazon Linux or Ubuntu (because they are free).Thus you typically need to install programs via SSH and command prompt.
+8. Depending on your design choices, there could be additional AWS services required to set up, such as ALB, SQS, DynamoDB and so on. 
+9. You copied your program in step 5 and deployed them onto your server. 
+10. You run your tests from your local machine to send HTTP requests to the server on the EC2 instance(s), either through client program or Apache JMeter as per assignments requirement.
+
+Sound easy/ confused? Here are some more guides
+### Additional Guide / Resources
+
 
 ## AWS
 
