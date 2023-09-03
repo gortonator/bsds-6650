@@ -21,6 +21,7 @@
 Sound easy/ confused? Here are some more guides
 ### Additional Guide / Resources
 1. Lab1 visual guide [here](misc/Lab1_Visual_Guide.pdf)
+2. What happened when you launch an EC2 instance with AWS? [check here for quick summary](misc/AWS_EC2_Knowledge.pdf)
 
 ## AWS
 
