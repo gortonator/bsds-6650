@@ -1,6 +1,57 @@
 # CS6650 FAQ
 ## How to succeed in this Course
+1. [Prerequisite Knowledge](#Prerequisite-/-Required Knowledge)
 
+
+## AWS
+
+1. [IAM Role for AWS SQS](#aws-sqs-roles)
+2. [Loan balancer issues](#Unhealthy-AWS-LB-Instances)
+
+## Linux
+
+1. [Starting a program/script on Linux startup](#starting-a-program-on-linux-bootup)
+2. Creating Instance Templates for AWS Load Balancing Target Groups
+3. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
+
+## Servlets and Tomcats
+### Lab2 - Web Application Support and Servlet
+Check to make sure your intellij IDEA is the ultimate version. 
+
+Still cannot create a new Servlet in Intellij?
+
+Check this answer [Stackoverflow](https://stackoverflow.com/a/72509725)
+
+### Things you need to know about Tomcat
+Always installing the same versions of software/applications/packages as mentioned in the labs unless you are confident to know the differences between the versions to install the latest. 
+
+For example, Tomcat version 9 only works with Javax Servlet API version 4.0 but not version 5.0. 
+[Apache Reference](https://tomcat.apache.org/whichversion.html), [Java EE vs Jakarta EE](https://www.baeldung.com/java-enterprise-evolution), [Tomcat 10 info](https://www.openlogic.com/blog/apache-tomcat-10)
+
+One of the common causes of bugs is developing software in a version that is not compatible with the software you used in the deployment environment. 
+
+### Not enough space in your EC2 instance after working on the project for sometime?
+When installing Tomcat, remember to set the log retention policy of your Tomcat server to a maximum of one day. If you don’t set it, Tomcat will retain all the logs of all requests, which eventually eat up all the storage space of your EC2 instance. To set it. 
+
+Set the following property in your config/server.xml file for the Tomcat
+
+maxDays="1"
+
+[Stackoverflow for detail](https://stackoverflow.com/a/57826692/21508621)
+
+## Intellij
+
+[ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
+[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ Version required)
+
+## RabbitMQ
+
+[Installing RMQ on AWS Linux 2](#Installing-RMQ)
+
+Swagger
+
+# Answers
+## How to Succeed
 ### Prerequisite / Required Knowledge
 1. Understand how to manage maven dependency in your IDE,  package, and run a war file
 2. Understand how to use the tool (for example Postman) to test HTTP requests
@@ -22,37 +73,6 @@ Sound easy/ confused? Here are some more guides
 ### Additional Guide / Resources
 1. Lab1 visual guide [here](misc/Lab1_Visual_Guide.pdf)
 2. What happened when you launch an EC2 instance with AWS? [check here for quick summary](misc/AWS_EC2_Knowledge.pdf)
-
-## AWS
-
-1. [IAM Role for AWS SQS](#aws-sqs-roles)
-2. [Loan balancer issues](#Unhealthy-AWS-LB-Instances)
-
-## Linux
-
-1. [Starting a program/script on Linux startup](#starting-a-program-on-linux-bootup)
-2. Creating Instance Templates for AWS Load Balancing Target Groups
-3. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
-
-## Servlets and Tomcats
-### Lab2 - Web Application Support and Servlet
-Check to make sure your intellij IDEA is the ultimate version. 
-
-If I cannot create a new Servlet in Intellij?
-Check this answer [Stackoverflow](https://stackoverflow.com/a/72509725)
-
-## Intellij
-
-[ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
-[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ Version required)
-
-## RabbitMQ
-
-[Installing RMQ on AWS Linux 2](#Installing RMQ)
-
-Swagger
-
-# Answers
 
 ## Linux
 
@@ -109,5 +129,14 @@ whereis rabbitmq
 sudo chown -R ec2-user: /var/log/rabbitmq
 
 http://(YourDNS):15672/
+
+# Other
+## How to calculate mean, median, 99th percentile?
+First way - write your own java program. 
+
+Second way - use existing API
+
+You can use the descriptive statistics API  to help calculate the statistics required
+[reference](https://commons.apache.org/proper/commons-math/javadocs/api-3.6.1/index.html?org/apache/commons/math3/stat/descriptive/DescriptiveStatistics.html)
 
 
