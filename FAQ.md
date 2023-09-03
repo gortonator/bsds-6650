@@ -20,7 +20,7 @@
 
 Sound easy/ confused? Here are some more guides
 ### Additional Guide / Resources
-1. Lab1 visual guide [here](README.md)
+1. Lab1 visual guide [here](misc/Lab1)
 
 ## AWS
 
