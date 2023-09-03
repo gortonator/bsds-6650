@@ -1,6 +1,8 @@
 # CS6650 FAQ
 ## How to succeed in this Course
-1. [Prerequisite Knowledge](#Prerequisite-/-Required Knowledge)
+1. [Prerequisite Knowledge](#Prerequisite-/-Required-Knowledge)
+2. [How to do the assignments](#How-to-do-the-assignments?)
+3. [Additional Guides](#Additional-Guide-/-Resources)
 
 
 ## AWS
@@ -57,7 +59,7 @@ Swagger
 2. Understand how to use the tool (for example Postman) to test HTTP requests
 3. Understand how to launch an EC2 instance, access and modify the file content of your instance, and manage the security group setting (You will learn some of this by following the labs)
 
-### What is actually happening when you proceed with the assignments?
+### How to do the assignments?
 1. You code your main java programs in Integrated Development Environment (IDE like IntelliJ) on your local machine.
 2. For server program, that usually means creating java servlet file and application. 
 3. You integrated it with some other services like Tomcat (for hosting your webapp), message service (Example: RabbitMQ), and database service.
