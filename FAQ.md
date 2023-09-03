@@ -26,12 +26,15 @@
 
 1. [ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
 2. [Cannot find 'Web Application; under the "Add Framework support](#IntelliJ-Version-required)
+3. [Java Version Error During Compilation or Deployment](#Java-Version-Error-During-Compilation-or-Deployment)
+4. [SLF4J Error](#SLF4J-Error)
 
 ## RabbitMQ
 
 [Installing RMQ on AWS Linux 2](#Installing-RMQ)
 
-Swagger
+## Swagger issues
+Check this post from Spring 2023 class. [here](https://piazza.com/class/lcjrfetosy8581/post/103)
 
 ## Other
 1. [How to calculate those statistics?](#How-to-calculate-mean,-median,-99th-percentile?)
@@ -122,7 +125,7 @@ In the Project Structure menu, right-click on the (e.g.) `Lab2WebApp` folder (th
 
 You should install Idea Ultimate version (community version has limited support for this feature)
 
-#### Error During Compilation or Deployment
+#### Java Version Error During Compilation or Deployment
 If you encounter error similar to "source option 7 is no longer supported, use target 8 or higher"
 
 Check the dependencies/compilation target in the POML file. Look for something like
@@ -135,6 +138,21 @@ Check the dependencies/compilation target in the POML file. Look for something l
 Note for Java version
 1. For web application or java program to be deployed into EC2 instance, the compilation target should be equal to the java version installed on EC2
 2. For anything run on your local machine (like the client program), you can use any version you want
+
+#### SLF4J Error
+This normally wont affect your program. But if you want to know how to solve it. 
+[check here](https://stackoverflow.com/a/9919375/21508621)
+
+For maven, that means adding the SLF4J dependencies in your POM.xml, with ${slf4j.version} being the latest version of slf4j
+
+```
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>${slf4j.version}</version>
+</dependency>
+```
+
 
 ## RabbitMQ
 
