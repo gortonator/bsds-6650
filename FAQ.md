@@ -38,12 +38,12 @@ Swagger
 
 # Answers
 ## How to Succeed
-### Prerequisite / Required Knowledge
+#### Prerequisite / Required Knowledge
 1. Understand how to manage maven dependency in your IDE,  package, and run a war file
 2. Understand how to use the tool (for example Postman) to test HTTP requests
 3. Understand how to launch an EC2 instance, access and modify the file content of your instance, and manage the security group setting (You will learn some of this by following the labs)
 
-### How to do the assignments?
+#### How to do the assignments?
 1. You code your main java programs in Integrated Development Environment (IDE like IntelliJ) on your local machine.
 2. For server program, that usually means creating java servlet file and application. 
 3. You integrated it with some other services like Tomcat (for hosting your webapp), message service (Example: RabbitMQ), and database service.
@@ -56,7 +56,7 @@ Swagger
 10. You run your tests from your local machine to send HTTP requests to the server on the EC2 instance(s), either through client program or Apache JMeter as per assignments requirement.
 
 Sound easy/ confused? Here are some more guides
-### Additional Guide / Resources
+#### Additional Guide / Resources
 1. Lab1 visual guide [here](misc/Lab1_Visual_Guide.pdf)
 2. What happened when you launch an EC2 instance with AWS? [check here for quick summary](misc/AWS_EC2_Knowledge.pdf)
 
@@ -87,14 +87,14 @@ This [video](https://www.youtube.com/watch?v=rSoj7PEvWFY&t=395s) is a good sourc
 Also, you need your target group to listen on port 8080  using tomcat. This [excellent piazza post](https://piazza.com/class/l7qocxa6gzk5i4/post/170) from wonderful 2022 TA Heng spells it out.
 
 ## Servlets and Tomcats
-### Lab2-Web Application Support and Servlet
+#### Lab2-Web Application Support and Servlet
 Check to make sure your intellij IDEA is the ultimate version. 
 
 Still cannot create a new Servlet in Intellij?
 
 Check this answer [Stackoverflow](https://stackoverflow.com/a/72509725)
 
-### Things you need to know about Tomcat Version
+#### Things you need to know about Tomcat Version
 Always installing the same versions of software/applications/packages as mentioned in the labs unless you are confident to know the differences between the versions to install the latest. 
 
 For example, Tomcat version 9 only works with Javax Servlet API version 4.0 but not version 5.0. 
@@ -102,7 +102,7 @@ For example, Tomcat version 9 only works with Javax Servlet API version 4.0 but 
 
 One of the common causes of bugs is developing software in a version that is not compatible with the software you used in the deployment environment. 
 
-### Tomcat Log Retention Setting
+#### Tomcat Log Retention Setting
 When installing Tomcat, remember to set the log retention policy of your Tomcat server to a maximum of one day. If you don’t set it, Tomcat will retain all the logs of all requests, which eventually eat up all the storage space of your EC2 instance. To set it. 
 
 Set the following property in your config/server.xml file for the Tomcat
@@ -121,6 +121,20 @@ In the Project Structure menu, right-click on the (e.g.) `Lab2WebApp` folder (th
 #### IntelliJ Version required
 
 You should install Idea Ultimate version (community version has limited support for this feature)
+
+#### Error During Compilation or Deployment
+If you encounter error similar to "source option 7 is no longer supported, use target 8 or higher"
+
+Check the dependencies/compilation target in the POML file. Look for something like
+```
+<properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+ </properties>
+```
+Note for Java version
+1. For web application or java program to be deployed into EC2 instance, the compilation target should be equal to the java version installed on EC2
+2. For anything run on your local machine (like the client program), you can use any version you want
 
 ## RabbitMQ
 
