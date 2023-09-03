@@ -1,4 +1,17 @@
 # CS6650 FAQ
+## How to succeed in this Course
+
+### Prerequisite / Required Knowledge
+1. Understand how to manage maven dependency in your IDE,  package, and run a war file
+2. Understand how to use the tool (for example Postman) to test HTTP requests
+3. Understand how to launch an EC2 instance, access and modify the file content of your instance, and manage the security group setting (You will learn some of this by following the labs)
+
+### Typical Process Flow to Complete Assignment
+1. Code your main program on the local machine.
+2. Make sure the program runs without bugs locally. Recommended testing tools for HTTP requests: https://www.postman.com/
+3. Convert your program to the required file (war or jar)
+4. Launch the EC2 instance and upload the required program from local to EC2 (The upload is done by opening a command prompt window on your local machine and typing in the required commands)
+5. Run your tests from your local machine to send HTTP requests to the server on the EC2 instance(s). 
 
 ## AWS
 
