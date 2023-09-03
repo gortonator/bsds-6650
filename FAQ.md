@@ -25,7 +25,7 @@
 ## Intellij
 
 [ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
-[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ Version required)
+[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ-Version-required)
 
 ## RabbitMQ
 
@@ -34,7 +34,7 @@
 Swagger
 
 ## Other
-1. [How to calculate those statistics?](#How-to-calculate-mean,-median,-99th percentile?)
+1. [How to calculate those statistics?](#How-to-calculate-mean,-median,-99th-percentile?)
 
 # Answers
 ## How to Succeed
