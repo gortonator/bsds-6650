@@ -24,8 +24,8 @@
 
 ## Intellij
 
-[ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
-[Cannot find 'Web Application; under the "Add Framework support](#IntelliJ-Version-required)
+1. [ClassNotFoundException in .war built by IntelliJ](#ClassNotFoundException-in-.war-built-by-IntelliJ)
+2. [Cannot find 'Web Application; under the "Add Framework support](#IntelliJ-Version-required)
 
 ## RabbitMQ
 
