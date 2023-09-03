@@ -1,4 +1,4 @@
-# CS6650 FAQ
+# CS6650 FAQ Outline
 ## How to succeed in this Course
 1. [Prerequisite Knowledge](#Prerequisite-/-Required-Knowledge)
 2. [How to do the assignments](#How-to-do-the-assignments?)
@@ -17,29 +17,10 @@
 3. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
 
 ## Servlets and Tomcats
-### Lab2 - Web Application Support and Servlet
-Check to make sure your intellij IDEA is the ultimate version. 
+1. [Potential Issues with Lab2](#Lab2-Web-Application-Support-and-Servlet)
+2. [Tomcat version](#Things-you-need-to-know-about-Tomcat-Version)
+3. [Important: Set your Tomcat Log retention to avoid not enough space in EC2](#Tomcat-Log-Retention-Setting)
 
-Still cannot create a new Servlet in Intellij?
-
-Check this answer [Stackoverflow](https://stackoverflow.com/a/72509725)
-
-### Things you need to know about Tomcat
-Always installing the same versions of software/applications/packages as mentioned in the labs unless you are confident to know the differences between the versions to install the latest. 
-
-For example, Tomcat version 9 only works with Javax Servlet API version 4.0 but not version 5.0. 
-[Apache Reference](https://tomcat.apache.org/whichversion.html), [Java EE vs Jakarta EE](https://www.baeldung.com/java-enterprise-evolution), [Tomcat 10 info](https://www.openlogic.com/blog/apache-tomcat-10)
-
-One of the common causes of bugs is developing software in a version that is not compatible with the software you used in the deployment environment. 
-
-### Not enough space in your EC2 instance after working on the project for sometime?
-When installing Tomcat, remember to set the log retention policy of your Tomcat server to a maximum of one day. If you don’t set it, Tomcat will retain all the logs of all requests, which eventually eat up all the storage space of your EC2 instance. To set it. 
-
-Set the following property in your config/server.xml file for the Tomcat
-
-maxDays="1"
-
-[Stackoverflow for detail](https://stackoverflow.com/a/57826692/21508621)
 
 ## Intellij
 
@@ -51,6 +32,9 @@ maxDays="1"
 [Installing RMQ on AWS Linux 2](#Installing-RMQ)
 
 Swagger
+
+## Other
+1. [How to calculate those statistics?](#How-to-calculate-mean,-median,-99th percentile?)
 
 # Answers
 ## How to Succeed
@@ -102,6 +86,32 @@ This [video](https://www.youtube.com/watch?v=rSoj7PEvWFY&t=395s) is a good sourc
 
 Also, you need your target group to listen on port 8080  using tomcat. This [excellent piazza post](https://piazza.com/class/l7qocxa6gzk5i4/post/170) from wonderful 2022 TA Heng spells it out.
 
+## Servlets and Tomcats
+### Lab2-Web Application Support and Servlet
+Check to make sure your intellij IDEA is the ultimate version. 
+
+Still cannot create a new Servlet in Intellij?
+
+Check this answer [Stackoverflow](https://stackoverflow.com/a/72509725)
+
+### Things you need to know about Tomcat Version
+Always installing the same versions of software/applications/packages as mentioned in the labs unless you are confident to know the differences between the versions to install the latest. 
+
+For example, Tomcat version 9 only works with Javax Servlet API version 4.0 but not version 5.0. 
+[Apache Reference](https://tomcat.apache.org/whichversion.html), [Java EE vs Jakarta EE](https://www.baeldung.com/java-enterprise-evolution), [Tomcat 10 info](https://www.openlogic.com/blog/apache-tomcat-10)
+
+One of the common causes of bugs is developing software in a version that is not compatible with the software you used in the deployment environment. 
+
+### Tomcat Log Retention Setting
+When installing Tomcat, remember to set the log retention policy of your Tomcat server to a maximum of one day. If you don’t set it, Tomcat will retain all the logs of all requests, which eventually eat up all the storage space of your EC2 instance. To set it. 
+
+Set the following property in your config/server.xml file for the Tomcat
+
+maxDays="1"
+
+[Stackoverflow for detail](https://stackoverflow.com/a/57826692/21508621)
+
+
 ## Intellij
 
 #### ClassNotFoundException in .war built by IntelliJ
@@ -112,7 +122,7 @@ In the Project Structure menu, right-click on the (e.g.) `Lab2WebApp` folder (th
 
 You should install Idea Ultimate version (community version has limited support for this feature)
 
-# RabbitMQ
+## RabbitMQ
 
 #### Installing RMQ
 
@@ -132,8 +142,8 @@ sudo chown -R ec2-user: /var/log/rabbitmq
 
 http://(YourDNS):15672/
 
-# Other
-## How to calculate mean, median, 99th percentile?
+## Other
+### How to calculate mean, median, 99th percentile?
 First way - write your own java program. 
 
 Second way - use existing API
