@@ -33,6 +33,9 @@
 
 [Installing RMQ on AWS Linux 2](#Installing-RMQ)
 
+## Kafka
+[Additional Guides](#Additional-Guides)
+
 ## Swagger issues
 Check this post from Spring 2023 class. [here](https://piazza.com/class/lcjrfetosy8581/post/103)
 
@@ -174,8 +177,18 @@ sudo chown -R ec2-user: /var/log/rabbitmq
 
 http://(YourDNS):15672/
 
+## Kafka
+#### Additional Guides
+1. For tutorial, [here](https://www.javatpoint.com/apache-kafka)
+2. For Windows user, you can check out the following installation guide [here](https://www.geeksforgeeks.org/how-to-install-and-run-apache-kafka-on-windows/)
+
+Note you will be running the BAT (Window Batch File) in the bin \ window directory 
+
+Example: C:\kafka\bin\windows
+
+
 ## Other
-### How to calculate mean, median, 99th percentile?
+#### How to calculate mean, median, 99th percentile?
 First way - write your own java program. 
 
 Second way - use existing API
