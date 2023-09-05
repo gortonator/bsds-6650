@@ -23,8 +23,8 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 
 ### Super Talented Teaching Assistants
 
-* **???** - ???(at)northeastern.edu/
-  * Office Hours - ?? ??-??? (PST) 
+* Shiang Jin, Chin - chin.shi@northeastern.edu/
+  * Office Hours - Every Friday starting 8th Sep 1:30-3:30pm (PST) 
 
 ## Overview
 
