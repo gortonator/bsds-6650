@@ -30,6 +30,9 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
   * Office Hours - Every Monday starting 11st Sep 2:00-4:00pm (PST)
 * Shengguo, Zhou - zhou.she@northeastern.edu/
   * Office Hours - Sunday 8:30am-10:30am (PST) via Teams
+* Mahvash Maghrabi - maghrabi.m@northeastern.edu/
+  * Office Hours - Tuesday 4:00pm-6:00pm (PST) via Teams
+  
 ## Overview
 
 This course will cover the essential elements of distributed, concurrent systems and build upon that knowledge with engineering principles and practical experience with state-of-the-art technologies and methods for building scalable systems. Scalability is an essential quality of Internet-facing systems, and requires specialized skills and knowledge to build systems that scale at low cost. 
