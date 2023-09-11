@@ -19,6 +19,24 @@ Change to: router.Run(":8080")
 This is to allow the server run on EC2. 
 
 ## Lab 1 - Getting started with AWS EC2 Instance
+### Aims: Cross Compile Your Go-Gin code 
+* Basically we want to cross compile the Go-Gin codes coded on Your local machine into binary executable file that you can run on EC2 directly.
+  - What you need is to specify the target Operating System (OS) and architecture when compiling and build your go application. 
+
+* After you build and test your code. open a bash terminal, navigate to the main directory of your Go-Gin code file (where your main.go reside), 
+  - For window, you will need to open a git-bash terminal from VS Studio Code. Check [here](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_git-bash-on-windows)
+ 
+* Run the following command to cross-compile your code
+  ```
+  GOOS=linux GOARCH=amd64 go build -o <your-filename> main.go
+  ```
+  - Here, GOOS set the target OS to linux,
+  - GOARCH set the target architecture to amd64. (For AWS Linux, it will either be amd64 or arm64, try the other if the first didnt work)
+  - For list of available OS and GOARCH, check [here](https://go.dev/doc/install/source#environment)
+  - go build command build the executable file with code resides on main.go (the file name you write your code)
+  - -o <your-filename> specify the output name of the executable binaries file.
+  - Useful reference for compilation tutorial [here](https://go.dev/doc/tutorial/compile-install), command options [here](https://pkg.go.dev/cmd/go)
+
 ### Aims: Set Up Your EC2 Instance
 * Get AWS account up and running - you should have an AWS Academy invitation
 
@@ -53,20 +71,48 @@ This is to allow the server run on EC2.
     ~~~
     ```
 
-### Aims: Cross Compile Your Go-Gin code 
-* Basically we want to cross compile the Go-Gin codes coded on Your local machine into binary executable file that you can run on EC2 directly.
-  - What you need is to specify the target Operating System (OS) and architecture when compiling and build your go application. 
 
-* After you build and test your code. open a bash terminal, navigate to the main directory of your Go-Gin code file (where your main.go reside), 
-  - For window, you will need to open a git-bash terminal from VS Studio Code. Check [here](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_git-bash-on-windows)
  
-* Run the following command to cross-compile your code
+### Aims: Upload your binary executable file to EC2 and Run it. 
+* After SSH into EC2, make a directory of your choice using mkdir command 
   ```
-  GOOS=linux GOARCH=amd64 go build -o <your desire filename> main.go
+  #create your directory, if permission denied, add sudo
+  (sudo) mkdir <your_dir_name>
+
+  #run following command to allow permission to upload files
+  #if permission denied, add sudo
+  (sudo) chmod -R 777 <your_dir_name>
   ```
-  - Here, GOOS set the target OS to linux,
-  - GOARCH set the target architecture to amd64. 
-  - go build command build the executable file with code resides on main.go
+
+* Open a command prompt windor from your local machine, and use scp to copy the file onto EC2 
+```
+sudo scp -i <path to your pem file for aws private key, include.pem extension> <path to your executable binary cross-compiled> ec2-user@<EC2_IP_ADDR>:<folder of your choices>
+```
+- Note the whitespace, if I separate the command by whitespace I should see something like
+```
+sudo 
+scp 
+-i 
+<path to your pem file for aws private key, include.pem extension> 
+<path to your executable binary cross-compiled> 
+ec2-user@<EC2_IP_ADDR>:<folder of your choices>
+```
+* Notes for above commands
+  - sudo is not required if you open the command prompt from Window with administrator right
+  - for the paths, the first two (perm file and compiled file) are paths on your local machine
+  - ec2-user is the login name you used when ssh into your ec2 instance
+  - EC2_IP_ADDR -> this is the public IP address of your EC2 instance
+  - For folder path on EC2, if you previously mkdir folder on directory when you logged in, it will typically be /home/ec2-user/<your_dir_name>
+
+* Now you can try run your go server, navigate to the directory where your upload the file
+```
+#run your go-server file
+./<your-filename>
+
+#do this to change permissions if you get permission denied
+sudo chmod -R 777 <your-filename>
+```
+* 
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'll be able to do all this in your sleep. 
 
 Some notes based on first experience with the Learner Lab:
