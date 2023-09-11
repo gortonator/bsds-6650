@@ -1,21 +1,35 @@
 # CS6650 Lab 1  
 
-This lab is designed to guide you to create an EC2 instance on AWS running AWS Linux.
+This lab is designed to guide you to create an EC2 instance on AWS running AWS Linux, and deploy your webserver built using Go-Gin framework onto it. 
 
-AWS Linux 2 is the version to use. You may choose another Linux instance but will be on your own.
+AWS Linux 2023 or AWS Linux 2 is the version to use. You may choose another Linux instance but will be on your own.
 
-## Lab 1 - Getting started with AWS Linux 2
-### Aims: 
+## Prerequisite
+Completed the two tutorials in Lab 0. 
+
+https://go.dev/doc/tutorial/getting-started
+
+https://go.dev/doc/tutorial/web-service-gin
+
+Note for second tutorial. change the address of your server in main function to remove the localhost reference as below. 
+```
+Original : router.Run("localhost:8080")
+Change to: router.Run(":8080")
+```
+This is to allow the server run on EC2. 
+
+## Lab 1 - Getting started with AWS EC2 Instance
+### Aims: Set Up Your EC2 Instance
 * Get AWS account up and running - you should have an AWS Academy invitation
 
 * Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step. For visual guide reference, you can check [here](../misc/Lab1_Visual_Guide.pdf)
 
-* [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
+* [Launch a free tier AMI running Amazon Linux 2023 or Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
 
 * You must configure access to your virtual machine uisng AWS Security Groups. [This is a good overview](https://www.javatpoint.com/aws-security-group) if you are unfamiliar
 
 * Make sure you have configured your security group that allows traffic on:
-  - port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
+  - port 80 for http and 8080 as a Custom TCP Rule (Same port as your Go-Gin server)
     port 22 for ssh. 
     
   - Make port 22 accessible from  "My IP" for when you are working from home. On campus you will need to redo this rule each time as your allocated IP address might change
@@ -26,6 +40,7 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
 
     63.208.141.234/29
 
+  - Alternatively, make port 80 and 8080 accessible from My IP as well if you testing from home. As your ISPs may give you different IP address from CIDR blocks above. 
   - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
 
 * ssh into your instance, [These instructions](https://www.linuxsysadmins.com/how-to-connect-to-amazon-ec2-remotely-using-ssh/) should work. Alternatively, check the official AWS Website [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html). Basically the command looks like below:
@@ -38,15 +53,20 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
     ~~~
     ```
 
-* Install tomcat  9 - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
-  - ignore the instructions to configure the firewall service at the end of Step 3.
-  - ignore setting up httpd - we are using tomcat instead
-  - Follow the instructions to enable administrator access to tomcat. This will make deploying your application .war file easier as you can use the "Deploy" option on the administration page. 
+### Aims: Cross Compile Your Go-Gin code 
+* Basically we want to cross compile the Go-Gin codes coded on Your local machine into binary executable file that you can run on EC2 directly.
+  - What you need is to specify the target Operating System (OS) and architecture when compiling and build your go application. 
 
-* Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage. Hit the manager app button and on the homepage and you should be able to log in with your credentials. If you can't and get a 403 error, follow [this link](https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host) to fix it.
-
-* Once you can log in, scroll down the 'Manager App' page and you will see a Deploy button. This will be how you deploy your code in lab 2 - its easier than using an scp command.
-
+* After you build and test your code. open a bash terminal, navigate to the main directory of your Go-Gin code file (where your main.go reside), 
+  - For window, you will need to open a git-bash terminal from VS Studio Code. Check [here](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_git-bash-on-windows)
+ 
+* Run the following command to cross-compile your code
+  ```
+  GOOS=linux GOARCH=amd64 go build -o <your desire filename> main.go
+  ```
+  - Here, GOOS set the target OS to linux,
+  - GOARCH set the target architecture to amd64. 
+  - go build command build the executable file with code resides on main.go
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'll be able to do all this in your sleep. 
 
 Some notes based on first experience with the Learner Lab:
