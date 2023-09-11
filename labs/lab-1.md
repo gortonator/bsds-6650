@@ -8,7 +8,7 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
 ### Aims: 
 * Get AWS account up and running - you should have an AWS Academy invitation
 
-* Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step.
+* Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step. For visual guide reference, you can check [here](/../misc/Lab1_Visual_Guide.pdf)
 
 * [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
 
@@ -28,7 +28,7 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
 
   - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
 
-* ssh into your instance, [These instructions](https://www.linuxsysadmins.com/how-to-connect-to-amazon-ec2-remotely-using-ssh/) should work. Basically the command looks like below:
+* ssh into your instance, [These instructions](https://www.linuxsysadmins.com/how-to-connect-to-amazon-ec2-remotely-using-ssh/) should work. Alternatively, check the official AWS Website [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html). Basically the command looks like below:
 
   
 
