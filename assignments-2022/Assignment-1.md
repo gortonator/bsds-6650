@@ -128,12 +128,8 @@ Submit your work to Canvas Assignment 1 as a pdf document. The document should c
 4. Client Part 2 - (10 points) - 5 points for throughput within ~5% of Client Part 1. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible).
 
 5. Step 6: Plot of throughput over time (5 points)
-   
-   
-   
-   ### Additional Useful Information
-   
-   
+
+### Additional Useful Information
 
 ### Client API Implementation
 
@@ -154,32 +150,35 @@ If you don't want to figure out the Swagger client, you can use the [Java 11 HTT
 ### Building Swagger Client with Java 11
 
 You need to modify your POM, add the following dependencies:
-    <dependency>
-        <groupId>javax.xml.bind</groupId>
-        <artifactId>jaxb-api</artifactId>
-        <version>2.2.11</version>
-    </dependency>
-    <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-core</artifactId>
-        <version>2.2.11</version>
-    </dependency>
-    <dependency>
-        <groupId>com.sun.xml.bind</groupId>
-        <artifactId>jaxb-impl</artifactId>
-        <version>2.2.11</version>
-    </dependency>
-    <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>activation</artifactId>
-        <version>1.1.1</version>
-    </dependency>
 
-    <dependency>
-        <groupId>javax.annotation</groupId>
-        <artifactId>javax.annotation-api</artifactId>
-        <version>1.3.2</version>
-    </dependency>
+```
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-core</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-impl</artifactId>
+    <version>2.2.11</version>
+</dependency>
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+```
 
 ### Problems with GSON import in .war file in Intellij
 
