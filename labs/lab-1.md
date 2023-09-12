@@ -16,7 +16,7 @@ Note for second tutorial. change the address of your server in main function to 
 Original : router.Run("localhost:8080")
 Change to: router.Run(":8080")
 ```
-This is to allow the server run on EC2. 
+This is to enable the server to run on EC2. 
 
 ## Lab 1 - Getting started with AWS EC2 Instance
 ### Aims: Cross Compile Your Go-Gin code 
@@ -112,14 +112,28 @@ ec2-user@<EC2_IP_ADDR>:<folder of your choices>
 #do this to change permissions if you get permission denied
 sudo chmod -R 777 <your-filename>
 ```
-* 
+![image](https://github.com/sjchin88/bsds-6650-TA/assets/71600246/657e0738-9088-4a4c-b737-36e207fa7444)
+
+* Now, using curl / Postman, send an http request to your server. your address should be something like http:/<EC2_IP_ADDR>:8080/<your_url_path>
+
+
+
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'll be able to do all this in your sleep. 
 
+### Notes
 Some notes based on first experience with the Learner Lab:
 
 - Download a new key pair when you launch your first instance. You can then use this for all subsequent instances you launch
 - a .cer file seems to be the same as a .pem file, so you can use that in ssh commands
 
+Here is some troubleshooting guide if something is not working. 
+* If you receive permission error when uploading / running the file
+  - try use sudo chmod -R 777 <dir/filename> command to change the permission
+* If you receive other error when try to run the executable file on EC2
+  - try compile again the file from local into other GOARCH (arm64 or amd64)
+* If you can see the server running on SSH interface, but cannot receive valid http responses
+  - check your security group setting to allow inbound traffic on required port from your PC
+  - check your url path information 
 
 ## Notes on AWS Academy Learner Labs and Charging
 We will be using AWS Academy Learner Labs for this course.
