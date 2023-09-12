@@ -23,8 +23,17 @@ This is an onground class taught on the Seattle Campus, 225 Terry Ave N
 
 ### Super Talented Teaching Assistants
 
-* **???** - ???(at)northeastern.edu/
-  * Office Hours - ?? ??-??? (PST) 
+* Shiang Jin, Chin - chin.shi@northeastern.edu/
+  * Office Hours - Every Friday starting 8th Sep 1:30-3:30pm (PST)
+  * Team Link [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTg5ODRhMTEtNDY2Zi00YjNjLWFmMmEtZTRmMmI0MDZjZGJl%40thread.v2/0?context=%7b%22Tid%22%3a%22a8eec281-aaa3-4dae-ac9b-9a398b9215e7%22%2c%22Oid%22%3a%22ac28dc18-f02c-475d-8e58-af53fd0f6ace%22%7d)
+* Zhining, Wang - wang.zhin@northeastern.edu/
+  * Office Hours - Every Monday 8:30AM-10:30AM (PST) on [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTY1OWExN2ItNjhkMS00YzhlLThmZGMtMjVjYThjNWU3NzU1%40thread.v2/0?context=%7b%22Tid%22%3a%22a8eec281-aaa3-4dae-ac9b-9a398b9215e7%22%2c%22Oid%22%3a%2265862c32-176a-459e-b69f-bf33be3fa56a%22%7d)
+* Shengguo, Zhou - zhou.she@northeastern.edu/
+  * Office Hours - Sunday 8:30am-10:30am (PST) via Teams
+* Mahvash Maghrabi - maghrabi.m@northeastern.edu/
+  * Office Hours - Tuesday 4:00pm-6:00pm (PST) via Teams
+* Xiaohan Qin - qin.xia@northeastern.edu/
+  * Office Hours - Wednesday 9:00 - 11:00 am (PST) on [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzNlYWIyZjktZjFkMS00OTc1LWI4NTgtMzQ1ZTk2M2NiZjNk%40thread.v2/0?context=%7b%22Tid%22%3a%22a8eec281-aaa3-4dae-ac9b-9a398b9215e7%22%2c%22Oid%22%3a%22a5f1a87f-52bd-48c3-92e2-8430aa5e8eac%22%7d)
 
 ## Overview
 
