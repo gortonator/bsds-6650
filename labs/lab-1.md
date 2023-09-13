@@ -1,21 +1,53 @@
 # CS6650 Lab 1  
 
-This lab is designed to guide you to create an EC2 instance on AWS running AWS Linux.
+This lab is designed to guide you to create an EC2 instance on AWS running AWS Linux, and deploy your webserver built using Go-Gin framework onto it. 
 
-AWS Linux 2 is the version to use. You may choose another Linux instance but will be on your own.
+AWS Linux 2023 or AWS Linux 2 is the version to use. You may choose another Linux instance but will be on your own.
 
-## Lab 1 - Getting started with AWS Linux 2
-### Aims: 
+## Prerequisite
+Completed the two tutorials in Lab 0. 
+
+https://go.dev/doc/tutorial/getting-started
+
+https://go.dev/doc/tutorial/web-service-gin
+
+Note for second tutorial. change the address of your server in main function to remove the localhost reference as below. 
+```
+Original : router.Run("localhost:8080")
+Change to: router.Run(":8080")
+```
+This is to enable the server to run on EC2. 
+
+## Lab 1 - Getting started with AWS EC2 Instance
+### Aims: Cross Compile Your Go-Gin code 
+* Basically we want to cross compile the Go-Gin codes coded on Your local machine into binary executable file that you can run on EC2 directly.
+  - What you need is to specify the target Operating System (OS) and architecture when compiling and build your go application. 
+
+* After you build and test your code. open a bash terminal, navigate to the main directory of your Go-Gin code file (where your main.go reside), 
+  - For window, you will need to open a git-bash terminal from VS Studio Code. Check [here](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_git-bash-on-windows)
+ 
+* Run the following command to cross-compile your code
+  ```
+  GOOS=linux GOARCH=amd64 go build -o <your-filename> main.go
+  ```
+  - Here, GOOS set the target OS to linux,
+  - GOARCH set the target architecture to amd64. (For AWS Linux, it will either be amd64 or arm64, try the other if the first didnt work)
+  - For list of available OS and GOARCH, check [here](https://go.dev/doc/install/source#environment)
+  - go build command build the executable file with code resides on main.go (the file name you write your code)
+  - -o <your-filename> specify the output name of the executable binaries file.
+  - Useful reference for compilation tutorial [here](https://go.dev/doc/tutorial/compile-install), command options [here](https://pkg.go.dev/cmd/go)
+
+### Aims: Set Up Your EC2 Instance
 * Get AWS account up and running - you should have an AWS Academy invitation
 
-* Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step.
+* Sign into the AWS Academy Learner Lab. Hit the 'Start' button for any of the labs, and watch the alien-like V symbol spin for a long time. When it finished the 'AWS' logo on the left should be green, Hit this and it will throw you into an AWS Console Window. From that window you should be able to follow the instructions in the next step. For visual guide reference, you can check [here](../misc/Lab1_Visual_Guide.pdf)
 
-* [Launch a free tier AMI running Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
+* [Launch a free tier AMI running Amazon Linux 2023 or Amazon Linux 2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) on us-west2 (it should be available)
 
 * You must configure access to your virtual machine uisng AWS Security Groups. [This is a good overview](https://www.javatpoint.com/aws-security-group) if you are unfamiliar
 
 * Make sure you have configured your security group that allows traffic on:
-  - port 80 for http and 8080 as a Custom TCP Rule (Tomcat listens on this port by default)
+  - port 80 for http and 8080 as a Custom TCP Rule (Same port as your Go-Gin server)
     port 22 for ssh. 
     
   - Make port 22 accessible from  "My IP" for when you are working from home. On campus you will need to redo this rule each time as your allocated IP address might change
@@ -26,9 +58,10 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
 
     63.208.141.234/29
 
+  - Alternatively, make port 80 and 8080 accessible from My IP as well if you testing from home. As your ISPs may give you different IP address from CIDR blocks above. 
   - Under no circumstances open any port to everywhere. You will get hacked and lose your account.
 
-* ssh into your instance, [These instructions](https://www.linuxsysadmins.com/how-to-connect-to-amazon-ec2-remotely-using-ssh/) should work. Basically the command looks like below:
+* ssh into your instance, [These instructions](https://www.linuxsysadmins.com/how-to-connect-to-amazon-ec2-remotely-using-ssh/) should work. Alternatively, check the official AWS Website [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html). Basically the command looks like below:
 
   
 
@@ -38,22 +71,69 @@ AWS Linux 2 is the version to use. You may choose another Linux instance but wil
     ~~~
     ```
 
-* Install tomcat  9 - [Follow the instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
-  - ignore the instructions to configure the firewall service at the end of Step 3.
-  - ignore setting up httpd - we are using tomcat instead
-  - Follow the instructions to enable administrator access to tomcat. This will make deploying your application .war file easier as you can use the "Deploy" option on the administration page. 
 
-* Tomcat listens on port 8080, so in your browser go to http://{your public IP address}:8080 and you should see the Tomcat homepage. Hit the manager app button and on the homepage and you should be able to log in with your credentials. If you can't and get a 403 error, follow [this link](https://stackoverflow.com/questions/36703856/access-tomcat-manager-app-from-different-host) to fix it.
+ 
+### Aims: Upload your binary executable file to EC2 and Run it. 
+* After SSH into EC2, make a directory of your choice using mkdir command 
+  ```
+  #create your directory, if permission denied, add sudo
+  (sudo) mkdir <your_dir_name>
 
-* Once you can log in, scroll down the 'Manager App' page and you will see a Deploy button. This will be how you deploy your code in lab 2 - its easier than using an scp command.
+  #run following command to allow permission to upload files
+  #if permission denied, add sudo
+  (sudo) chmod -R 777 <your_dir_name>
+  ```
+
+* Open a command prompt windor from your local machine, and use scp to copy the file onto EC2 
+```
+sudo scp -i <path to your pem file for aws private key, include.pem extension> <path to your executable binary cross-compiled> ec2-user@<EC2_IP_ADDR>:<folder of your choices>
+```
+- Note the whitespace, if I separate the command by whitespace I should see something like
+```
+sudo 
+scp 
+-i 
+<path to your pem file for aws private key, include.pem extension> 
+<path to your executable binary cross-compiled> 
+ec2-user@<EC2_IP_ADDR>:<folder of your choices>
+```
+* Notes for above commands
+  - sudo is not required if you open the command prompt from Window with administrator right
+  - for the paths, the first two (perm file and compiled file) are paths on your local machine
+  - ec2-user is the login name you used when ssh into your ec2 instance
+  - EC2_IP_ADDR -> this is the public IP address of your EC2 instance
+  - For folder path on EC2, if you previously mkdir folder on directory when you logged in, it will typically be /home/ec2-user/<your_dir_name>
+
+* Now you can try run your go server, navigate to the directory where your upload the file
+```
+#run your go-server file
+./<your-filename>
+
+#do this to change permissions if you get permission denied
+sudo chmod -R 777 <your-filename>
+```
+![image](https://github.com/sjchin88/bsds-6650-TA/assets/71600246/657e0738-9088-4a4c-b737-36e207fa7444)
+
+* Now, using curl / Postman, send an http request to your server. your address should be something like http:/<EC2_IP_ADDR>:8080/<your_url_path>
+
+
 
 Once you get this far, life looks pretty good. First mission accomplished! In 3 weeks you'll be able to do all this in your sleep. 
 
+### Notes
 Some notes based on first experience with the Learner Lab:
 
 - Download a new key pair when you launch your first instance. You can then use this for all subsequent instances you launch
 - a .cer file seems to be the same as a .pem file, so you can use that in ssh commands
 
+Here is some troubleshooting guide if something is not working. 
+* If you receive permission error when uploading / running the file
+  - try use sudo chmod -R 777 <dir/filename> command to change the permission
+* If you receive other error when try to run the executable file on EC2
+  - try compile again the file from local into other GOARCH (arm64 or amd64)
+* If you can see the server running on SSH interface, but cannot receive valid http responses
+  - check your security group setting to allow inbound traffic on required port from your PC
+  - check your url path information 
 
 ## Notes on AWS Academy Learner Labs and Charging
 We will be using AWS Academy Learner Labs for this course.
