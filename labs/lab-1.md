@@ -88,14 +88,14 @@ This is to enable the server to run on EC2.
 ```
 sudo scp -i <path to your pem file for aws private key, include.pem extension> <path to your executable binary cross-compiled> ec2-user@<EC2_IP_ADDR>:<folder of your choices>
 ```
-- Note the whitespace, if I separate the command by whitespace I should see something like
+- Note the whitespace, if I separate the command by whitespace I should see something like  
 ```
 sudo 
 scp 
 -i 
 <path to your pem file for aws private key, include.pem extension> 
 <path to your executable binary cross-compiled> 
-ec2-user@<EC2_IP_ADDR>:<folder of your choices>
+ec2-user@<EC2_IP_ADDR>:<folder of your choices>  
 ```
 * Notes for above commands
   - sudo is not required if you open the command prompt from Window with administrator right
