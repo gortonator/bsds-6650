@@ -179,7 +179,49 @@ You need to modify your POM, add the following dependencies:
     <version>1.3.2</version>
 </dependency>
 ```
+###  Using StudServer for Go generated using Swagger
+if you thinking of using the studserver generated from The Swagger Web page for the API. 
 
+Here is one way to make it running in the local. 
+
+First way, set up module import
+
+1. In the go folder where router.go file resides, run go mod init command and go mod tidy command to create and update the go.mod file
+
+2. In the folder where main.go file resides,
+
+- run go mod init command
+
+- change the sw "./go" to something like sw "example.com/router"
+
+- run go mod edit -replace example.com/router=/go   command. This will tell the go to look for folder inside /go when reference to "example.com/router"
+
+- run go mod tidy command
+
+3. Finally, try run the main.go file using go run command. 
+
+It is highly recommended that you go through the tutorial below to understand how to import other module from local machine. 
+
+https://go.dev/doc/tutorial/create-module
+
+Alternative way, places all files in the same module (folder)
+
+1. Move all the .go file under the /go folder into the same folder for the main.go file 
+
+2. change the package name of all go file to be the same as the package name of the main.go file 
+
+3. Run go mod init command and go mod tidy command
+
+4. Run main.go 
+
+If you opt for this route, as you start writing more functions and structs in the same module, your folder might become very big with lots of file. Which may not be a tidy way to do things 
+
+#### Important Notes
+Note the studserver generated doesnt contain any logics. You probably still need additional work to amend it to suit your need. Especially when you need to process the multipart file from the request. 
+
+And the studserver is not using gin framework, which may be slower. 
+
+The alternative is to code the server from scratch based on the API. 
 ### Problems with GSON import in .war file in Intellij
 
 Sometimes there's an issue building the GSON jar file into a servlet, such that when the servlet is deployed it fails because GSON is missing.
