@@ -16,6 +16,9 @@
 2. Creating Instance Templates for AWS Load Balancing Target Groups
 3. [Unhealthy ELB instances - cause and fix](#Unhealthy-AWS-LB-Instances)
 
+## Windows
+1. [Powershell equiv of chmod 400](#chmod)
+
 ## Servlets and Tomcats
 1. [Potential Issues with Lab2](#Lab2-Web-Application-Support-and-Servlet)
 2. [Tomcat version](#Things-you-need-to-know-about-Tomcat-Version)
@@ -81,6 +84,20 @@ java -jar <pathToYourJar>
 ```
 
 Reference: [here](https://unix.stackexchange.com/questions/49626/purpose-and-typical-usage-of-etc-rc-local)
+
+## Windows
+
+#### chmod
+
+for windows users use Powershell as follows:
+
+icacls.exe your_key_name.pem /reset
+
+icacls.exe your_key_name.pem /grant:r "$($env:username):(r)"
+
+icacls.exe your_key_name.pem /inheritance:r
+
+thats it! your keys.pem have same restrisctions as you use chmod 400
 
 ## AWS
 
