@@ -8,7 +8,7 @@
 ## AWS
 
 1. [IAM Role for AWS SQS](#aws-sqs-roles)
-2. [Loan balancer issues](#Unhealthy-AWS-LB-Instances)
+2. [Load balancer issues](#Unhealthy-AWS-LB-Instances)
 
 ## Linux
 
