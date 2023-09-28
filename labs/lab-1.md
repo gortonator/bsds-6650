@@ -70,8 +70,6 @@ This is to enable the server to run on EC2.
     ssh -i your-amazon.pem ec2-user@instance-address
     ~~~
     ```
-
-
  
 ### Aims: Upload your binary executable file to EC2 and Run it. 
 * After SSH into EC2, make a directory of your choice using mkdir command 
