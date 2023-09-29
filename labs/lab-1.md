@@ -146,9 +146,10 @@ Some notes based on first experience with the Learner Lab:
   ./<your-filename>
   
   ```
+- do this to change permissions if you get permission denied
+  `sudo chmod -R 777 <your-filename>`
 
-#do this to change permissions if you get permission denied
-sudo chmod -R 777 <your-filename>
+- 
 
 ![image](https://github.com/sjchin88/bsds-6650-TA/assets/71600246/657e0738-9088-4a4c-b737-36e207fa7444)
 
