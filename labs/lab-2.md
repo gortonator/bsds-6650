@@ -50,9 +50,10 @@ Then create 500 threads and in each thread generate 1000 strings of the format:
 "timestamp, Thread-id, N"
 
 where:
+
 1. _timestamp_ is the output of calling _System.currentTimeMillis();_
-1. _Thread-id_ is result of calling _Thread.currentThread().getId();_
-1. _N_ is the loop iteration, i.e. between 0 and 999
+2. _Thread-id_ is result of calling _Thread.currentThread().getId();_
+3. _N_ is the loop iteration, i.e. between 0 and 999
 
 Your aim to to store all these generated strings from all threads into the same file as quickly as possible. 
 The order they are written to the file is initially unimportant. 
@@ -60,21 +61,23 @@ The order they are written to the file is initially unimportant.
 Time how long the program takes by taking a timestamp immediately before creating any threads and another when all threads are completed and the file is written and closed.
 
 Approaches you can experiment with are along the lines of:
+
 1. write every string to the file immediately after it is generated in the loop in each thread
-1. write _all_ the strings from one thread after they are generated and just before a thread terminates
-1. Store all the strings from all threads in a shared collection, and write this to a file from your main() thread after all threads are completed
-1. others?
+2. write _all_ the strings from one thread after they are generated and just before a thread terminates
+3. Store all the strings from all threads in a shared collection, and write this to a file from your main() thread after all threads are completed
+4. others?
 
 Implement two or more of these approaches and compare the wall time for the program.
 
 What insights do you take away from this exercise?
 
 Extensions:
+
 1. Test your solutions with threads that generate 2000 strings rather than 1000. What about 5000? 10000?
-1. Can you design a solution in which only one thread writes to the file _while_ the threads are generating the strings.
-1. How would you modify any of your solutions to ensure the data is written to the file in ascending timestamp order?
-
-
+2. Can you design a solution in which only one thread writes to the file _while_ the threads are generating the strings.
+3. How would you modify any of your solutions to ensure the data is written to the file in ascending timestamp order?
+   
+   
 
 ## Java Servlets
 
@@ -183,7 +186,6 @@ This will create a simple web application structure in your project
    ```
    
     You can use similar URL validation approach for `doPost`. 
-   
     Additionally, according to the API spec, the `POST` method to the same URL accepts a JSON request body. We can parse that information with `req.getReader()` which returns a `BufferedReader`, which can be [easily converted to a String](https://stackoverflow.com/questions/5516020/bufferedreader-read-multiple-lines-into-a-single-string) for further JSON processing.
 
 ### Step 4: Install Tomcat **locally** and set up Tomcat in IntelliJ
@@ -218,7 +220,7 @@ Connected to server
 [2019-09-16 03:42:08,111] Artifact cs6650lab:war exploded: Deploy took 714 milliseconds
 ```
 
-And if you visit http://localhost:8080/[WEB_APP]/skiers/12/seasonss/2019/day/1/skier/123 (no brackets, same below), (hopefully) you should see the response (`"It works!"`) processed by `doGet` method in your servlet.
+And if you visit http://localhost:8080/[WEB_APP]/skiers/12/seasons/2019/day/1/skier/123 (no brackets, same below), (hopefully) you should see the response (`"It works!"`) processed by `doGet` method in your servlet.
 
 If you get a 404 page, make sure `WEB_APP` matches **Application Context** specified in **Run/Debug Configurations** -> **Tomcat Server** -> **Deployment** tab.
 
@@ -265,7 +267,6 @@ Since `POST` requests usually also contain request body, we can utilize tools li
    ```
    
     then click "Send".
-   
     If all goes well, you will be able to see the response produced by your `doPost` method.
 
 Congratulations! You have just finished one of the most tricky part of all assignments! It may take a lot of pain to set up everything correctly and get your dev environment ready, but I assure you much more exciting stuff is coming up next!
@@ -273,22 +274,35 @@ Congratulations! You have just finished one of the most tricky part of all assig
 ### Reference Stuff:
 
 - [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+
 - <a href='#install-tomcat' id='install-tomcat' class='anchor'>Installing Tomcat on</a>
+  
   - [macOS](http://www.herongyang.com/JSP/macOS-Download-and-Install-Tomcat.html)
   - [Windows](https://tomcat.apache.org/tomcat-9.0-doc/setup.html#Windows)
   - [Ubuntu](https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804)
+
 - Finding a file - example Linux command 
+  
   - find / -name "tomcat-users.xml" 2>/dev/null
     
     #### Common HTTP Response Codes
+
 - 200: Done, it was okay. Generally, your GETs return this code.
+
 - 201: “Done, and created.” Generally, your POSTs return this code.
+
 - 204: “Done, and no body.” Generally, your DELETEs return this code.
+
 - 400: “Client sent me junk, and I’m not going to mess with it.”
+
 - 401: “Unauthorized, the client should authenticate first.”
+
 - 403: “Not allowed. You can’t have it because you logged in but don’t have permission to this thing or to delete this thing.”
+
 - 404: “Can’t find it.”
+
 - 410: “Marked as deleted.”
+
 - 451: “The government made me not show it.”
 
 [Back to Course Home Page](https://gortonator.github.io/bsds-6650/)
