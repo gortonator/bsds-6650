@@ -83,7 +83,7 @@ This is to enable the server to run on EC2.
   
   
 
-#### Install tomcat  9
+#### Install tomcat  9 (not 10 - it implements a breaking API change)
 
   [Follow these instruction for the first 5 steps](https://techviewleo.com/install-tomcat-on-amazon-linux/)
 
