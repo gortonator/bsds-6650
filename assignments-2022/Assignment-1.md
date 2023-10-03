@@ -37,7 +37,7 @@ Once your have the client API calls working (just like in POSTMAN), write a Java
 1. accepts 4 arguments, ie threadGroupSize = N, numThreadGroups = N,  delay = N (seconds), and IPAddr = server URI to to test against.
 2. On startup, the program creates 10 threads, and each thread calls the POST API followed by the GET API 100 times in a simple loop. IPAddr is the base address of your server URI. This is basically a hardcoded initialization phase.
 3. Take a _startTime_ timestamp
-4. Once all 10 threads have completed, startup _threadGroupSize_ threads, each of which sends 1000 POST/GET APIs.
+4. Once all 10 threads have completed, startup _threadGroupSize_ threads, each of which sends 1000 POST/GET APIs pairs (ie 2000 total)
 5. Once all the threads are running, wait for a period of _delay_ seconds, then start another (identical) thread group.
 6. Repeat the above step (wait _delay_ seconds, start a thread group) until you have started _numThreadGroups_.
 7. When **_all the threads_** from all thread groups have completed, take an _endTime_ timestamp

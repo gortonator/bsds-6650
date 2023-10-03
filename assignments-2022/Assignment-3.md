@@ -2,21 +2,41 @@
 
 COMING SOON
 
-##### Addendum - DynamoDB
 
-**For those interested inDynamoDB**
 
-If you are interested in using DynamoDB, here are some hopefully useful resources:
+Addendum: Multithreading and RabbitMQ
 
-1. A series of documentation explaining how to set up confidential before you could make requests to AWS using AWS SDK for Java 2.X.  
-   https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/credentials.html.  
-   I have already verified the first two options work well in this [section](https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fsdk-for-java%2Flatest%2Fdeveloper-guide%2Fcredentials-chain.html&data=05%7C01%7Ci.gorton%40northeastern.edu%7Cefdb3826568247aa065008db28ec6227%7Ca8eec281aaa34daeac9b9a398b9215e7%7C0%7C0%7C638148767954694150%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=Ul2Fq9eVxt0UogRJ26m%2BbbnrLU8sN9r6LruwHR%2Flny0%3D&reserved=0).  
-   The credentials(aws_access_key_id, aws_secret_access_key, aws_session_token) could be found on your learner's lab page by clicking the right top corner "aws details"
-2. Examples of interacting with DynamoDB using AWS SDK for Java 2.X.  
-   https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.html  
-   I also found the API reference included in each example really helpful.
+RabbitMQ and multithreading needs a few considerations. Read on ....
 
-DynamoDBPricing  
-https://aws.amazon.com/dynamodb/pricing/  
-Pay attention to the difference between “provisioned capacity mode” and“on-demand capacity mode”.  
-As to how to set billing mode in code, check link below https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/model/CreateTableRequest.html#billingMode()Version:1.0StartHTML:0000000105EndHTML:0000042057StartFragment:0000039335EndFragment:0000042017<style></style>
+The basic abstraction that needs to be operated on by each thread is the channel. This means:
+
+In your servlet (or equivalent if not using a servlet):
+
+1. In the init() method, initialize the connection (this is the socket, so is slow)
+2. In the doPost(), create a channel and use that to publish to RabbitMQ. Close it at end of the request.
+
+This should work fine, although the [documentation](https://www.rabbitmq.com/api-guide.html#concurrency) say channels are meant to be long-lived and caution again churn.
+
+So a better solution would be to create a channel pool that shares a bunch of pre-created channels (in .init()) to form a connection pool.
+
+Roll your own is not too hard, but apache commons has a [generic pool implementation](http://commons.apache.org/proper/commons-pool/examples.html) that you could build on.Another approach to implementing a channel pool would be to use a BlockingQueue. Not too tricky ... give it a try!
+
+The [code repo for the book](https://github.com/gortonator/foundations-of-scalable-systems) has examples of these in Chapter 7 that you can use.
+
+On the consumer side, you probably want a multi-threaded consumer that just gets a message and writes to the hash map. In this case you can just create a channel per thread and all should be fine.
+
+There's an excellent write up that describes the complexities of multi-threaded RMQ clients [here](http://moi.vonos.net/bigdata/rabbitmq-threading/)
+
+And [here's](https://github.com/gortonator/bsds-6650/tree/master/code/week-6) some sample code you can work from.
+
+### Starting a program on Linux bootup
+
+Any script in the `/etc/rc.local` file will be run as the last step in booting linux. To start a Java program when you boot the instance, you can put the following command in this file. java -jar <pathToYourJar>
+
+Reference: [here](https://unix.stackexchange.com/questions/49626/purpose-and-typical-usage-of-etc-rc-local)
+
+[Back to Course Home Page
+
+##### 
+
+
