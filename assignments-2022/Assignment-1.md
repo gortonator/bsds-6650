@@ -123,7 +123,7 @@ Submit your work to Canvas Assignment 1 as a pdf document. The document should c
 
 2. Client design description (5 points) - clarity of description, good design practies used
 
-3. Client Part 1 - (10 points) - Output window showing best throughput. Points deducted if actual throughput not close to Little's Law predictions.
+3. Client Part 1 - (10 points) - Output window showing best throughput. Somewhere around 2k/sec should be a minimum target at higher loads
 
 4. Client Part 2 - (10 points) - 5 points for throughput within ~5% of Client Part 1. 5 points for calculations of mean/median/p99/max/throughput (as long as they are sensible).
 
