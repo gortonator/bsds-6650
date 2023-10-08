@@ -1,8 +1,8 @@
-# CS6650 Spring 2023 Assignment 2
+# CS6650 Fall 2023 Assignment 2
 
 #### Let's Store Some Data
 
-This is conceptually pretty simple. We're going to implement the doPost() and goGet() methods  and write/read to a database respectively. As always, simple things are not that simple!
+This is conceptually pretty simple. We're going to implement the doPost() and goGet() methods  and write/read to a database respectively. As always, simple things are not that simple in this course!
 
 #### Client
 
