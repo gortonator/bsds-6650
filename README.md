@@ -95,7 +95,7 @@ Submission instructions and exact deadlines are on the course Canvas site.
 | Assignment | Topic                                                                                                 | Due Date |
 | ---------- | ----------------------------------------------------------------------------------------------------- | -------- |
 | 1          | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-1) | 10/8     |
-| 2          | [Persisting Data](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-2)               | 11/3     |
+| 2          | [Persisting Data](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-2)               | 11/5    |
 | 3          | [Microservices](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-3)                 | 12/1     |
 | 4          | [Mix Request Loads](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-4)             | 12/15    |
 
