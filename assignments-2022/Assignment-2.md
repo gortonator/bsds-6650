@@ -62,13 +62,28 @@ There's a lot of variables here so do your best. See if you can increase the thr
 
 1. URL for your code repo
 
-2. A short description of your data model (5 points)
+2. A short description of your data model (5 points) - Please state size of image used if not using the stock image, and also Database/File storage solution. 
 
 3. Output windows for the 3 client configuration tests run against a single server/DB (5 points)
 
 4. Output windows for the 3 client configuration tests run against a two load balanced servers/DB (15 points)
 
 5. Output window for optimized server configuration for client with 30 Thread Groups. Briefly describe what configuration changes you made and what % throughput improvement you achieved (15 points)
+
+#### Additional Notes for Submission ####
+For 3, 4, 5. The output windows means output window similar to A1 - client part II which contains
+- Configuration used
+- Overall wall time and throughput
+- number of success and fail request
+- the statistics (mean, median, P99, min, max etc) separated for the GET and POST request
+
+A table for the results for each stage for 3, 4, 5, and a overall table for comparison of results across 3, 4, 5. 
+
+Other optional but highly recommended to have in your submission:
+- Some screenshot of your ALB/ELB set up
+- Some screenshot of your database after testing
+- Any other screenshot to demonstrate the effect of your configuration change for task 5.
+  - which can be some screenshot of your servers CPU Utilization before / after changes showing if you successfully remove the bottleneck
 
 ## Deadline : 11/3 11.59pm
 
