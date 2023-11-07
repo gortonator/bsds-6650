@@ -28,7 +28,7 @@ You can use the RabbitMQ management console to track the number of messages in t
 
 The questions you need to explore are:
 
-* How many client threads are optimal to maximize system throughput?
+* How should the database(s) be organized/deployed to handle the higher INSERT/UPDATE load?
 * How many queue consumers threads are needed to keep the queue size as close to zero as possible? Less than a 1000 max is a great target, but the main aim is to ensure the queue length doesn't continually grow, then shrink, giving a 'pointy' queue length profile, ie /\\. An increase to a plateau is fine, ie /¯¯¯¯\\. If the plateau is less than around a 1000, you are in great shape!
 
 Submit your work to Canvas Assignment 3 as a pdf document. The document should contain:
@@ -43,7 +43,7 @@ Submit your work to Canvas Assignment 3 as a pdf document. The document should c
 
 1. Server and consumers implementations (15 points)
 2. Server design description (5 points) - clarity of description, good design practies used
-3. Results (10 points) - single instance tests. Overall throughput, short queue sizes and flat line profile
+3. Results (10 points) - single instance tests. Overall throughput close to assignment 2, short queue sizes and flat line profile
    
    
 
