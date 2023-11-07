@@ -1,6 +1,57 @@
 # CS6650 Spring 2023  Assignment 3
 
-COMING SOON
+##### Lets Go Asynchronous
+
+We're going to augment your solution from assignment 2 with asynchronous request processing to handle a new use case - mainly like and dislikes from users for albums. 
+
+The [Swagger API](https://app.swaggerhub.com/apis/IGORTON/AlbumStore/1.1#) has been modified to include a new endpoint - `/review `- which accepts POST operations that indicate a "like" or "dislike" for an album.  You need to build a servlet to handle this endpoint and store likes and dislikes in a database.
+
+##### Build the Servlet
+
+Like and dislikes are perfect for asynchronous processing. You can accept the request from the client, publish a message to a queue, and then consume messages to 'eventually' update the database. RabbitMQ is the recommended dolution for a queueing platform to use. You can also choose to store likes and dislikes in same table you created in assignment 2, or in a dedicated table. All design choices you have. 
+
+##### Modify the Client
+
+To reduce the new album write load, Just write 100 new albums per thread iteration instead of 1000, and remove the GET request. Then modify you client so that on each thread iteration you:
+
+- POST a new album and image
+
+- POST two likes and one dislike for the album.
+
+##### Performance Testing
+
+As usual, the hard bit. Use your client to load test your servlet(s) (no load balancer) and produce the same results as in assignment 2. Your throughput should be 'roughly' the same as assignment 2.
+
+As your likes/dislikes are handles asynchronously, its possible/likley that your client will finish before all the messages have been processed. This is ok, but we want to be sure your queue(s) are not growing  out of control.   This is unlikely to be your optimal configuration as RMQ struggles with long queue lengths. Hence you need to balance production and consumption rates, such that **production_rate** ≈ **consumption_rate. ** When this condition is met, queue lengths remain small and systems perform predictably and reliably.
+
+You can use the RabbitMQ management console to track the number of messages in the queue, and producers and consumer rates.
+
+The questions you need to explore are:
+
+* How many client threads are optimal to maximize system throughput?
+* How many queue consumers threads are needed to keep the queue size as close to zero as possible? Less than a 1000 max is a great target, but the main aim is to ensure the queue length doesn't continually grow, then shrink, giving a 'pointy' queue length profile, ie /\\. An increase to a plateau is fine, ie /¯¯¯¯\\. If the plateau is less than around a 1000, you are in great shape!
+
+Submit your work to Canvas Assignment 3 as a pdf document. The document should contain:
+
+1. The URL for your git repo. Create a new folder for your Assignment 3 server code
+2. A 1-2 page description of your server design. Include major classes, packages, relationships, how messages get sent/received, etc
+3. Test run results (command lines showing metrics, RMQ management windows showing queue size, send/receive rates) showing your best throughput.
+   
+   
+
+## Grading:
+
+1. Server and consumers implementations (15 points)
+2. Server design description (5 points) - clarity of description, good design practies used
+3. Results (10 points) - single instance tests. Overall throughput, short queue sizes and flat line profile
+   
+   
+
+# Deadline: 11/3 11.59pm PST
+
+
+
+
 
 
 
@@ -38,5 +89,3 @@ Reference: [here](https://unix.stackexchange.com/questions/49626/purpose-and-typ
 [Back to Course Home Page
 
 ##### 
-
-
