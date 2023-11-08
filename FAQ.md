@@ -139,6 +139,7 @@ This [video](https://www.youtube.com/watch?v=rSoj7PEvWFY&t=395s) is a good sourc
 
 Also, you need your target group to listen on port 8080  using tomcat. This [excellent piazza post](https://piazza.com/class/l7qocxa6gzk5i4/post/170) from wonderful 2022 TA Heng spells it out.
 
+A potentually even easier solution is to choose TCP rather than HTTP as the protocol. Health checks then succeed if the TCP connection request succeeds.
 ## Servlets and Tomcats
 
 #### Lab2-Web Application Support and Servlet
