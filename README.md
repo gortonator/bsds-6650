@@ -71,22 +71,22 @@ You can also access this and all O'Reilly books online through the Snell library
 
 ## Modules
 
-| Week | Topic                                                                                                   | Section 1 | Section 2 |
-| ---- | ------------------------------------------------------------------------------------------------------- | --------- | --------- |
-| 1    | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1)           | 9/12      | 9/13      |
-| 2    | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2)                                             | 9/19      | 9/20      |
-| 3    | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3)         | 9/26      | 9/27      |
-| 4    | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4)                        | 10/3      | 10/4      |
-| 5    | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5)                                 | 10/10     | 10/11     |
-| 6    | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6)                                    | 10/17     | 10/18     |
-| 7    | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-7)                           | 10/24     | 10/25     |
-| 8    | [Microservices](http://gortonator.github.io/bsds-6650/Week-8)                                           | 10/31     | 11/1      |
-| 9    | [Data Replication, Partitioning and Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-9) | 11/7      | 11/8      |
-| 10   | [Strong Consistency and Distributed Databases](http://gortonator.github.io/bsds-6650/Week-10)           | 11/14     | 11/15     |
-| 11   | [NoSQL Databases](http://gortonator.github.io/bsds-6650/Week-11)                                        | 11/21     | 11/22     |
-| 12   | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12)                                      | 11/28     | 11/29     |
-| 13   | Final Quiz                                                                                              | 12/5      | 12/6      |
-| 14   | Assignment 4 presentations                                                                              | 12/12     | 12/13     |
+| Week | Topic                                                                                                                | Section 1 | Section 2 |
+| ---- | -------------------------------------------------------------------------------------------------------------------- | --------- | --------- |
+| 1    | [Introduction to Scalable Distributed Systems](https://gortonator.github.io/bsds-6650/Week-1)                        | 9/12      | 9/13      |
+| 2    | [Concurrency](http://gortonator.github.io/bsds-6650/Week-2)                                                          | 9/19      | 9/20      |
+| 3    | [Distributed Systems Architecture Whirlwind Tour](http://gortonator.github.io/bsds-6650/Week-3)                      | 9/26      | 9/27      |
+| 4    | [Distributed Systems Fundamentals](http://gortonator.github.io/bsds-6650/Week-4)                                     | 10/3      | 10/4      |
+| 5    | [Scalable Service Design](http://gortonator.github.io/bsds-6650/Week-5)                                              | 10/10     | 10/11     |
+| 6    | [Asynchronous Systems](http://gortonator.github.io/bsds-6650/Week-6)                                                 | 10/17     | 10/18     |
+| 7    | [Serverless Processing Systems](http://gortonator.github.io/bsds-6650/Week-7)                                        | 10/24     | 10/25     |
+| 8    | [Microservices](http://gortonator.github.io/bsds-6650/Week-8)                                                        | 10/31     | 11/1      |
+| 9    | [Data Replication, Partitioning and Eventual Consistency Introduction](http://gortonator.github.io/bsds-6650/Week-9) | 11/7      | 11/8      |
+| 10   | [Eventual Consistency](http://gortonator.github.io/bsds-6650/Week-10)                                                | 11/14     | 11/15     |
+| 11   | [Strong Consistency](http://gortonator.github.io/bsds-6650/Week-11)                                                  | 11/21     | 11/22     |
+| 12   | [Stream Processing](http://gortonator.github.io/bsds-6650/Week-12)                       | 11/28     | 11/29     |
+| 13   | Final Quiz                                                                                                           | 12/5      | 12/6      |
+| 14   | Assignment 4 presentations                                                                                           | 12/12     | 12/13     |
 
 ## Assignments
 
@@ -95,7 +95,7 @@ Submission instructions and exact deadlines are on the course Canvas site.
 | Assignment | Topic                                                                                                 | Due Date |
 | ---------- | ----------------------------------------------------------------------------------------------------- | -------- |
 | 1          | [Concurrency and Client-server](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-1) | 10/8     |
-| 2          | [Persisting Data](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-2)               | 11/5    |
+| 2          | [Persisting Data](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-2)               | 11/5     |
 | 3          | [Microservices](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-3)                 | 12/1     |
 | 4          | [Mix Request Loads](https://gortonator.github.io/bsds-6650/assignments-2022/Assignment-4)             | 12/15    |
 

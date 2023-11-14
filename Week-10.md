@@ -1,11 +1,10 @@
-# Week 10: Strong Consistency and Distributed Databases
+# Week 10: Eventual Consistency
 
 ## Learning Objectives
 
-1. Explain how 2 phase commit works and how it handles failures
-2. Explain the implications of the FLP result
-3. Describe the Raft consensus algorithm
-4. Explain causal consistency in Neo4j
+1. Explain the need for read-your-writes consistency
+2. Be able to select tunable consitency settings to meet use case needs
+3. Explain the role of version vectors and logical clocks in conflict resolution
 
 ## Mandatory Lecture Materials
 
@@ -15,7 +14,7 @@ Video lessons for the materials  are [here](https://sites.google.com/view/scalab
 
 ## Mandatory Reading
 
-1. Chapter 12 of course book
+1. Chapter 11 of course book
 2. Chapter 9, Designing Data-Intensive Applications, Martin Kleppmann, O'Reilly Publishing (available online at Snell library)
 
 ## Optional Reading
